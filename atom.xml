@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cosmoslazycat.github.io</id>
+    <title>Gridea</title>
+    <updated>2021-07-02T05:53:18.328Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://cosmoslazycat.github.io"/>
+    <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
+    <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[（待完善）[学习日志]JavaScript之旅]]></title>
+        <id>https://cosmoslazycat.github.io/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/</id>
+        <link href="https://cosmoslazycat.github.io/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/">
+        </link>
+        <updated>2021-07-01T12:13:21.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625141677751.jpg" alt="" loading="lazy"></figure>
+<h3 id="javascript排错">JavaScript排错</h3>
+<p>1，Error()</p>
+<pre><code>var err = new Error('Wrong!');
+err.message // wrong!
+err.name
+err.stack
+</code></pre>
+<ul>
+<li><strong>message</strong>：错误提示信息</li>
+<li><strong>name</strong>：错误名称（非标准属性）</li>
+<li><strong>stack</strong>：错误的堆栈（非标准属性）</li>
+</ul>
+<p>2, SyntaxError 对象</p>
+<p><code>SyntaxError</code>对象是解析代码时发生的语法错误。</p>
+<p>错误场景：</p>
+<p>​	变量名错误    // Uncaught SyntaxError: Invalid or unexpected token</p>
+<p>​	缺少括号     // Uncaught SyntaxError: Unexpected string</p>
+<p>3, ReferenceError 对象</p>
+<p><code>ReferenceError</code>对象是引用一个不存在的变量时发生的错误。</p>
+<p>错误场景：</p>
+<p>​	引用一个不存在的变量时发生的错误。</p>
+<p>​	将一个值分配给无法分配的对象，比如对函数的运行结果赋值</p>
+<p>4，<code>RangeError</code>对象是一个值超出有效范围时发生的错误</p>
+<p>数组长度为负数     // Uncaught RangeError: Invalid array length</p>
+<p><code>Number</code>对象的方法参数超出范围，以及函数堆栈超过最大值</p>
+<p>5，<code>TypeError</code>对象是变量或参数不是预期类型时发生的错误。</p>
+<p>对字符串、布尔值、数值等原始类型的值使用<code>new</code>命令，就会抛出这种错误，因为<code>new</code>命令的参数应该是一个构造函数。 // Uncaught TypeError: 123 is not a constructor</p>
+<p>调用对象不存在的方法，也会抛出<code>TypeError</code>错误，因为<code>obj.unknownMethod</code>的值是<code>undefined</code>，而不是一个函数。  // Uncaught TypeError: obj.unknownMethod is not a function</p>
+<p>如何查看这些错误？</p>
+<p>添加断点</p>
+<pre><code>var err1 = new Error('出错了！');
+var err2 = new RangeError('出错了，变量超出有效范围！');
+var err3 = new TypeError('出错了，变量类型无效！');
+
+err1.message // &quot;出错了！&quot;
+err2.message // &quot;出错了，变量超出有效范围！&quot;
+err3.message // &quot;出错了，变量类型无效！&quot;
+</code></pre>
+<p>如何打断点</p>
+<p><code>throw</code>语句的作用是手动中断程序执行，抛出一个错误。</p>
+<pre><code>var x = -1;
+
+if (x &lt;= 0) {
+  throw new Error('x 必须为正数');
+}
+// Un
+</code></pre>
+<p>对于 JavaScript 引擎来说，遇到<code>throw</code>语句，程序就中止了。引擎会接收到<code>throw</code>抛出的信息，可能是一个错误实例，也可能是其他类型的值。</p>
+<p><code>try...catch</code> 结构</p>
+<p>一旦发生错误，程序就中止执行了。JavaScript 提供了<code>try...catch</code>结构，允许对错误进行处理，选择是否往下执行。</p>
+<pre><code>try {
+  throw new Error('出错了!');
+} catch (e) {
+  console.log(e.name + &quot;: &quot; + e.message);
+  console.log(e.stack);
+}
+// Error: 出错了!
+//   at &lt;anonymous&gt;:3:9
+//   ...
+</code></pre>
+<p>如果你不确定某些代码是否会报错，就可以把它们放在<code>try...catch</code>代码块之中，便于进一步对错误进行处理。</p>
+<pre><code>try {
+  f();
+} catch(e) {
+  // 处理错误
+}
+</code></pre>
+<p><code>catch</code>代码块捕获错误之后，程序不会中断，会按照正常流程继续执行下去。</p>
+<pre><code>try {
+  throw &quot;出错了&quot;;
+} catch (e) {
+  console.log(111);
+}
+console.log(222);
+// 111
+// 222
+</code></pre>
+<p><code>try</code>代码块抛出的错误，被<code>catch</code>代码块捕获后，程序会继续向下执行。</p>
+<p>为了捕捉不同类型的错误，<code>catch</code>代码块之中可以加入判断语句。</p>
+<pre><code>try {
+  foo.bar();
+} catch (e) {
+  if (e instanceof EvalError) {
+    console.log(e.name + &quot;: &quot; + e.message);
+  } else if (e instanceof RangeError) {
+    console.log(e.name + &quot;: &quot; + e.message);
+  }
+  // ...
+}
+</code></pre>
+<h3 id="符号说明">符号说明</h3>
+<p><code>()</code>圆括号（parentheses）在 JavaScript 中有两种作用，一种表示函数的调用，另一种表示表达式的组合（grouping）。</p>
+<pre><code>// 圆括号表示函数的调用
+console.log('abc');
+
+// 圆括号表示表达式的组合
+(1 + 2) * 3
+</code></pre>
+<p>规范</p>
+<pre><code>表示函数调用时，函数名与左括号之间没有空格。
+
+表示函数定义时，函数名与左括号之间没有空格。
+
+其他情况时，前面位置的语法元素与左括号之间，都有一个空格。
+</code></pre>
+<p>变量符号</p>
+<p>JavaScript 最大的语法缺点，可能就是全局变量对于任何一个代码块，都是可读可写。这对代码的模块化和重复使用，非常不利。</p>
+<p>因此，建议避免使用全局变量。如果不得不使用，可以考虑用大写字母表示变量名，这样更容易看出这是全局变量，比如<code>UPPER_CASE</code>。</p>
+<ul>
+<li>所有函数都应该在使用之前定义。函数内部的变量声明，都应该放在函数的头部。</li>
+<li>不要使用<code>with</code>语句。</li>
+<li>建议不要使用相等运算符（<code>==</code>），只使用严格相等运算符（<code>===</code>）。</li>
+<li>建议不要将不同目的的语句，合并成一行。</li>
+<li>所有的<code>++</code>运算符都可以用<code>+= 1</code>代替。</li>
+<li>建议自增（<code>++</code>）和自减（<code>--</code>）运算符尽量使用<code>+=</code>和<code>-=</code>代替</li>
+<li>建议<code>switch...case</code>结构可以用对象结构代替。</li>
+</ul>
+<p>重构switch方法</p>
+<pre><code>function doAction(action) {
+  switch (action) {
+    case 'hack':
+      return 'hack';
+    case 'slash':
+      return 'slash';
+    case 'run':
+      return 'run';
+    default:
+      throw new Error('Invalid action.');
+  }
+}
+</code></pre>
+<p>重构</p>
+<pre><code>function doAction(action) {
+  var actions = {
+    'hack': function () {
+      return 'hack';
+    },
+    'slash': function () {
+      return 'slash';
+    },
+    'run': function () {
+      return 'run';
+    }
+  };
+
+  if (typeof actions[action] !== 'function') {
+    throw new Error('Invalid action.');
+  }
+
+  return actions[action]();
+}
+</code></pre>
+<h3 id="console">console</h3>
+<p>常用方法</p>
+<p><code>count</code>方法用于计数，输出它被调用了多少次。</p>
+<pre><code>function greet(user) {
+  console.count();
+  return 'hi ' + user;
+}
+
+greet('bob')
+//  : 1
+// &quot;hi bob&quot;
+
+greet('alice')
+//  : 2
+// &quot;hi alice&quot;
+
+greet('bob')
+//  : 3
+// &quot;hi bob&quot;
+</code></pre>
+<p>检查对象</p>
+<p><code>console.dir()</code>，<code>console.dirxml()</code></p>
+<pre><code>console.log({f1: 'foo', f2: 'bar'})
+// Object {f1: &quot;foo&quot;, f2: &quot;bar&quot;}
+
+console.dir({f1: 'foo', f2: 'bar'})
+// Object
+//   f1: &quot;foo&quot;
+//   f2: &quot;bar&quot;
+//   __proto__: Object
+</code></pre>
+<p>打断点</p>
+<p><code>console.assert</code>方法主要用于程序运行过程中，进行条件判断，如果不满足条件，就显示一个错误，但不会中断程序执行。这样就相当于提示用户，内部状态不正确。</p>
+<pre><code>console.assert(false, '判断条件不成立')
+// Assertion failed: 判断条件不成立
+
+// 相当于
+try {
+  if (!false) {
+    throw new Error('判断条件不成立');
+  }
+} catch(e) {
+  console.error(e);
+}
+</code></pre>
+<p>代码计时</p>
+<p><code>console.time()</code>，<code>console.timeEnd()</code></p>
+<pre><code>console.time('Array initialize');
+
+var array= new Array(1000000);
+for (var i = array.length - 1; i &gt;= 0; i--) {
+  array[i] = new Object();
+};
+
+console.timeEnd('Array initialize');
+// Array initialize: 1914.481ms
+</code></pre>
+<p>代码查错</p>
+<p><code>console.trace</code>方法显示当前执行的代码在堆栈中的调用路径。</p>
+<pre><code>console.trace()
+// console.trace()
+//   (anonymous function)
+//   InjectedScript._evaluateOn
+//   InjectedScript._evaluateAndWrap
+//   InjectedScript.evaluate
+</code></pre>
+<p><code>debugger 语句</code></p>
+<p><code>debugger</code>语句主要用于除错，作用是设置断点。如果有正在运行的除错工具，程序运行到<code>debugger</code>语句时会自动停下。如果没有除错工具，<code>debugger</code>语句不会产生任何结果，JavaScript 引擎自动跳过这一句。</p>
+<p>Chrome 浏览器中，当代码运行到<code>debugger</code>语句时，就会暂停运行，自动打开脚本源码界面。</p>
+<pre><code>for(var i = 0; i &lt; 5; i++){
+  console.log(i);
+  if (i === 2) debugger;
+}
+</code></pre>
+<h3 id="object">Object</h3>
+<p><code>Object</code>本身是一个函数，可以当作工具方法使用，将任意值转为对象。这个方法常用于保证某个值一定是对象</p>
+<p>方法</p>
+<p>属性描述对象</p>
+<pre><code>{
+  value: 123,
+  writable: false,
+  enumerable: true,
+  configurable: false,
+  get: undefined,
+  set: undefined
+}
+</code></pre>
+<pre><code>value
+
+value是该属性的属性值，默认为undefined。
+
+（2）writable
+
+writable是一个布尔值，表示属性值（value）是否可改变（即是否可写），默认为true。
+
+（3）enumerable
+
+enumerable是一个布尔值，表示该属性是否可遍历，默认为true。如果设为false，会使得某些操作（比如for...in循环、Object.keys()）跳过该属性。
+
+（4）configurable
+
+configurable是一个布尔值，表示可配置性，默认为true。如果设为false，将阻止某些操作改写该属性，比如无法删除该属性，也不得改变该属性的属性描述对象（value属性除外）。也就是说，configurable属性控制了属性描述对象的可写性。
+
+（5）get
+
+get是一个函数，表示该属性的取值函数（getter），默认为undefined。
+
+（6）set
+
+set是一个函数，表示该属性的存值函数（setter），默认为undefined。
+</code></pre>
+<p><code>Object.getOwnPropertyDescriptor()</code>方法可以获取属性描述对象。它的第一个参数是目标对象，第二个参数是一个字符串，对应目标对象的某个属性名。</p>
+<pre><code>var obj = { p: 'a' };
+
+Object.getOwnPropertyDescriptor(obj, 'p')
+// Object { value: &quot;a&quot;,
+//   writable: true,
+//   enumerable: true,
+//   configurable: true
+// }
+</code></pre>
+<p>注意，<code>Object.getOwnPropertyDescriptor()</code>方法只能用于对象自身的属性，不能用于继承的属性。</p>
+<h4 id="对象的拷贝">对象的拷贝</h4>
+<p>我们需要将一个对象的所有属性，拷贝到另一个对象，可以用下面的方法实现。</p>
+<pre><code>var extend = function (to, from) {
+  for (var property in from) {
+    to[property] = from[property];
+  }
+
+  return to;
+}
+
+extend({}, {
+  a: 1
+})
+// {a: 1}
+</code></pre>
+<p>上面这个方法的问题在于，如果遇到存取器定义的属性，会只拷贝值</p>
+<pre><code>extend({}, {
+  get a() { return 1 }
+})
+// {a: 1}
+</code></pre>
+<p>为了解决这个问题，我们可以通过<code>Object.defineProperty</code>方法来拷贝属性。</p>
+<pre><code>var extend = function (to, from) {
+  for (var property in from) {
+    if (!from.hasOwnProperty(property)) continue;
+    Object.defineProperty(
+      to,
+      property,
+      Object.getOwnPropertyDescriptor(from, property)
+    );
+  }
+
+  return to;
+}
+
+extend({}, { get a(){ return 1 } })
+// { get a(){ return 1 } })
+</code></pre>
+<p>上面代码中，<code>hasOwnProperty</code>那一行用来过滤掉继承的属性，否则可能会报错，因为<code>Object.getOwnPropertyDescriptor</code>读不到继承属性的属性描述对象。</p>
+<h4 id="控制对象状态">控制对象状态</h4>
+<p>有时需要冻结对象的读写状态，防止对象被改变。JavaScript 提供了三种冻结方法，最弱的一种是<code>Object.preventExtensions</code>，其次是<code>Object.seal</code>，最强的是<code>Object.freeze</code>。</p>
+<p><code>Object.preventExtensions</code>方法可以使得一个对象无法再添加新的属性。</p>
+<pre><code>var obj = new Object();
+Object.preventExtensions(obj);
+
+Object.defineProperty(obj, 'p', {
+  value: 'hello'
+});
+// TypeError: Cannot define property:p, object is not extensible.
+
+obj.p = 1;
+obj.p // undefined
+</code></pre>
+<p>上面代码中，<code>obj</code>对象经过<code>Object.preventExtensions</code>以后，就无法添加新属性了。</p>
+<p><code>Object.isExtensible</code>方法用于检查一个对象是否使用了<code>Object.preventExtensions</code>方法。也就是说，检查是否可以为一个对象添加属性。</p>
+<pre><code>var obj = new Object();
+
+Object.isExtensible(obj) // true
+Object.preventExtensions(obj);
+Object.isExtensible(obj) // false上面代码中，对obj对象使用Object.preventExtensions方法以后，再使用Object.isExtensible方法，返回false，表示已经不能添加新属性了。
+</code></pre>
+<p>上面代码中，对<code>obj</code>对象使用<code>Object.preventExtensions</code>方法以后，再使用<code>Object.isExtensible</code>方法，返回<code>false</code>，表示已经不能添加新属性了。</p>
+<p><code>Object.seal</code>方法使得一个对象既无法添加新属性，也无法删除旧属性。</p>
+<pre><code>var obj = { p: 'hello' };
+Object.seal(obj);
+
+delete obj.p;
+obj.p // &quot;hello&quot;
+
+obj.x = 'world';
+obj.x // undefined
+</code></pre>
+<p>上面代码中，<code>obj</code>对象执行<code>Object.seal</code>方法以后，就无法添加新属性和删除旧属性了。</p>
+<p><code>Object.seal</code>实质是把属性描述对象的<code>configurable</code>属性设为<code>false</code>，因此属性描述对象不再能改变了。</p>
+<pre><code>var obj = {
+  p: 'a'
+};
+
+// seal方法之前
+Object.getOwnPropertyDescriptor(obj, 'p')
+// Object {
+//   value: &quot;a&quot;,
+//   writable: true,
+//   enumerable: true,
+//   configurable: true
+// }
+
+Object.seal(obj);
+
+// seal方法之后
+Object.getOwnPropertyDescriptor(obj, 'p')
+// Object {
+//   value: &quot;a&quot;,
+//   writable: true,
+//   enumerable: true,
+//   configurable: false
+// }
+
+Object.defineProperty(obj, 'p', {
+  enumerable: false
+})
+// TypeError: Cannot redefine property: p
+</code></pre>
+<p>上面代码中，使用<code>Object.seal</code>方法之后，属性描述对象的<code>configurable</code>属性就变成了<code>false</code>，然后改变<code>enumerable</code>属性就会报错。</p>
+<p><code>Object.seal</code>只是禁止新增或删除属性，并不影响修改某个属性的值。</p>
+<pre><code>var obj = { p: 'a' };
+Object.seal(obj);
+obj.p = 'b';
+obj.p // 'b'
+</code></pre>
+<p>上面代码中，<code>Object.seal</code>方法对<code>p</code>属性的<code>value</code>无效，是因为此时<code>p</code>属性的可写性由<code>writable</code>决定。</p>
+<p><code>Object.isSealed</code>方法用于检查一个对象是否使用了<code>Object.seal</code>方法。</p>
+<pre><code>var obj = { p: 'a' };
+
+Object.seal(obj);
+Object.isSealed(obj) // true
+</code></pre>
+<p>这时，<code>Object.isExtensible</code>方法也返回<code>false</code>。</p>
+<pre><code>var obj = { p: 'a' };
+
+Object.seal(obj);
+Object.isExtensible(obj) // false
+</code></pre>
+<p><code>Object.freeze</code>方法可以使得一个对象无法添加新属性、无法删除旧属性、也无法改变属性的值，使得这个对象实际上变成了常量。</p>
+<pre><code>var obj = {
+  p: 'hello'
+};
+
+Object.freeze(obj);
+
+obj.p = 'world';
+obj.p // &quot;hello&quot;
+
+obj.t = 'hello';
+obj.t // undefined
+
+delete obj.p // false
+obj.p // &quot;hello&quot;
+</code></pre>
+<p>上面代码中，对<code>obj</code>对象进行<code>Object.freeze()</code>以后，修改属性、新增属性、删除属性都无效了。这些操作并不报错，只是默默地失败。如果在严格模式下，则会报错。</p>
+<p><code>Object.isFrozen</code>方法用于检查一个对象是否使用了<code>Object.freeze</code>方法。</p>
+<pre><code>var obj = {
+  p: 'hello'
+};
+
+Object.freeze(obj);
+Object.isFrozen(obj) // true
+</code></pre>
+<p>使用<code>Object.freeze</code>方法以后，<code>Object.isSealed</code>将会返回<code>true</code>，<code>Object.isExtensible</code>返回<code>false</code>。</p>
+<pre><code>var obj = {
+  p: 'hello'
+};
+
+Object.freeze(obj);
+
+Object.isSealed(obj) // true
+Object.isExtensible(obj) // false
+</code></pre>
+<p><code>Object.isFrozen</code>的一个用途是，确认某个对象没有被冻结后，再对它的属性赋值。</p>
+<pre><code>var obj = {
+  p: 'hello'
+};
+
+Object.freeze(obj);
+
+if (!Object.isFrozen(obj)) {
+  obj.p = 'world';
+}
+</code></pre>
+<p>上面代码中，确认<code>obj</code>没有被冻结后，再对它的属性赋值，就不会报错了。</p>
+<h3 id="构造函数">构造函数</h3>
+<p><code>Array</code>是 JavaScript 的原生对象，同时也是一个构造函数，可以用它生成新的数组。</p>
+<pre><code>var arr = new Array(2);
+arr.length // 2
+arr // [ empty x 2 ]
+</code></pre>
+<p><code>Array()</code>作为构造函数，行为很不一致。因此，不建议使用它生成新数组，直接使用数组字面量是更好的做法。</p>
+<pre><code>// bad
+var arr = new Array(1, 2);
+
+// good
+var arr = [1, 2];
+</code></pre>
+<p><code>Array.isArray</code>方法返回一个布尔值，表示参数是否为数组。它可以弥补<code>typeof</code>运算符的不足。</p>
+<pre><code>var arr = [1, 2, 3];
+
+typeof arr // &quot;object&quot;
+Array.isArray(arr) // true
+</code></pre>
+<p>上面代码中，<code>typeof</code>运算符只能显示数组的类型是<code>Object</code>，而<code>Array.isArray</code>方法可以识别数组。</p>
+<p><code>push</code>方法用于在数组的末端添加一个或多个元素，并返回添加新元素后的数组长度。注意，该方法会改变原数组。</p>
+<pre><code>var arr = [];
+
+arr.push(1) // 1
+arr.push('a') // 2
+arr.push(true, {}) // 4
+arr // [1, 'a', true, {}]
+</code></pre>
+<p>上面代码使用<code>push</code>方法，往数组中添加了四个成员。</p>
+<p><code>pop</code>方法用于删除数组的最后一个元素，并返回该元素。注意，该方法会改变原数组。</p>
+<pre><code>var arr = ['a', 'b', 'c'];
+
+arr.pop() // 'c'
+arr // ['a', 'b']
+</code></pre>
+<p><code>push</code>和<code>pop</code>结合使用，就构成了“后进先出”的栈结构（stack）。</p>
+<pre><code>var arr = [];
+arr.push(1, 2);
+arr.push(3);
+arr.pop();
+arr // [1, 2]
+</code></pre>
+<p>上面代码中，<code>3</code>是最后进入数组的，但是最早离开数组。</p>
+<ul>
+<li><code>join()</code>方法以指定参数作为分隔符，将所有数组成员连接为一个字符串返回。如果不提供参数，默认用逗号分隔。</li>
+<li>通过<code>call</code>方法，这个方法也可以用于字符串或类似数组的对象。</li>
+<li><code>concat</code>方法用于多个数组的合并。它将新数组的成员，添加到原数组成员的后部，然后返回一个新数组，原数组不变。</li>
+<li><code>reverse</code>方法用于颠倒排列数组元素，返回改变后的数组。注意，该方法将改变原数组。</li>
+<li><code>slice()</code>方法用于提取目标数组的一部分，返回一个新数组，原数组不变。<code>slice()</code>方法的一个重要应用，是将类似数组的对象转为真正的数组。</li>
+<li><code>sort</code>方法对数组成员进行排序，默认是按照字典顺序排序。排序后，原数组将被改变。</li>
+<li><code>map()</code>方法将数组的所有成员依次传入参数函数，然后把每一次的执行结果组成一个新数组返回。</li>
+<li><code>forEach()</code>方法与<code>map()</code>方法很相似，也是对数组的所有成员依次执行参数函数。</li>
+<li><code>filter()</code>方法用于过滤数组成员，满足条件的成员组成一个新数组返回。</li>
+<li><code>some</code>方法是只要一个成员的返回值是<code>true</code>，则整个<code>some</code>方法的返回值就是<code>true</code>，否则返回<code>false</code>。</li>
+<li><code>every</code>方法是所有成员的返回值都是<code>true</code>，整个<code>every</code>方法才返回<code>true</code>，否则返回<code>false</code>。</li>
+<li><code>reduce</code>方法和<code>reduceRight</code>方法依次处理数组的每个成员，最终累计为一个值。它们的差别是，<code>reduce</code>是从左到右处理（从第一个成员到最后一个成员），<code>reduceRight</code>则是从右到左（从最后一个成员到第一个成员），其他完全一样。</li>
+<li><code>indexOf</code>方法返回给定元素在数组中第一次出现的位置，如果没有出现则返回<code>-1</code>。</li>
+</ul>
+<h3 id="正则表达式">正则表达式</h3>
+<p>新建正则表达式有两种方法。一种是使用字面量，以斜杠表示开始和结束。</p>
+<pre><code>var regex = /xyz/;
+</code></pre>
+<p>另一种是使用<code>RegExp</code>构造函数。</p>
+<pre><code>var regex = new RegExp('xyz');
+</code></pre>
+<h4 id="匹配规则"><a href="https://wangdoc.com/javascript/stdlib/regexp.html#%E5%8C%B9%E9%85%8D%E8%A7%84%E5%88%99">匹配规则</a></h4>
+<p>字面量字符和元字符</p>
+<p><code>/a/</code>匹配<code>a</code>，<code>/b/</code>匹配<code>b</code>。如果在正则表达式之中，某个字符只表示它字面的含义（就像前面的<code>a</code>和<code>b</code>），那么它们就叫做“字面量字符”（literal characters）。</p>
+<pre><code>/dog/.test('old dog') // true
+</code></pre>
+<p><code>元字符</code></p>
+<p><strong>点字符（.)</strong></p>
+<p>点字符（<code>.</code>）匹配除回车（<code>\r</code>）、换行(<code>\n</code>) 、行分隔符（<code>\u2028</code>）和段分隔符（<code>\u2029</code>）以外的所有字符。注意，对于码点大于<code>0xFFFF</code>字符，点字符不能正确匹配，会认为这是两个字符。</p>
+<pre><code>/c.t/
+</code></pre>
+<p>上面代码中，<code>c.t</code>匹配<code>c</code>和<code>t</code>之间包含任意一个字符的情况，只要这三个字符在同一行，比如<code>cat</code>、<code>c2t</code>、<code>c-t</code>等等，但是不匹配<code>coot</code></p>
+<p>位置字符用来提示字符所处的位置，主要有两个字符。</p>
+<ul>
+<li><code>^</code> 表示字符串的开始位置</li>
+<li><code>$</code> 表示字符串的结束位置</li>
+</ul>
+<pre><code>// test必须出现在开始位置
+/^test/.test('test123') // true
+
+// test必须出现在结束位置
+/test$/.test('new test') // true
+
+// 从开始位置到结束位置只有test
+/^test$/.test('test') // true
+/^test$/.test('test test') // false
+</code></pre>
+<p>竖线符号（<code>|</code>）在正则表达式中表示“或关系”（OR），即<code>cat|dog</code>表示匹配<code>cat</code>或<code>dog</code>。</p>
+<pre><code>/11|22/.test('911') // true
+</code></pre>
+<p>上面代码中，正则表达式指定必须匹配<code>11</code>或<code>22</code>。</p>
+<p>多个选择符可以联合使用。</p>
+<pre><code>// 匹配fred、barney、betty之中的一个
+/fred|barney|betty/
+</code></pre>
+<p>选择符会包括它前后的多个字符，比如<code>/ab|cd/</code>指的是匹配<code>ab</code>或者<code>cd</code>，而不是指匹配<code>b</code>或者<code>c</code>。如果想修改这个行为，可以使用圆括号。</p>
+<pre><code>/a( |\t)b/.test('a\tb') // true
+</code></pre>
+<p>上面代码指的是，<code>a</code>和<code>b</code>之间有一个空格或者一个制表符。</p>
+<p>其他的元字符还包括<code>\</code>、<code>*</code>、<code>+</code>、<code>?</code>、<code>()</code>、<code>[]</code>、<code>{}</code>等，将在下文解释。</p>
+<p>正则表达式对一些不能打印的特殊字符，提供了表达方法。</p>
+<ul>
+<li><code>\cX</code> 表示<code>Ctrl-[X]</code>，其中的<code>X</code>是A-Z之中任一个英文字母，用来匹配控制字符。</li>
+<li><code>[\b]</code> 匹配退格键(U+0008)，不要与<code>\b</code>混淆。</li>
+<li><code>\n</code> 匹配换行键。</li>
+<li><code>\r</code> 匹配回车键。</li>
+<li><code>\t</code> 匹配制表符 tab（U+0009）。</li>
+<li><code>\v</code> 匹配垂直制表符（U+000B）。</li>
+<li><code>\f</code> 匹配换页符（U+000C）。</li>
+<li><code>\0</code> 匹配<code>null</code>字符（U+0000）。</li>
+<li><code>\xhh</code> 匹配一个以两位十六进制数（<code>\x00</code>-<code>\xFF</code>）表示的字符。</li>
+<li><code>\uhhhh</code> 匹配一个以四位十六进制数（<code>\u0000</code>-<code>\uFFFF</code>）表示的 Unicode 字符。</li>
+</ul>
+<p>预定义模式指的是某些常见模式的简写方式。</p>
+<ul>
+<li><code>\d</code> 匹配0-9之间的任一数字，相当于<code>[0-9]</code>。</li>
+<li><code>\D</code> 匹配所有0-9以外的字符，相当于<code>[^0-9]</code>。</li>
+<li><code>\w</code> 匹配任意的字母、数字和下划线，相当于<code>[A-Za-z0-9_]</code>。</li>
+<li><code>\W</code> 除所有字母、数字和下划线以外的字符，相当于<code>[^A-Za-z0-9_]</code>。</li>
+<li><code>\s</code> 匹配空格（包括换行符、制表符、空格符等），相等于<code>[ \t\r\n\v\f]</code>。</li>
+<li><code>\S</code> 匹配非空格的字符，相当于<code>[^ \t\r\n\v\f]</code>。</li>
+<li><code>\b</code> 匹配词的边界。</li>
+<li><code>\B</code> 匹配非词边界，即在词的内部。</li>
+</ul>
+<h3 id="json对象">JSON对象</h3>
+<p>JSON 格式（JavaScript Object Notation 的缩写）是一种用于数据交换的文本格式</p>
+<p>每个 JSON 对象就是一个值，可能是一个数组或对象，也可能是一个原始类型的值。总之，只能是一个值，不能是两个或更多的值</p>
+<p>以下都是合法的 JSON。</p>
+<pre><code>[&quot;one&quot;, &quot;two&quot;, &quot;three&quot;]
+
+{ &quot;one&quot;: 1, &quot;two&quot;: 2, &quot;three&quot;: 3 }
+
+{&quot;names&quot;: [&quot;张三&quot;, &quot;李四&quot;] }
+
+[ { &quot;name&quot;: &quot;张三&quot;}, {&quot;name&quot;: &quot;李四&quot;} ]
+</code></pre>
+<p>以下都是不合法的 JSON。</p>
+<pre><code>{ name: &quot;张三&quot;, 'age': 32 }  // 属性名必须使用双引号
+
+[32, 64, 128, 0xFFF] // 不能使用十六进制值
+
+{ &quot;name&quot;: &quot;张三&quot;, &quot;age&quot;: undefined } // 不能使用 undefined
+
+{ &quot;name&quot;: &quot;张三&quot;,
+  &quot;birthday&quot;: new Date('Fri, 26 Aug 2011 07:13:10 GMT'),
+  &quot;getName&quot;: function () {
+      return this.name;
+  }
+} // 属性值不能使用函数和日期对象
+</code></pre>
+<p>注意，<code>null</code>、空数组和空对象都是合法的 JSON 值。</p>
+<p><code>JSON</code>对象是 JavaScript 的原生对象，用来处理 JSON 格式数据。它有两个静态方法：<code>JSON.stringify()</code>和<code>JSON.parse()</code>。</p>
+<h3 id="面向对象">面向对象</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[翻译]如何努力工作]]></title>
+        <id>https://cosmoslazycat.github.io/post/fan-yi-ru-he-nu-li-gong-zuo/</id>
+        <link href="https://cosmoslazycat.github.io/post/fan-yi-ru-he-nu-li-gong-zuo/">
+        </link>
+        <updated>2021-07-01T12:11:31.000Z</updated>
+        <content type="html"><![CDATA[<p>原文: <a href="http://paulgraham.com/hwh.html">How To Work</a><br>
+关于如何努力工作，似乎没有什么可说的，任何上过学的人都知道。有一些12岁的孩子，他们的努力程度令人吃惊。但现在我对「努力工作」又有了更深的理解。</p>
+<p>我知道如果想做伟大的事情，就必须非常努力地工作。我小时候对这一点并不确定：学校作业的难度各不相同；一个人并不总是要非常努力才能做得好。而一些牛人似乎不费吹灰之力就能把事情做好。我曾经认为是不是可以通过纯粹的聪明才智来达到目的？现在我知道了，没有。</p>
+<p>一些学科看起来很容易的原因是我的学校的标准很低。而牛人似乎毫不费力的原因是多年的实践；他们使事情看起来很容易。</p>
+<p>当然，那些牛人通常也有天赋。要取得杰出的成绩需要有三个要素：天赋、实践和努力。只用其中两个就可以做得很好，但要做到最好，则需要全部三个：你需要有很好的天赋，经过大量的练习，并且要非常努力。</p>
+<p>例如，比尔-盖茨是他那个时代商业领域最聪明的人之一，同时也是最勤奋的人之一。他说：&quot;我在二十多岁时从未休息过一天，一次都没有。&quot; 梅西的情况也类似，他有很好的天赋，但当他的青年教练谈到他时，他们记住的不是他的天赋，而是他的奉献精神和求胜欲望。如果让我选择20世纪最佳英国作家的话，我会投 P.G.Wodehouse 一票。74岁时，他写道：</p>
+<p>我每写一本新书，就像我在文学的花园里摘了一个柠檬。这确实是一件好事，它使人保持清醒的头脑，使人把每句话重写 10 遍。很多情况下甚至是 20 遍。</p>
+<p>听起来有点极端。但是比尔-盖茨听起来更极端。十年来没有一天休息？这两个人拥有很好的天赋，但他们也像任何人一样努力工作。这两个你最好都需要。</p>
+<p>这似乎很明显，但在实践中我们发现并不是这样。在天赋和努力工作之间存在着一种微弱的对立。它部分来自于文化，部分源于牛人比较罕见。如果很好的天赋和很强的驱动力都是罕见的，那么拥有两者的人就是罕见的平方。你遇到的大多数人，如果一个人很有天赋，另一个大概率就会比较少。但是，如果你想成为一个杰出的人，就需要这两样东西。由于你无法真正改变你的天赋，你能做的，就只剩下努力工作了。</p>
+<p>如果你有明确的、外部设置的目标，就像在学校那样，那么努力工作是很直接的一件事。这其中有一些技巧：你必须学会不欺骗自己，不拖延时间（这也是一种欺骗自己的形式），不分心，遇到阻碍时不放弃。但这种程度的自律似乎主要是针对年轻人。</p>
+<p>我从小学到的是如何朝着既没有明确定义也没有外部强加的目标努力。如果想做出不错的成绩，你可能必须同时学会这两点。</p>
+<p>其中最基本的要求是觉得你应该工作，不需要任何人告诉你。现在，当我不努力工作时，警钟就会响起。我不确定是否有进展，但当我不努力时，我可以确定没有进展，这感觉很不好。</p>
+<p>像大多数小孩子一样，我很享受学习或完成新事情时的成就感。随着年龄的增长，当我没有取得任何成就时，这种感觉就演变成了一种厌恶感。我印象很深刻，在我13岁时就不再看电视了。</p>
+<p>我与几个人交谈过，他们差不多都是在这个年龄段开始认真对待工作。我问帕特里克-科里森，他是什么时候开始觉得讨厌无所事事的感觉的，他说：</p>
+<p>大约是在13或14岁。我清晰地记得我坐在起居室里，盯着外面，想知道为什么就这么浪费自己的暑假。</p>
+<p>也许在青春期有什么变化？</p>
+<p>奇怪的是，认真工作的最大障碍可能来自学校，它使工作（他们所谓的工作）看起来很无聊，毫无意义。我们必须先了解什么是真正的工作，才能全心全意地渴望去做。这需要一段时间，因为即使在大学里，很多工作也是毫无意义的；甚至整个部门都是毫无意义的。但是，当我了解到真正工作的形态时，我发现我对工作的渴望与之契合，就好像它们是为彼此而生的。</p>
+<p>我想大多数人需要先了解什么是工作，然后才能爱上它。哈代在《一个数学家的辩白》中论述了这一点。</p>
+<p>我不记得我小时候对数学有什么热情，我对数学家这个职业有过一些想法，但也认为这只是一份工作而已。我对数学的看法就是考试和奖学金：我想打败其他孩子，而我可以轻松地做到这点。</p>
+<p>他直到大学，读了乔丹的《分析课》 (Cauchy’s Cours d’analyse)后，才知道数学的真正含义，。</p>
+<p>我永远不会忘记我在阅读那本了不起的著作时的惊喜，它是我们这一代许多数学家的启蒙书，我在阅读它时第一次知道了数学的真正含义。</p>
+<p>为了理解什么是真正的工作，你需要甄别两种「假工作」。一种是哈代在学校遇到的那种。当课题被改编为教给孩子们时，它们就被扭曲了，常常被扭曲到与实际工作完全不同。另一种是某些类型的工作所固有的。有些类型的工作本质上是假的，或者充其量只是忙碌的工作。</p>
+<p>真正的工作都有种共性，但也是一个模糊的标准，而且故意模糊的，因为它必须涵盖很多不同的类型。</p>
+<p>一旦你知道真正工作的样子，你就必须学会每天花多少小时来做。这不是简单地在每个清醒的时间工作就行，因为在许多种工作中会有一个临界点，超过这个点，结果的质量就会开始下降。</p>
+<p>这个限度因工作类型和个人而异。我做过几种不同类型的工作，每种工作的极限都不一样。我对较难的写作或编程类型的极限是每天约5小时。而当我在经营一家创业公司时，我可以一直工作。至少在我做的那三年里是这样；如果要坚持得更久，可能需要偶尔休假。</p>
+<p>找到极限的唯一方法就是跨越它。培养对你所做的工作质量的敏感性，然后你就会注意到它是否因为你工作得太辛苦而下降了。诚实在这里至关重要，它包括两个方面：你必须注意到你什么时候在偷懒，但也要注意到你什么时候工作太辛苦。如果你认为工作太辛苦有什么值得骄傲的地方，请把这个想法去掉。你不仅会有更糟糕的结果，还可能是在对别人，或者对自己炫耀。</p>
+<p>找到努力工作的极限是一个持续不断的过程。工作的难度和你的能力都会因时而异，所以你需要不断判断你的努力程度和你的表现。</p>
+<p>不过，努力工作并不意味着不断逼迫自己去工作。可能有一些人是这样的，但我的经验是，我只有在开始一个项目或遇到某个问题时，才会偶尔逼迫自己。那时候我就可能产生拖延症了。但是一旦我开始行动，往往会持续下去。</p>
+<p>让我坚持下去的动力，取决于工作的类型。当我在Viaweb工作时，我被对失败的恐惧所驱动。那时我几乎没有拖延，因为总是有一些事情需要做，如果我可以通过做这些事情把我和竞争者之间拉开更多的距离，为什么还要等呢？而现在驱动我写文章的，是那些缺陷。在两篇文章之间，我纠结了好几天。但一旦我开始决定写某一篇，我就不必逼自己了，因为总有一些错误或遗漏会驱动我。</p>
+<p>我确实会努力关注重要的议题。许多问题都有一个坚硬的核心，边缘是一些比较容易的东西。努力工作意味着在你能做到的范围内瞄准核心。有些时候可能做不到；有些时候，你只能做一些比较容易的、边缘的事情。但你应该总是尽可能地接近中心而不是停滞不前。</p>
+<p>「如何处理你的生活」这一更大的问题是这些硬核问题中的一个。中心有重要的问题，这些问题往往很困难，而边缘的问题则不太重要，比较容易。因此，除了在处理具体问题时涉及的小的、日常的调整外，你偶尔也要对「做哪种类型的工作」做出大的调整。而规则是相同的：努力工作意味着瞄准中心--瞄准对你来说最重要的问题。</p>
+<p>无论是一般情况还是在特定领域内，关于哪些问题是最重要的共识往往是错误的。如果你不同意它，而你又觉得自己是对的，这可能是一个好机会。</p>
+<p>宏伟的工作通常会更难，但也不应该把困难作为决定做什么的唯一参考。如果你发现某些工作类型对你来说比其他人更容易，无论是因为你碰巧拥有的能力，还是因为找到了一些新的方法，或者仅仅是因为你对它更感兴趣，都可以在这方面下功夫。</p>
+<p>除了了解实际工作之外，你还需要弄清楚你适合哪种工作。这意味着要弄清楚你的天赋与哪种工作最匹配；但并不意味着如果你身高7英尺，你就必须打篮球。你适合做什么，不仅取决于你的才能，也许更取决于你的兴趣。对某一主题的浓厚兴趣会让人更努力地工作。</p>
+<p>发现你的兴趣可能比发现你的才能更难。天赋的类型比兴趣少，往往在童年时就开始显现，而兴趣是一种微妙的东西，可能要到20多岁，甚至更晚才会被挖掘出来。此外，还会有一些错误信息需要学会甄别：你是真的对X感兴趣，还是因为你会赚很多钱，或者因为其他人会对你印象深刻，或者因为你的父母希望你这样做，所以你想在这方面努力？</p>
+<p>要弄清楚该从事什么工作，其难度因人而异，差别很大。还是个孩子的时候，你觉得每个人都有自己的使命，他们所要做的就是弄清楚它是什么。电影里是这样的，给孩子们看的故事书里也是这样的，有时现实生活中也是如此。有些人在小时候就想好了要做什么，然后就去做，比如莫扎特。但其他人，如牛顿，则不安分地从一种工作转向另一种。也许回过头来，我们可以确定其中一项是他们的使命--我们可以希望牛顿在数学和物理学上花更多的时间，而在炼金术和神学上花更少的时间--但这就有点事后诸葛亮的意思了。</p>
+<p>因此，虽然有些人的生活快速收敛（知道要做什么，并去做），但也会有一些人的生活从未收敛。对这些人来说，弄清楚要做什么工作与其说是努力工作的前奏，不如说是努力工作的一部分。对这些人来说，我前面描述的过程还有第三个组成部分：在衡量你工作的努力程度和你做得如何的同时，你必须考虑你是否应该继续在这个领域工作，还是转到另一个领域。如果你努力工作，但没有得到足够好的结果，你就应该换。这样表述听起来很简单，但实际上却很难。你不应该在第一天就放弃，只因为你努力工作却没有任何进展。你需要给自己一些时间，让自己有所作为。但是有多少时间呢？如果原本进展顺利的工作不再顺利，你又该怎么办？那时你会给自己多少时间？</p>
+<p>什么样的结果才算好？这确实很难决定。如果你正在探索一个很少有人涉足的领域，你甚至可能不知道好的结果是什么样子。历史上有很多误判了他们所做工作的重要性的例子。</p>
+<p>检验是否值得从事某项工作的最佳标准是你是否觉得它有趣。这听起来可能是一个危险的主观衡量标准，但它可能是你要得到的最准确的标准。你是从事这项工作的人。谁比你更有资格判断它是否重要，还有什么比它是否有趣更能体现它的重要性呢？</p>
+<p>不过，要使这个测试发挥作用，你必须对自己诚实。事实上，这是整个努力工作问题最引人注目的地方：在每一点上都取决于对自己的诚实。</p>
+<p>努力工作不仅仅是每天工作到 11 点。它是一个复杂的、动态的系统，必须在每个点上调整得恰到好处。你必须了解实际工作的样子，清楚地看到你最适合做哪种工作，尽可能地接近它的真正核心，在每个时刻准确判断你的能力和你的表现，并在不损害结果质量的情况下每天投入尽可能多的时间。这个网络太复杂了。但是，如果你始终诚实，目光清晰，它就会自动呈现出最佳形状，你就会以一种很少有人能做到的方式取得成效。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[翻译]一位软件工程师的心里话]]></title>
+        <id>https://cosmoslazycat.github.io/post/translationyi-wei-ruan-jian-gong-cheng-shi-de-xin-li-hua/</id>
+        <link href="https://cosmoslazycat.github.io/post/translationyi-wei-ruan-jian-gong-cheng-shi-de-xin-li-hua/">
+        </link>
+        <updated>2021-06-28T03:45:03.000Z</updated>
+        <content type="html"><![CDATA[<p>原文：<a href="https://old.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/">Drunk Post: Things I've learned as a Sr Engineer</a></p>
+<p>我喝醉了，我可能会后悔这么做，但这是我在过去10年作为一名工程师学到的一些醉醺醺的东西。</p>
+<ul>
+<li>我提升自己职业生涯的最好方式就是换公司</li>
+<li>技术堆栈并不重要，因为在我的领域里有15种基本的软件工程模式可以应用。我从事数据方面的工作，所以它不会和 webdev 或者嵌入式一样。但是所有领域都有大约10-20个核心原则，技术堆栈只是试图让这些事情变得更容易，所以不要为此烦恼</li>
+<li>人们推荐我找工作是有原因的，如果我对一份工作不满意，也许是时候离开了</li>
+<li>在我工作过的公司里，我结交了一些很好的、一辈子的朋友。我不需要把它作为我工作的每个地方的必要条件。在没有和同事建立友谊的地方工作，我感到非常快乐; 在交到好朋友的地方，我感到不快乐</li>
+<li>我学会了对我的经理诚实。不太诚实，但足够诚实，在工作中我可以做到真实。还有什么比这更糟糕的呢？他炒了我？我会在两周内找到一份新工作</li>
+<li>如果我在凌晨两点就从每个季度不止一次的随叫随到的状态中醒来，那么一定是出了严重的问题，我要么解决问题，要么辞职</li>
+<li>再倒一杯</li>
+<li>一个好的管理者的素质与一个好的工程师的素质有很多相似之处</li>
+<li>当我刚开始工作的时候，我迷上了技术、编程和计算机科学，现在我已经不再迷恋它了</li>
+<li>好的代码是初级工程师可以理解的代码。优秀的代码可以被大一的计算机系新生理解。最好的代码就是根本没有代码</li>
+<li>作为一名工程师，最容易被低估的技能就是如何记录日志。有人教我怎么写好文档吗。说真的，如果有任何建议，我都会认真支付一个课程的费用(比如可能很多钱，如果能保证我能写出好的文档的话，一个课程也许1000美元)</li>
+<li>与上面相关的是，为改变写好的建议是一项很好的技能</li>
+<li>几乎所有的圣战(vim vs emacs，mac vs linux，等等)都无关紧要... ... 除了一个</li>
+<li>随着年龄的增长，我越来越欣赏动态语言。妈的，我说出来了。跟我打吧</li>
+<li>如果我发现自己认为自己是这个房间里最聪明的人，那么是时候离开了</li>
+<li>我不知道为什么全栈的网站开发者薪水如此之低。不，真的，他们应该支付大约50万美元一年只是基本工资。去他妈的，他们必须了解前端和后端，不同的浏览器如何工作，网络和数据库，缓存和区别之间的网络和移动和他妈的有什么另一个框架，公司想使用？说真的，为什么网站开发者的报酬如此之低</li>
+<li>我们应该雇佣更多的实习生，他们太棒了。那些精力充沛的小混蛋们的想法。当他们可以质疑或者批评某些事情的时候就更好了。我喜欢实习生</li>
+<li>啜饮</li>
+<li>不要遇见你的英雄。我花了5千美元去参加一个我心目中的英雄的课程。他是一个聪明的人，但是最后我意识到他和我们其他人一样是在编故事</li>
+<li>技术堆栈很重要。好吧，我只是说技术堆栈不重要，但是听我说完。如果你听到 Python dev vs c + + dev，你会想到非常不同的东西，对吗？这是因为某些工具确实擅长某些工作。如果你不确定你想要做什么，那么就用 Java。这是一种差劲的编程语言，几乎什么都擅长</li>
+<li>有史以来最伟大的编程语言是 lisp，我应该学习 lisp</li>
+<li>对于初学者来说，最赚钱的编程语言是 SQL。去他妈的其他语言。如果你只懂 SQL，你可以赚很多钱。薪水册专家？也许5万。懂 SQL 的工资管理专家？9万。在大公司有组织能力的普通人？4万美元。普通人与组织技能和 sql？称自己为 PM，赚15万美元</li>
+<li>测试很重要，但 TDD 是个该死的狂热崇拜</li>
+<li>轻松的政府工作并不像人们吹嘘的那样，至少对于职业生涯早期到中期的工程师来说是这样。当然，12万美元的本尼斯 + 养老金听起来很棒，但是你将会出卖你的灵魂去研究深奥的专利技术。我很尊重政府工作人员，但严肃地说，这些地方工程师的平均年龄为50岁以上是有原因的。此建议并不适用于政府承办商<br>
+第三方招聘者是吸血鬼。然而，如果你找到了一个好的，认真地和他们发展一种良好的关系。他们可以帮助你开创事业。你怎么知道你有没有一个好的？如果他们作为第三方招聘人员已经超过3年，那么他们可能很糟糕。优秀的招聘人员通常是大公司</li>
+<li>选择是没有价值的，或者可以让你成为百万富翁。除非工程师的人数超过100人，否则他们可能一文不值。然后 它们在这十年内是有价值的</li>
+<li>在家工作是件好事，但缺少白板真是糟透了</li>
+<li>我从来没有在 FAANG 工作过，所以我不知道我错过了什么。但是我从 FAANGs 公司雇佣了(而不是雇佣)工程师，他们也不知道自己在做什么</li>
+<li>我的自我价值不是一个功能或与我的总补偿相关。资本主义不是一个决定自我价值的好方法</li>
+<li>管理者的权力比你想象的要小。更少的能量。如果你曾经想过，为什么经理 XYZ 不解雇某人，那是因为他们不能</li>
+<li>头衔大多不重要。首席杰出员工来自任何公司的首席工程师。你做了什么，完成了什么。这就是人们所关心的</li>
+<li>说到头衔: 在你职业生涯的早期，头衔的变化是不错的。从初级到中级。中级至高级。高年级领导。在你职业生涯的后期，头衔会发生变化 都很好。这样的话，你可以得到同样的报酬，但是当你升职的时候，你会得到提升。换句话说，在你职业生涯的早期(&lt; 10年) ，头衔的变化是好的，因为它让你增长你的技能和责任。后来，头衔变下来是好的，因为它让你的薪水增长</li>
+<li>把我们的401k 计划用光了</li>
+<li>善待每一个人。不是因为它会帮助你的事业(它会) ，而是因为善良本身就是一种奖励</li>
+<li>如果上个月我没有从初级工程师或实习生那里学到一些东西，我就没有注意</li>
+<li>哎呀，我的酒喝完了</li>
+<li>支付课程、书籍、会议的费用是值得的。我参加过一些会议，一些1.5 k 的课程，很多书籍，还订阅了一些书籍。值了。这样，我就能更好地假装我在做什么</li>
+<li>说真的，为什么网站开发者不多付钱? 他们什么都知道! !</li>
+<li>腕管综合症和背部问题可不是闹着玩的，好的设备值得花钱！</li>
+<li>我工作过的最聪明的人是一个数学博士。我从那家伙身上学到了很多。我希望他一切都好</li>
+<li>有一次，在高中，有一个女孩是我的一个很好的朋友。我的意思是，在过去的几年里，我们一起聊天，一起玩耍，分享了很多私人的事情。然后有传言说我喜欢她或者我们要出去约会或者其他什么的。她不太能接受，所以开始无视我。感觉不太好。我猜这就相当于现代版的“重影”。不过我并不希望她有什么不好的想法，我希望她过得很好。很抱歉我没有处理好</li>
+<li>我8年级的时候有一个女朋友，虽然我不再喜欢她了，但我还是不想和她分手，所以我开始忽视她。太他妈操蛋了。对不起 Lena</li>
+<li>你知道软件工程师最好的部分是什么吗？你可以和那些和你想法一样的人见面和交谈。不一定是像体育和电视节目等相同的兴趣爱好。但是他们对问题的看法和你对问题的看法是一样的。这很酷</li>
+<li>科技行业的女性不够多。真是个混乱的行业。这种情况需要改变。我一直在努力鼓励和帮助我们组织中的女性工程师，但我不知道还能做什么</li>
+<li>黑人工程师也一样，管他呢？</li>
+<li>有些技术太流行，我不得不用它。我心里就会很讨厌这种技术，但会把它推荐给客户，比如我恨 Jenkins，但把它推荐给新客户，我不觉得做错了。</li>
+<li>尽管如此，git 是可怕的，我有选择，但使用它。另外，GUI git 工具可以去死，给我命令行的任何一天。大概有7条命令行需要记住，其他的都可以在 google 上搜索</li>
+<li>因为我是从事数据工作的，所以我要给大家上一堂关于数据的课。去他妈的熊猫</li>
+<li>我的工作比较容易，因为我的团队中有半技术分析师。半技术性的，因为他们懂编程，但不懂软件工程。这是一种福气，因为如果有些东西对他们来说没有意义，这就意味着它可能设计得很糟糕。我喜欢团队中的分析师，他们帮助我成长得比最杰出的工程师要多得多</li>
+<li>黑暗模式是伟大的，直到你被迫使用光模式(网页或不支持的应用程序)。这就是为什么我使用光模式</li>
+<li>我对安全很了解，所以我对安全一窍不通</li>
+<li>该死，我没酒了</li>
+<li>作为一个优秀的工程师意味着了解最佳实践。作为一个高级工程师意味着知道什么时候打破最佳实践</li>
+<li>如果人们试图将责任归咎于 bug 或者宕机，那么是时候继续前进了</li>
+<li>许多进步的公司，尤其是初创公司，都在谈论如何展现“真实的自我”。如果你的真实自我就是看色情片呢？是的，在工作和个人生活之间保持一道屏障是健康的</li>
+<li>我喜欢在欢乐时光和同事喝酒，我宁愿花时间和孩子、家人或朋友在一起</li>
+<li>伟大领导力的最好证明就是我的领导为一个完全是我的错的错误承担责任。你最好相信我会为她走过火堆</li>
+<li>同样的，我有幸与之共事的最好的领导者都尽最大努力来支持我的观点，并向我解释与我观点相冲突的其他观点。我正在努力学习他们</li>
+<li>去他妈的副业。如果你喜欢做这些事情，那很好！即使我有时间做副业，我也太忙于在 reddit 上发表醉醺醺的帖子了</li>
+<li>算法和数据限制在某种程度上是重要的。我没有看到药剂师面试考试关于有机化学的琐事。我们这个行业的面试程序有点问题</li>
+<li>该死，那些清道夫们真他妈的聪明，至少那些小混混还有钱拿</li>
+<li>做我喜欢的事并不重要，重要的是做我不讨厌的事</li>
+<li>越接近产品，就越接近推动收入增长。无论工作的技术性如何，只要它接近产品，我都感到越有价值。</li>
+<li>即使我平时用 Windows 工作，Linux 也很重要。为什么？因为服务器是 Linux 系统，你最终在 Linux 系统上工作。真高兴那个周末我把安装 Arch 的事情搞得一团糟</li>
+<li>我已经学会警惕那些模棱两可的流行词，比如大数据。卧槽是“大”数据？我在 Spark 和 Kafka 中每10分钟处理10k 行数据流，在 Python 和 MySQL 中每小时处理1B 行数据流。这些标签可以去他妈的自己</li>
+<li>并不是所有的好工作都在硅谷，但很多都在硅谷</li>
+</ul>
+<p>最后，如果你真的想伤害我，不要投反对票我不在乎。忽略这篇文章。没有什么比我写了一篇很长的帖子却没有人回复更让我难过的了。所以，如果你讨厌这篇文章，就忽略它。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[常见的css]]></title>
+        <id>https://cosmoslazycat.github.io/post/chang-jian-de-css/</id>
+        <link href="https://cosmoslazycat.github.io/post/chang-jian-de-css/">
+        </link>
+        <updated>2021-06-25T15:37:36.000Z</updated>
+        <content type="html"><![CDATA[<p>边框内圆角<br>
+code</p>
+<pre><code>//HTML
+&lt;div class=&quot;border&quot;&gt;&lt;/div&gt;
+
+//CSS
+.border{
+  display:flex;
+  justify-content:center;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 0 12px #655;
+  background: #50C6E6;
+  outline: 6px solid #655;
+  border-radius: 6px;
+}
+</code></pre>
+<p>review (<a href="https://codepen.io/cosmoslazycat/pen/VwpogoW">点此查看详细信息</a>)</p>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1624637131011.png" alt="" loading="lazy"></figure>
+<p>code</p>
+<pre><code>// HTML
+&lt;div class=&quot;elemt&quot;&gt;&lt;/div&gt;
+
+// CSS
+/* 横向 */
+.elemt {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#fb3 50%, #58a 0);
+    background-size: 100% 30px;
+}
+
+/* 纵向 */
+.elemt {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(90deg, #fb3 50%, #58a 0);
+    background-size: 30px 100%;
+}
+
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[翻译]你的设计准则是什么？]]></title>
+        <id>https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
+        <link href="https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
+        </link>
+        <updated>2021-06-21T13:42:30.000Z</updated>
+        <content type="html"><![CDATA[<p>一路走来，我学到了一些在设计和商业上经得起时间考验的东西</p>
+<p>我的设计生涯（如果我可以这么说的话）现在已经跨越了数十年。在90年代的某个时候，我为一个朋友的乐队创作了一张7英寸的唱片，我认为这是一个合适的设计。21世纪初，我开始设计网站。到2000年代末，我开始打造品牌。在2010年，我正在发展一项业务，并学习战略和过程的力量。随着我们进入2020年代，我正在利用我过去几十年所学到的知识，成长为一个更加独立的个体，探索新事物，并寻找设计职业给我带来的相邻的可能性ーー就像写这篇文章一样。</p>
+<p>下面的准则并不是普遍性真理，但它们是我学到的最重要的一些东西。我希望它们可以帮助你的创作之旅。</p>
+<p>1，字体就是一切<br>
+好的字体设计在平面设计学科中的价值不能被低估。字体是一切设计的成败关键，懂得如何有效地使用字体可以区分好的作品和伟大的作品。说到排版设计，设计师需要擅长两件事: 字体的选择和字体在设计中的使用。好的字体选择需要你知道什么是好的字体，以及在哪里可以找到它们。</p>
+<p>一个当代的平面设计师必须非常在意字体，就像一个唱片收藏家一样，必须具有良好的品味，知道被设计的主题与字体和字体系统之间的细微差别和相互关联，这种字体和字体系统最适用于手头的目的，最具表现力。工作室只是少数几家小型铸造厂，它们没有获得足够的赞誉，因为它们的工艺不足以开发出一种字体，这种字体能够让一个有能力的平面设计师为生活带来一个伟大的设计解决方案。没有伟大的字体设计师，就没有伟大的平面设计师。</p>
+<p>有永不过时的字体(Garamond，Helvetica) ，时髦的字体(还记得 Brown 风靡一时的时候吗?)以及其间的一切。今天新鲜的、未被过度使用的东西，明天将不再新鲜、被过度使用。保持你运用字体的能力，包括组成、创造性和易读性，同时对新面孔的出现保持热情和意识是至关重要的。</p>
+<p>在最近 John Mayer 对 Kerwin Frost 的有趣访谈中(25:10 In) Mayer 谈到免费字体是多么的“狗屁”，当你在唱片封面或网站上看到免费字体时，你就能分辨出来。约翰接着说，花钱买一个好字体是为了投资于质量，当你使用一个不合格的免费字体时，“你的大脑不知道，但你的心可以告诉你。”我对梅耶先生的音乐作品并不十分熟悉，但我很高兴看到有人创作具有广泛吸引力的流行音乐，总结了为什么伟大的字体很重要，尤其是当你创作的作品在世界范围内像音乐这样的文化作品时。正如约翰所说: “只要买字体！。</p>
+<p>2, 好的品味很难教，更难掌握</p>
+<p>我发现每个设计师都有自己的个人品味，这影响着他们如何进行设计。你的品味是你经历的产物，也是你灵感和影响的深度和广度的产物。一个人的个人品味并不总是适合每个客户的项目，所以挑战就是在充分利用你自己的品味的同时，也要理解你所做的工作的好品味是什么。个人品味是无法教授的: 它来自于你如何看待这个世界。</p>
+<p>在设计学科的背景下，良好的品味是一个人的能力，把美丽和复杂的设计方法，同时也使其适合客户的需要，使其共鸣的方式被认为是当代和令人惊叹的时刻。你需要这样做，同时也用你的个人品味作为过滤器。在你喜欢什么，现在优秀设计的世界是什么样子，以及什么对客户来说是正确的之间的舞蹈，对每个设计师来说都是独一无二的。解决这个复杂的方程式只需要良好的品味，只有通过你自己的创造性的好奇心和意志才能找到。</p>
+<p>也就是说，和其他有品味的设计师在一起是有帮助的。与非常有才华的人一起工作会鼓励你发挥自己的能力和你的观察方式。你必须是一个好的观察者和一个好的管理者，管理你自己的审美冲动。当我想到好品味时，我立刻想到意大利时装企业家 Alessandro Squarzi。斯夸兹先生有很好的品味，你可以通过他的 Instagram 看到，他是如何将 Pitti Uomo 复杂的文化词汇与美国古典和军事融合在一起，并融入自己的个人审美观。他的好品味是他一生在时尚界磨练手艺的成果。平面设计师寻求这种同样水平的审美平衡，这是你只能通过无情的启发才能学到的东西。作为一个品牌的例子，我认为 Manual Creative 为思达瓦和田径公司所做的工作是思杰良好工作品味的典范。这两个项目都表现出了一定程度的成熟、克制和对客户及其使命的尊重，这只有来自于对如何运用良好品味将一个伟大品牌带入生活的坚定把握。</p>
+<p>3, 领导力来自内心</p>
+<p>如果说我在过去25年里学到了什么关于商业的话，那就是不是每个人都想领导项目。领导是一项很大的责任，而且总是有很多的未知数。这可能是可怕的，而且最重要的是，当你领导时，人们认为你有正确的答案，但事实往往并非如此。我用的一个比喻是想象一个好的领导者就像森林里的向导。一个有经验的向导比一个没有经验的好，但是没有人能保证你不会走错路或迷路。领导者正在努力从众所周知的创造性森林中找到正确的道路，即使这需要绕道，避开悬崖，或者逃离熊。通过这种方式，一个好的领导者在为项目成果承担责任的同时促进并提供方向。</p>
+<p>当谈到为我设计的时候，当你想成为一个领导者的时候，有一个简单的差异在你的脑海中成长; 你从想要“制造”某些具体的东西到想要“解决”某些更大的东西。制作一些东西是有趣的。当你“做”的时候，没有正确或错误的答案。我喜欢做东西。我喜欢探索各种想法。但这不同于被驱使去解决一个更大的问题和领导。作为一个真正的项目领导者，你正试图通过团队的组建找到正确的解决方案。你正在努力识别所有的意外情况和潜在的陷阱。为什么这很重要？当你为了钱而做一个项目的时候，你必须达到一个终点，客户感觉他们已经得到了他们所付出的，团队必须感觉他们已经尽了他们最大的努力完成了他们的工作。真正的领导者会确保这个结果始终是每一步的首要任务。</p>
+<p>我认为有些人比其他人更热衷于领导，我把他们分成两组。有一类人在历史频道上看传记，他们对一个想法充满激情和动力，而且常常非常自私和古怪。有无数的领导者，我们可以说出他们的才能、远见和个人傲慢都融为一体。这些人往往被视为比生命更伟大的人。说实话，我不是很喜欢这种领导原型，因为它把一个人作为唯一的作者放在聚光灯下，我们都知道这完全是胡说八道。做伟大的事情需要不止一个人的愿景，我认为相信一个人有所有的答案是不公平和有偏见的假设。它忽略了所有其他人，让项目发生和做艰苦的工作。</p>
+<p>另一种类型的领导者被驱使去为工作和理念服务，而不是被自我驱使。每个领导者都想解决问题，但伟大的领导者是那些永不厌倦实现目标的人。我有幸与少数极具创造力的人共事，其中一些人也是领导者。我所知道的那些有创造力的领导者都是杰出的，他们能够巧妙地平衡他们的工艺和领导者解决更大问题所需要的众多依赖性。他们既是创造者又是管理者。制造者和解决者。领袖和士兵。我真的很钦佩这种类型的领导者，因为他们总是贴近工作，知道把伟大的事物带到生活中需要付出多少汗水和痛苦。对于那些有兴趣了解一个设计师作为领导者的经历的人们，我强烈推荐这个频率播客: 没有一致性的团结与格雷特尔的设计主管迪伦 · 马尔瓦尼</p>
+<p>4, 写作和表达创造性思维的能力是至关重要的<br>
+随着你作为一个设计师的成长，你会发现你的作品不会像你希望的那样为自己说话。其他人不是你，他们总是有他们自己的解释什么是呈现。作为人类，我们通过自己的偏好和经历来看待世界，这使得整个美学世界相当主观。当你开发品牌的时候，这种主观性是非常令人沮丧的。</p>
+<p>有些人，比如客户，可能没有你那么好的品味，可能会爱上一个你觉得不如你想法好的点子。解决这种主观偏好的唯一方法是通过书面和口头的争论。你必须能够向客户展示他们的主观偏好如何对项目的结果产生负面影响。如果你不这样做，那么这只是一个关于个人品味的主观讨论，你会同意不同意，这将是一个僵局。</p>
+<p>这真的是一件需要理解的重要事情ーー你必须能够说服非视觉人士欣赏和理解你的创意作品的语言合理化，这样他们才能在作品中看到你的想法。你必须向他们展示光明，你不仅要说服他们你的想法更好，你还必须解释你的想法如何与商业目标和底线相联系。作为一个平面设计师，你必须能够在会议上口头上做到这一点，在简短的形式为一个演示，以及在长形式的电子邮件。我发现，这是唯一的方法，以确保你的想法，可能不是主观上首选将被理解为客观上的优越解决方案。</p>
+<p>5, 孤独与合作是相辅相成的</p>
+<p>我花了几千个小时在电脑前设计东西。数小时不停地对字体大惊小怪，调整关键帧，渲染，制作一百万个不同的 logo 版本——你说得出来。我很大程度上都是独自完成这种工作，或者戴着耳机与外界隔绝。这部深刻的作品只有独处才能提供给我，它对于提高我的技艺是不可或缺的。分心的事情越少，我学到的就越多。</p>
+<p>多年来，我发现独自工作只有在某种程度上是好的。如果你没有其他人可以交流想法，你可能会陷得太深，变成《现代启示录》中库尔茨上校的创造性版本。合作意味着一起工作，但也意味着“共同劳动”作为一个设计师，我们从来没有真正“一起工作”，因为我们一起努力，为了一个共同的目标。我们在个人的孤立中相互支持，通过一个想法来工作，我们在努力做一些真正好的事情的过程中寻求彼此的安慰和指导。</p>
+<p>许多年前，我有一个富有创造力的搭档，非常有天赋，但是不管别人说什么，他们都必须按照自己的方式做事。他们必须选择一条道路，而我必须让他们在自己的时间里失败或成功。我非常想给他们“答案”，但是他们总是不得不自己去寻找，即使那是我想去的地方。我发现这非常令人沮丧，但多年后我意识到，尽管我们本应该一起工作，但我们实际上是在一起工作，作为支持者和啦啦队长站在一边，而不是给出答案，这是同样有意义的。</p>
+<p>6, 不要把设计场景和设计工作混为一谈</p>
+<p>我是一个设计迷。一直都是。不管是设计、插图还是艺术，对我来说最吸引人的还是作品本身。我总是被创造性的工作所吸引，这些创造性的工作激励着我，激励着我更加努力地工作，变得更好。随着你职业生涯的成长，你会遇到其他设计师，并可能成为任何数量的设计组织的成员，如 AIGA 或 d &amp; ad。这些组织可以是一个很好的方式来建立联系，并可能赢得奖项。这些都是好东西，但就像一个有趣的 Twitter 帖子，它们可能会占用你很多时间，而你可能应该设计它们。</p>
+<p>我喜欢使用的比喻是，作为一个赛车手是非常不同的赛车爱好者俱乐部的一员。创意机构就像赛车公司，他们是为表演而设计的。设计组织更像粉丝俱乐部，他们的设计是为了支持和庆祝机构工作的成果。我当然是一个设计迷，想要在一个会议或者演讲中见到我的一些设计英雄，但是这是一个非常短暂的事情。最终，我所拥有的最有意义和最持久的创造性的关系是通过项目工作或通过与我的设计同事多年来培养的更深层次的互动。</p>
+<p>成为一个设计超级粉丝是完全可以的，但是你自己的工作应该放在第一位。在“现场”花费太多的精力，无论是在网上还是面对面，都可以立即让你感到满足，但这并不能替代你的工作和提高你的技能。没有伟大的创造性工作，你只是一个旁观者。</p>
+<p>在一些设计师中，也有一种被同行验证的发自内心的渴望。达到设计的聚光灯可以是一个短暂的练习，成为一个设计名人，无论这意味着什么，是一个微妙的事情想要成为。想要受欢迎的本质是一种自私和奇怪的，往往是你内心某种东西的副产品，而不是你创造的实际工作。想要你的工作被认可和欣赏是很自然的事情，但是只有通过做伟大的工作你才能获得认可。除了伟大的工作，还有其他一些因素可能会发挥作用——在正确的时间出现在正确的地点，为某个人或组织在非常受欢迎的文化中做一些事情，并获得“余辉”、运气、市场营销等等。寻求创造性的认可往往会被认为是自私自利或者不真诚。当它来临时，欣赏它是一种更甜蜜的奖励。只要记住，工作就是论文。花时间去做令人惊叹的工作是很难的，也是唯一真正的道路。其他的也会跟着来。</p>
+<p>7, 你掌握的背景越多，你做出的决定就越好</p>
+<p>作为一个设计师，理解一个行业的大局和你的客户的目标和具体需求是至关重要的，并作为一个重要的投入，以作出更好的创造性的决定。这里有一个简单的例子: 如果你客户的直接竞争对手使用蓝色作为主要的品牌颜色，也许你不应该使用蓝色，即使你真的喜欢蓝色。除非你知道谁是你客户的直接竞争对手，否则你不会知道如何决定这个颜色。环境是帮助你做出明智的创造性决定的关键。环境也可以帮助设计师避免在真空中设计，可以给你客户的 CEO 和 CMO 需要听到的信息，这样他们就可以合理化你的创造性解决方案，并同意这是一个合适的解决方案。这听起来像是常识，但却出人意料地不同寻常。设计师们忙于制作，忽略了一些非常实用的东西，无论是在工作本身，还是在客户所服务的行业，这些东西可能会对客户眼中的伟大创意产生负面影响，甚至是否定。记住做好你的功课，并且能够简明扼要地阐述行业或客户类别的挑战，客户需要解决的具体事情，以及你的设计决策如何解决这些问题。</p>
+<p>我最新的行业背景和见解是电子邮件时事通讯奥夫基尔特写的资深品牌战略家和前战略负责人在沃尔夫奥林斯纽约保罗沃辛顿。保罗对他的工作充满热情，同样对理解影响全球品牌的商业发展趋势和决策充满热情。Off Kilter 是非常聪明和黑麦，并提供了一个紧凑的蒸馏发生在商业上的一些更大的运动，因为它涉及品牌。</p>
+<p>8, 价值多少算多少<br>
+如何为设计工作收费从来都不是一个完美的公式。有很多因素。我经常问自己的三个问题是: “它会让你变得富有吗?””这会让你出名吗?”或者”这会让你开心吗?”我发现，如果你在项目结束时不快乐，其他两个因素就不那么重要了。</p>
+<p>幸福是每个项目的最终目标，但金钱确实很重要。以有竞争力的费用交换创造性服务创造了一种合同形式，鼓励双方遵守规则，更加尊重彼此。如果你收取的是你的时间和专业知识的真正价值，你和你的团队将投入额外水平的努力来交付，客户将期望你付出同样水平的努力，并尊重你创造的工作。</p>
+<p>有时候我会花更少的钱做一些工作，因为我真的很想做这个项目。但是在这样做的过程中，不管是不是经常，我变得不满意，我的脑海中有一个声音感觉到他们应该更加感激和接受“现状”的想法，因为他们得到了一个协议。这让我处于一种错误的心态去做我最好的工作，让双方都能做出更加主观和情绪化的决定。我发现，如果你觉得自己被利用了，如果客户觉得他们正在达成协议，那么你几乎不可能为别人做出伟大的工作。</p>
+<p>9, 永远不要停止学习，永远不要停止犯错</p>
+<p>学习新技能和天赋一样重要。我们永远都是学生。设计的基础是永恒的，但是创意产业总是在变化的。随着文化、技术和社会的进步，设计师的工作也在进步。关于设计有一种不言而喻的摩尔定律。我相信每隔18个月，设计的进步就会明显地跟上软件和业务流程的步伐。</p>
+<p>随着改变而来的是犯错误。你必须做很多错事才能得到正确的结果。我认为没有捷径可走。接受改变和犯错至少是设计师工作的一半。你越早意识到这一点并接受它，你的工作就会越有趣。你无法抗拒改变。你必须接受它，并向它倾斜。我宁愿看到有人尝试一个奇怪的新想法然后失败，而不是仅仅给我看我以前见过的东西。当有人向我展示一个新的软件或者一个正在进行的新趋势时，我总是很兴奋。我们越接近我们认为正确的东西，它就离我们越远。正是这种前进的动力让事情保持新鲜、新鲜和充满活力。</p>
+<p>10, 努力工作得到回报</p>
+<p>我不是一个健身爱好者，但我熟悉五届健身冠军马特 · 弗雷泽，他刚刚从比赛中退役。在连续赢得2016-2020年的 CrossFit 运动会之前，马特在2009年世界青少年举重锦标赛之前有一条长长的脊椎骨折断的路。经过实验性的背部手术，他重新振作起来，一天一次，7年多来赢得了他的第一个健身游戏。</p>
+<p>我喜欢马特的故事(他的乔 · 罗根那一集很好听) ，因为它完美地证明了一句古老的格言: 努力工作总会有回报 # hwpo。的确如此。像运动员一样，成为一个真正有天赋的设计师需要时间。它需要你进行无数次单调的设计迭代，创造无数错误的想法，最终获得经验和掌握，得到正确的想法。初出茅庐的年轻设计师往往不能理解这一点。如果你把你的活动限制在你的日常工作中，那么你作为一个设计师不太可能有显著的进步。创造性地超越，就是充满激情地学习，并花费数千小时去改进、成熟和变得更好。这听起来可能很糟糕，但是如果你喜欢某样东西，而且你想在这方面做得更好，那么时间并不重要。你必须让你的销售代表来完善你的技能。简单明了。</p>
+<p>我正在收听 Instagram 直播对我最喜欢的一个创意工作室 Young Jerks 的采访，他们谈到了努力工作的一个特殊层面。有人问: “你如何让你的技能水平达到你的品味水平?”这是一个如此简单而精彩的问题，每个想要变得更好的人都会问自己。唯一的答案就是练习。练习需要时间和努力。我一直在苦苦思索字体的选择，最终的颜色，正式的决定，字距调整，凡是你能想到的。为什么？因为我能感觉到工作可以做得更好。我能感觉到它，如果我继续努力，我就能找到它。这种感觉从未离开过我。那些神奇的时刻，把你的想法从它的创造，然后有那个想法住在你之外，被体验和积极影响他人可以是一件真正深刻的事情。这就是每一首伟大的歌曲的意义所在，也是伟大设计的意义所在。努力工作并不能保证出色的时刻，它只是为更有可能发生的事情搭建了舞台。</p>
+<p>我希望以上的格言能对你有所帮助。他们帮助我度过了创造性和专业性工作中的起起伏伏，但是人们相信真实的东西总是在不断进步的。谢谢阅读。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[开始使用Gridea写博客]]></title>
+        <id>https://cosmoslazycat.github.io/post/kai-shi-shi-yong-gridea-xie-bo-ke/</id>
+        <link href="https://cosmoslazycat.github.io/post/kai-shi-shi-yong-gridea-xie-bo-ke/">
+        </link>
+        <updated>2021-06-20T13:36:27.000Z</updated>
+        <content type="html"><![CDATA[<p>Gridea是我偶然在Twitter上看到的，看了一下感觉还不错，而且还是开源的（https://github.com/getgridea/gridea），于是就在GitHub Page上部署起来，把以前的一些文章都放上来。目前用起来还不错。</p>
+<p>我以后会将对Gridea的一些使用心得，代码作用分析也放到这篇博客中来，欢迎关注。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Time Boxing]]></title>
+        <id>https://cosmoslazycat.github.io/post/time-boxing/</id>
+        <link href="https://cosmoslazycat.github.io/post/time-boxing/">
+        </link>
+        <updated>2021-06-20T13:00:21.000Z</updated>
+        <content type="html"><![CDATA[<p>最近觉得自己的注意力挺分散的，搜索一圈之后，决定实践一下[Time Boxing]<br>
+Workflow:<br>
+* 1. 选一个任务，并为此创建一个md日志<br>
+* 2. 确定这个任务需要在多长时间内做完（帕金森定律）<br>
+* 3. 设置一个倒计时，全部设备进入免打扰模式<br>
+* 4. 开始计时<br>
+* 5. 全身心Focus 到当前的任务中，暂时忽略外部消息<br>
+* 6. 完成后处理一下各种消息，休息一下，开始下一个任务</p>
+<p>Tips:<br>
+* 1. 慢慢提升自己的专注时间，可对此进行对比统计</p>
+]]></content>
+    </entry>
+</feed>
