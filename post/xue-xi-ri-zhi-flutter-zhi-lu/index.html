@@ -4,52 +4,46 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>常见的css - CosmosLazyCat的宇宙</title>
+<title>[学习日志]flutter之旅 - CosmosLazyCat的宇宙</title>
 <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 <link rel="stylesheet" href="http://localhost:4000/media/css/tailwind.css">
 <link rel="stylesheet" href="http://localhost:4000/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="常见的css - CosmosLazyCat的宇宙 - Atom Feed" href="http://localhost:4000/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="[学习日志]flutter之旅 - CosmosLazyCat的宇宙 - Atom Feed" href="http://localhost:4000/atom.xml">
 
     
 
-  <meta name="description" content="边框内圆角
-code
-//HTML
-&amp;lt;div class=&amp;quot;border&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-
-//CSS
-.border{
-  display:flex;
-  justify-content:cen..." />
-  <meta property="og:title" content="常见的css - CosmosLazyCat的宇宙">
-  <meta property="og:description" content="边框内圆角
-code
-//HTML
-&amp;lt;div class=&amp;quot;border&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-
-//CSS
-.border{
-  display:flex;
-  justify-content:cen..." />
+  <meta name="description" content="flutter的源码如何运行起来？
+环境：
+flutter框架及代码运行环境
+andriod studio （可在VScode上开发，下载flutter插件即可）
+新建flutter并运行
+flutter create filename
+c..." />
+  <meta property="og:title" content="[学习日志]flutter之旅 - CosmosLazyCat的宇宙">
+  <meta property="og:description" content="flutter的源码如何运行起来？
+环境：
+flutter框架及代码运行环境
+andriod studio （可在VScode上开发，下载flutter插件即可）
+新建flutter并运行
+flutter create filename
+c..." />
   <meta property="og:type" content="articles">
-  <meta property="og:url" content="http://localhost:4000/post/chang-jian-de-css/" />
-  <meta property="og:image" content="http://localhost:4000/post-images/chang-jian-de-css.jpg">
+  <meta property="og:url" content="http://localhost:4000/post/xue-xi-ri-zhi-flutter-zhi-lu/" />
+  <meta property="og:image" content="http://localhost:4000/images/avatar.png">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="常见的css - CosmosLazyCat的宇宙">
-  <meta name="twitter:description" content="边框内圆角
-code
-//HTML
-&amp;lt;div class=&amp;quot;border&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-
-//CSS
-.border{
-  display:flex;
-  justify-content:cen...">
+  <meta name="twitter:title" content="[学习日志]flutter之旅 - CosmosLazyCat的宇宙">
+  <meta name="twitter:description" content="flutter的源码如何运行起来？
+环境：
+flutter框架及代码运行环境
+andriod studio （可在VScode上开发，下载flutter插件即可）
+新建flutter并运行
+flutter create filename
+c...">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="http://localhost:4000/post/chang-jian-de-css/">
+  <link rel="canonical" href="http://localhost:4000/post/xue-xi-ri-zhi-flutter-zhi-lu/">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
@@ -67,57 +61,118 @@ code
     <div class="max-w-4xl w-full mx-auto">
       <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
         <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
-          常见的css
+          [学习日志]flutter之旅
         </h1>
         
-          <img src="http://localhost:4000/post-images/chang-jian-de-css.jpg" alt="常见的css" class="block w-full mb-8">
-        
         <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2021-06-25 · 1 min read</div>
+          <div class="text-gray-400 text-sm mr-4">2021-07-02 · 4 min read</div>
           
         </div>
         <div class="markdown mb-8" v-pre>
-          <p>边框内圆角<br>
-code</p>
-<pre><code>//HTML
-&lt;div class=&quot;border&quot;&gt;&lt;/div&gt;
+          <h1 id="flutter的源码如何运行起来">flutter的源码如何运行起来？</h1>
+<p>环境：</p>
+<p>flutter框架及代码运行环境</p>
+<p>andriod studio （可在VScode上开发，下载flutter插件即可）</p>
+<p>新建flutter并运行</p>
+<pre><code>flutter create filename
+cd filename
+flutter run -d filename
+</code></pre>
+<p>开发好后打包成apk</p>
+<p>1，Android Studio 中打包flutter apk</p>
+<p>​	cmd中运行命令</p>
+<pre><code>// 生成flutter 密钥文件
+// c:/sign.jks为秘钥生成位置
+keytool -genkey -v -keystore c:/sign.jks -keyalg RSA -keysize 2048 -validity 10000 -alias sign
 
-//CSS
-.border{
-  display:flex;
-  justify-content:center;
-  width: 150px;
-  height: 150px;
-  box-shadow: 0 0 0 12px #655;
-  background: #50C6E6;
-  outline: 6px solid #655;
-  border-radius: 6px;
+
+// 查看密钥对应信息
+keytool -list -v -keystore c:/sign.jks -alias sign -storepass android -storepass 123456
+</code></pre>
+<p>2，在项目/android文件夹下新增 key.properties文件</p>
+<p>正常flutter的目录文件</p>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgfI" alt="image.png" loading="lazy"></figure>
+<p>新建key文件夹：project/android/app，将keyName.jks复制到该文件夹下</p>
+<pre><code>storeFile=&gt;前面操作复制的apk签名文件路径位置。
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIggr" alt="image.png" loading="lazy"></figure>
+<p>3，配置项目/android/build.gradle文件</p>
+<p>找到andriod {xxxx} 模块</p>
+<figure data-type="image" tabindex="3"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgjq" alt="image.png" loading="lazy"></figure>
+<p>1.在前面新增:</p>
+<pre><code>def keystorePropertiesFile = rootProject.file(&quot;key.properties&quot;)
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+</code></pre>
+<p>2.屏蔽原有buildTypes：{} ：</p>
+<figure data-type="image" tabindex="4"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgju" alt="image.png" loading="lazy"></figure>
+<p>3.buildTypes同级新增：</p>
+<pre><code>signingConfigs {
+ release {
+        keyAlias keystoreProperties['keyAlias']
+        keyPassword keystoreProperties['keyPassword']
+        storeFile file(keystoreProperties['storeFile'])
+        storePassword keystoreProperties['storePassword']
+ }
+}
+buildTypes {
+ release {
+    signingConfig signingConfigs.release
+ }
 }
 </code></pre>
-<p>review (<a href="https://codepen.io/cosmoslazycat/pen/VwpogoW">点此查看详细信息</a>)</p>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1624637131011.png" alt="" loading="lazy"></figure>
-<p>code</p>
-<pre><code>// HTML
-&lt;div class=&quot;elemt&quot;&gt;&lt;/div&gt;
-
-// CSS
-/* 横向 */
-.elemt {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(#fb3 50%, #58a 0);
-    background-size: 100% 30px;
-}
-
-/* 纵向 */
-.elemt {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(90deg, #fb3 50%, #58a 0);
-    background-size: 30px 100%;
-}
-
+<p><em>signingConfigs.release 中 keystoreProperties['xxx']，xxx内容为前期第二步中key.properties 内对应Key字符串</em></p>
+<figure data-type="image" tabindex="5"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgjy" alt="image.png" loading="lazy"></figure>
+<p>此时对应文件设置已经配置完毕。</p>
+<p>4, 编译</p>
+<pre><code>// 打包成apk
+flutter build apk
 </code></pre>
+<h3 id="总结">总结</h3>
+<p>app应用密钥库：</p>
+<p>创建文件：<code>&lt;app dir&gt;/android/key.properties</code> 里面包含密钥位置</p>
+<p>为app配置签名： 编辑文件<code>&lt;app dir&gt;/android/app/build.gradle</code></p>
+<p>将</p>
+<pre><code> android {
+      ...
+   }
+</code></pre>
+<p>修改成</p>
+<pre><code> def keystoreProperties = new Properties()
+   def keystorePropertiesFile = rootProject.file('key.properties')
+   if (keystorePropertiesFile.exists()) {
+       keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+   }
+
+   android {
+         ...
+   }
+</code></pre>
+<p>将</p>
+<pre><code>   buildTypes {       release {           // TODO: Add your own signing config for the release build.           // Signing with the debug keys for now,           // so `flutter run --release` works.           signingConfig signingConfigs.debug       }   }
+</code></pre>
+<p>替换成</p>
+<pre><code>   signingConfigs {       release {           keyAlias keystoreProperties['keyAlias']           keyPassword keystoreProperties['keyPassword']           storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null           storePassword keystoreProperties['storePassword']       }   }   buildTypes {       release {           signingConfig signingConfigs.release       }   }
+</code></pre>
+<pre><code>配置Gradle签名，运行Flutter Clean&lt;app dir&gt;/android/app/build.gradle
+</code></pre>
+<p>文章来源：</p>
+<p><a href="https://segmentfault.com/a/1190000037678220">Android Studio下fluter打包Apk签名文件准备(Windosw环境)</a></p>
+<h1 id="flutter-app-修改">flutter app 修改</h1>
+<p>图标</p>
+<p>file address: <code>/android/app/src/main/AndroidMainifest.xml</code></p>
+<pre><code>&lt;application	        android:name=&quot;io.flutter.app.FlutterApplication&quot;	        android:label=&quot;flutter-app&quot;	        android:icon=&quot;@mipmap/ic_luncher_logo&quot;&gt;	        &lt;activity 
+</code></pre>
+<p><code>label</code>为app名字，<code>icon</code>为app图标。</p>
+<p>icon address:  <code>/android/app/src/main/res</code></p>
+<pre><code>注意:有好几个mipmap文件夹，这和ios是一样的，这几个是适配不同分辨率的手机。只需让美工出相应尺寸的图标放到相应的文件夹就可以了。注意图片需要是png格式。
+</code></pre>
+<p>启动页</p>
+<p>file address: 在<code>android</code>目录中，找到<code>app&gt;src&gt;main&gt;res&gt;drawable&gt;launch_background.xml</code></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;!-- Modify this file to customize your launch splash screen --&gt;&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;    &lt;item android:drawable=&quot;@android:color/white&quot; /&gt;    &lt;!-- You can insert your own image assets here --&gt;    &lt;item&gt;        &lt;bitmap            android:gravity=&quot;center&quot;            android:src=&quot;@mipmap/ic_logo&quot; /&gt;    &lt;/item&gt;&lt;/layer-list&gt;
+</code></pre>
+<p>来源：</p>
+<p><a href="https://blog.csdn.net/qq_38410494/article/details/109674583">flutter应用打包、修改图标、启动页和app名字</a></p>
 
         </div>
         <!-- Share to Twitter, Weibo, Telegram -->
@@ -158,7 +213,16 @@ code</p>
         </div>
       </div>
       <div class="post-toc-container">
-        
+        <ul class="markdownIt-TOC">
+<li><a href="#flutter%E7%9A%84%E6%BA%90%E7%A0%81%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E8%B5%B7%E6%9D%A5">flutter的源码如何运行起来？</a><br>
+*
+<ul>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+</ul>
+</li>
+<li><a href="#flutter-app-%E4%BF%AE%E6%94%B9">flutter app 修改</a></li>
+</ul>
+
       </div>
     </div>
 

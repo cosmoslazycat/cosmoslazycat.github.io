@@ -1,22 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://cosmoslazycat.github.io</id>
+    <id>http://localhost:4000</id>
     <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-07-02T07:20:17.326Z</updated>
+    <updated>2021-07-02T07:22:55.623Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://cosmoslazycat.github.io"/>
-    <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>Man Always Remember Love Because Of Romance Only</subtitle>
-    <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
-    <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的宇宙</rights>
     <entry>
+        <title type="html"><![CDATA[[学习日志]flutter之旅]]></title>
+        <id>http://localhost:4000/post/xue-xi-ri-zhi-flutter-zhi-lu/</id>
+        <link href="http://localhost:4000/post/xue-xi-ri-zhi-flutter-zhi-lu/">
+        </link>
+        <updated>2021-07-02T07:21:39.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="flutter的源码如何运行起来">flutter的源码如何运行起来？</h1>
+<p>环境：</p>
+<p>flutter框架及代码运行环境</p>
+<p>andriod studio （可在VScode上开发，下载flutter插件即可）</p>
+<p>新建flutter并运行</p>
+<pre><code>flutter create filename
+cd filename
+flutter run -d filename
+</code></pre>
+<p>开发好后打包成apk</p>
+<p>1，Android Studio 中打包flutter apk</p>
+<p>​	cmd中运行命令</p>
+<pre><code>// 生成flutter 密钥文件
+// c:/sign.jks为秘钥生成位置
+keytool -genkey -v -keystore c:/sign.jks -keyalg RSA -keysize 2048 -validity 10000 -alias sign
+
+
+// 查看密钥对应信息
+keytool -list -v -keystore c:/sign.jks -alias sign -storepass android -storepass 123456
+</code></pre>
+<p>2，在项目/android文件夹下新增 key.properties文件</p>
+<p>正常flutter的目录文件</p>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgfI" alt="image.png" loading="lazy"></figure>
+<p>新建key文件夹：project/android/app，将keyName.jks复制到该文件夹下</p>
+<pre><code>storeFile=&gt;前面操作复制的apk签名文件路径位置。
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIggr" alt="image.png" loading="lazy"></figure>
+<p>3，配置项目/android/build.gradle文件</p>
+<p>找到andriod {xxxx} 模块</p>
+<figure data-type="image" tabindex="3"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgjq" alt="image.png" loading="lazy"></figure>
+<p>1.在前面新增:</p>
+<pre><code>def keystorePropertiesFile = rootProject.file(&quot;key.properties&quot;)
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+</code></pre>
+<p>2.屏蔽原有buildTypes：{} ：</p>
+<figure data-type="image" tabindex="4"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgju" alt="image.png" loading="lazy"></figure>
+<p>3.buildTypes同级新增：</p>
+<pre><code>signingConfigs {
+ release {
+        keyAlias keystoreProperties['keyAlias']
+        keyPassword keystoreProperties['keyPassword']
+        storeFile file(keystoreProperties['storeFile'])
+        storePassword keystoreProperties['storePassword']
+ }
+}
+buildTypes {
+ release {
+    signingConfig signingConfigs.release
+ }
+}
+</code></pre>
+<p><em>signingConfigs.release 中 keystoreProperties['xxx']，xxx内容为前期第二步中key.properties 内对应Key字符串</em></p>
+<figure data-type="image" tabindex="5"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgjy" alt="image.png" loading="lazy"></figure>
+<p>此时对应文件设置已经配置完毕。</p>
+<p>4, 编译</p>
+<pre><code>// 打包成apk
+flutter build apk
+</code></pre>
+<h3 id="总结">总结</h3>
+<p>app应用密钥库：</p>
+<p>创建文件：<code>&lt;app dir&gt;/android/key.properties</code> 里面包含密钥位置</p>
+<p>为app配置签名： 编辑文件<code>&lt;app dir&gt;/android/app/build.gradle</code></p>
+<p>将</p>
+<pre><code> android {
+      ...
+   }
+</code></pre>
+<p>修改成</p>
+<pre><code> def keystoreProperties = new Properties()
+   def keystorePropertiesFile = rootProject.file('key.properties')
+   if (keystorePropertiesFile.exists()) {
+       keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+   }
+
+   android {
+         ...
+   }
+</code></pre>
+<p>将</p>
+<pre><code>   buildTypes {       release {           // TODO: Add your own signing config for the release build.           // Signing with the debug keys for now,           // so `flutter run --release` works.           signingConfig signingConfigs.debug       }   }
+</code></pre>
+<p>替换成</p>
+<pre><code>   signingConfigs {       release {           keyAlias keystoreProperties['keyAlias']           keyPassword keystoreProperties['keyPassword']           storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null           storePassword keystoreProperties['storePassword']       }   }   buildTypes {       release {           signingConfig signingConfigs.release       }   }
+</code></pre>
+<pre><code>配置Gradle签名，运行Flutter Clean&lt;app dir&gt;/android/app/build.gradle
+</code></pre>
+<p>文章来源：</p>
+<p><a href="https://segmentfault.com/a/1190000037678220">Android Studio下fluter打包Apk签名文件准备(Windosw环境)</a></p>
+<h1 id="flutter-app-修改">flutter app 修改</h1>
+<p>图标</p>
+<p>file address: <code>/android/app/src/main/AndroidMainifest.xml</code></p>
+<pre><code>&lt;application	        android:name=&quot;io.flutter.app.FlutterApplication&quot;	        android:label=&quot;flutter-app&quot;	        android:icon=&quot;@mipmap/ic_luncher_logo&quot;&gt;	        &lt;activity 
+</code></pre>
+<p><code>label</code>为app名字，<code>icon</code>为app图标。</p>
+<p>icon address:  <code>/android/app/src/main/res</code></p>
+<pre><code>注意:有好几个mipmap文件夹，这和ios是一样的，这几个是适配不同分辨率的手机。只需让美工出相应尺寸的图标放到相应的文件夹就可以了。注意图片需要是png格式。
+</code></pre>
+<p>启动页</p>
+<p>file address: 在<code>android</code>目录中，找到<code>app&gt;src&gt;main&gt;res&gt;drawable&gt;launch_background.xml</code></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;!-- Modify this file to customize your launch splash screen --&gt;&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;    &lt;item android:drawable=&quot;@android:color/white&quot; /&gt;    &lt;!-- You can insert your own image assets here --&gt;    &lt;item&gt;        &lt;bitmap            android:gravity=&quot;center&quot;            android:src=&quot;@mipmap/ic_logo&quot; /&gt;    &lt;/item&gt;&lt;/layer-list&gt;
+</code></pre>
+<p>来源：</p>
+<p><a href="https://blog.csdn.net/qq_38410494/article/details/109674583">flutter应用打包、修改图标、启动页和app名字</a></p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[（待完善）[学习日志]JavaScript之旅]]></title>
-        <id>https://cosmoslazycat.github.io/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/</id>
-        <link href="https://cosmoslazycat.github.io/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/">
+        <id>http://localhost:4000/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/</id>
+        <link href="http://localhost:4000/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/">
         </link>
         <updated>2021-07-01T12:13:21.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625141677751.jpg" alt="" loading="lazy"></figure>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1625141677751.jpg" alt="" loading="lazy"></figure>
 <h3 id="javascript排错">JavaScript排错</h3>
 <p>1，Error()</p>
 <pre><code>var err = new Error('Wrong!');
@@ -622,8 +734,8 @@ arr // [1, 2]
     </entry>
     <entry>
         <title type="html"><![CDATA[[翻译]如何努力工作]]></title>
-        <id>https://cosmoslazycat.github.io/post/fan-yi-ru-he-nu-li-gong-zuo/</id>
-        <link href="https://cosmoslazycat.github.io/post/fan-yi-ru-he-nu-li-gong-zuo/">
+        <id>http://localhost:4000/post/fan-yi-ru-he-nu-li-gong-zuo/</id>
+        <link href="http://localhost:4000/post/fan-yi-ru-he-nu-li-gong-zuo/">
         </link>
         <updated>2021-07-01T12:11:31.000Z</updated>
         <content type="html"><![CDATA[<p>原文: <a href="http://paulgraham.com/hwh.html">How To Work</a><br>
@@ -671,8 +783,8 @@ arr // [1, 2]
     </entry>
     <entry>
         <title type="html"><![CDATA[常见的css]]></title>
-        <id>https://cosmoslazycat.github.io/post/chang-jian-de-css/</id>
-        <link href="https://cosmoslazycat.github.io/post/chang-jian-de-css/">
+        <id>http://localhost:4000/post/chang-jian-de-css/</id>
+        <link href="http://localhost:4000/post/chang-jian-de-css/">
         </link>
         <updated>2021-06-25T15:37:36.000Z</updated>
         <content type="html"><![CDATA[<p>边框内圆角<br>
@@ -693,7 +805,7 @@ code</p>
 }
 </code></pre>
 <p>review (<a href="https://codepen.io/cosmoslazycat/pen/VwpogoW">点此查看详细信息</a>)</p>
-<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1624637131011.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1624637131011.png" alt="" loading="lazy"></figure>
 <p>code</p>
 <pre><code>// HTML
 &lt;div class=&quot;elemt&quot;&gt;&lt;/div&gt;
@@ -720,8 +832,8 @@ code</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[[翻译]你的设计准则是什么？]]></title>
-        <id>https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
-        <link href="https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
+        <id>http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
+        <link href="http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
         </link>
         <updated>2021-06-21T13:42:30.000Z</updated>
         <content type="html"><![CDATA[<p>一路走来，我学到了一些在设计和商业上经得起时间考验的东西</p>
@@ -773,8 +885,8 @@ code</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[开始使用Gridea写博客]]></title>
-        <id>https://cosmoslazycat.github.io/post/kai-shi-shi-yong-gridea-xie-bo-ke/</id>
-        <link href="https://cosmoslazycat.github.io/post/kai-shi-shi-yong-gridea-xie-bo-ke/">
+        <id>http://localhost:4000/post/kai-shi-shi-yong-gridea-xie-bo-ke/</id>
+        <link href="http://localhost:4000/post/kai-shi-shi-yong-gridea-xie-bo-ke/">
         </link>
         <updated>2021-06-20T13:36:27.000Z</updated>
         <content type="html"><![CDATA[<p>Gridea是我偶然在Twitter上看到的，看了一下感觉还不错，而且还是开源的（https://github.com/getgridea/gridea），于是就在GitHub Page上部署起来，把以前的一些文章都放上来。目前用起来还不错。</p>
@@ -783,8 +895,8 @@ code</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Time Boxing]]></title>
-        <id>https://cosmoslazycat.github.io/post/time-boxing/</id>
-        <link href="https://cosmoslazycat.github.io/post/time-boxing/">
+        <id>http://localhost:4000/post/time-boxing/</id>
+        <link href="http://localhost:4000/post/time-boxing/">
         </link>
         <updated>2021-06-20T13:00:21.000Z</updated>
         <content type="html"><![CDATA[<p>最近觉得自己的注意力挺分散的，搜索一圈之后，决定实践一下[Time Boxing]<br>
