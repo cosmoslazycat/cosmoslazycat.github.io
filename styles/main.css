@@ -120,7 +120,7 @@ a:not([class]):hover {
         }
       }
     
-      body{white;} 
+      body{color: white;} 
 @media screen and (max-width: 1200px) {
                   color: white;            
 		}

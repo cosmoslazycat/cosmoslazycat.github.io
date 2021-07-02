@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-07-02T07:22:55.623Z</updated>
+    <updated>2021-07-02T07:24:20.544Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://cosmoslazycat.github.io"/>
+    <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
     <subtitle>Man Always Remember Love Because Of Romance Only</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
+    <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的宇宙</rights>
     <entry>
         <title type="html"><![CDATA[[学习日志]flutter之旅]]></title>
-        <id>http://localhost:4000/post/xue-xi-ri-zhi-flutter-zhi-lu/</id>
-        <link href="http://localhost:4000/post/xue-xi-ri-zhi-flutter-zhi-lu/">
+        <id>https://cosmoslazycat.github.io/post/xue-xi-ri-zhi-flutter-zhi-lu/</id>
+        <link href="https://cosmoslazycat.github.io/post/xue-xi-ri-zhi-flutter-zhi-lu/">
         </link>
         <updated>2021-07-02T07:21:39.000Z</updated>
         <content type="html"><![CDATA[<h1 id="flutter的源码如何运行起来">flutter的源码如何运行起来？</h1>
@@ -124,11 +124,11 @@ flutter build apk
     </entry>
     <entry>
         <title type="html"><![CDATA[（待完善）[学习日志]JavaScript之旅]]></title>
-        <id>http://localhost:4000/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/</id>
-        <link href="http://localhost:4000/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/">
+        <id>https://cosmoslazycat.github.io/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/</id>
+        <link href="https://cosmoslazycat.github.io/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/">
         </link>
         <updated>2021-07-01T12:13:21.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1625141677751.jpg" alt="" loading="lazy"></figure>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625141677751.jpg" alt="" loading="lazy"></figure>
 <h3 id="javascript排错">JavaScript排错</h3>
 <p>1，Error()</p>
 <pre><code>var err = new Error('Wrong!');
@@ -734,8 +734,8 @@ arr // [1, 2]
     </entry>
     <entry>
         <title type="html"><![CDATA[[翻译]如何努力工作]]></title>
-        <id>http://localhost:4000/post/fan-yi-ru-he-nu-li-gong-zuo/</id>
-        <link href="http://localhost:4000/post/fan-yi-ru-he-nu-li-gong-zuo/">
+        <id>https://cosmoslazycat.github.io/post/fan-yi-ru-he-nu-li-gong-zuo/</id>
+        <link href="https://cosmoslazycat.github.io/post/fan-yi-ru-he-nu-li-gong-zuo/">
         </link>
         <updated>2021-07-01T12:11:31.000Z</updated>
         <content type="html"><![CDATA[<p>原文: <a href="http://paulgraham.com/hwh.html">How To Work</a><br>
@@ -783,8 +783,8 @@ arr // [1, 2]
     </entry>
     <entry>
         <title type="html"><![CDATA[常见的css]]></title>
-        <id>http://localhost:4000/post/chang-jian-de-css/</id>
-        <link href="http://localhost:4000/post/chang-jian-de-css/">
+        <id>https://cosmoslazycat.github.io/post/chang-jian-de-css/</id>
+        <link href="https://cosmoslazycat.github.io/post/chang-jian-de-css/">
         </link>
         <updated>2021-06-25T15:37:36.000Z</updated>
         <content type="html"><![CDATA[<p>边框内圆角<br>
@@ -805,7 +805,7 @@ code</p>
 }
 </code></pre>
 <p>review (<a href="https://codepen.io/cosmoslazycat/pen/VwpogoW">点此查看详细信息</a>)</p>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1624637131011.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1624637131011.png" alt="" loading="lazy"></figure>
 <p>code</p>
 <pre><code>// HTML
 &lt;div class=&quot;elemt&quot;&gt;&lt;/div&gt;
@@ -832,8 +832,8 @@ code</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[[翻译]你的设计准则是什么？]]></title>
-        <id>http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
-        <link href="http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
+        <id>https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
+        <link href="https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
         </link>
         <updated>2021-06-21T13:42:30.000Z</updated>
         <content type="html"><![CDATA[<p>一路走来，我学到了一些在设计和商业上经得起时间考验的东西</p>
@@ -885,8 +885,8 @@ code</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[开始使用Gridea写博客]]></title>
-        <id>http://localhost:4000/post/kai-shi-shi-yong-gridea-xie-bo-ke/</id>
-        <link href="http://localhost:4000/post/kai-shi-shi-yong-gridea-xie-bo-ke/">
+        <id>https://cosmoslazycat.github.io/post/kai-shi-shi-yong-gridea-xie-bo-ke/</id>
+        <link href="https://cosmoslazycat.github.io/post/kai-shi-shi-yong-gridea-xie-bo-ke/">
         </link>
         <updated>2021-06-20T13:36:27.000Z</updated>
         <content type="html"><![CDATA[<p>Gridea是我偶然在Twitter上看到的，看了一下感觉还不错，而且还是开源的（https://github.com/getgridea/gridea），于是就在GitHub Page上部署起来，把以前的一些文章都放上来。目前用起来还不错。</p>
@@ -895,8 +895,8 @@ code</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Time Boxing]]></title>
-        <id>http://localhost:4000/post/time-boxing/</id>
-        <link href="http://localhost:4000/post/time-boxing/">
+        <id>https://cosmoslazycat.github.io/post/time-boxing/</id>
+        <link href="https://cosmoslazycat.github.io/post/time-boxing/">
         </link>
         <updated>2021-06-20T13:00:21.000Z</updated>
         <content type="html"><![CDATA[<p>最近觉得自己的注意力挺分散的，搜索一圈之后，决定实践一下[Time Boxing]<br>
