@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>[学习日志]flutter之旅 - CosmosLazyCat的宇宙</title>
+<title>[学习日志]flutter之旅 - CosmosLazyCat的小宇宙</title>
 <link rel="shortcut icon" href="https://cosmoslazycat.github.io/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 <link rel="stylesheet" href="https://cosmoslazycat.github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://cosmoslazycat.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="[学习日志]flutter之旅 - CosmosLazyCat的宇宙 - Atom Feed" href="https://cosmoslazycat.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="[学习日志]flutter之旅 - CosmosLazyCat的小宇宙 - Atom Feed" href="https://cosmoslazycat.github.io/atom.xml">
 
     
 
@@ -21,7 +21,7 @@ andriod studio （可在VScode上开发，下载flutter插件即可）
 新建flutter并运行
 flutter create filename
 c..." />
-  <meta property="og:title" content="[学习日志]flutter之旅 - CosmosLazyCat的宇宙">
+  <meta property="og:title" content="[学习日志]flutter之旅 - CosmosLazyCat的小宇宙">
   <meta property="og:description" content="flutter的源码如何运行起来？
 环境：
 flutter框架及代码运行环境
@@ -31,10 +31,10 @@ flutter create filename
 c..." />
   <meta property="og:type" content="articles">
   <meta property="og:url" content="https://cosmoslazycat.github.io/post/xue-xi-ri-zhi-flutter-zhi-lu/" />
-  <meta property="og:image" content="https://cosmoslazycat.github.io/images/avatar.png">
+  <meta property="og:image" content="https://cosmoslazycat.github.io/post-images/xue-xi-ri-zhi-flutter-zhi-lu.jpg">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="[学习日志]flutter之旅 - CosmosLazyCat的宇宙">
+  <meta name="twitter:title" content="[学习日志]flutter之旅 - CosmosLazyCat的小宇宙">
   <meta name="twitter:description" content="flutter的源码如何运行起来？
 环境：
 flutter框架及代码运行环境
@@ -56,13 +56,15 @@ c...">
 <body>
   <div class="antialiased flex flex-col min-h-screen" id="app">
     <a href="https://cosmoslazycat.github.io" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
-      CosmosLazyCat的宇宙
+      CosmosLazyCat的小宇宙
     </a>
     <div class="max-w-4xl w-full mx-auto">
       <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
         <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
           [学习日志]flutter之旅
         </h1>
+        
+          <img src="https://cosmoslazycat.github.io/post-images/xue-xi-ri-zhi-flutter-zhi-lu.jpg" alt="[学习日志]flutter之旅" class="block w-full mb-8">
         
         <div class="mb-8 flex flex-wrap">
           <div class="text-gray-400 text-sm mr-4">2021-07-02 · 4 min read</div>
@@ -95,17 +97,14 @@ keytool -list -v -keystore c:/sign.jks -alias sign -storepass android -storepass
 <p>新建key文件夹：project/android/app，将keyName.jks复制到该文件夹下</p>
 <pre><code>storeFile=&gt;前面操作复制的apk签名文件路径位置。
 </code></pre>
-<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIggr" alt="image.png" loading="lazy"></figure>
 <p>3，配置项目/android/build.gradle文件</p>
 <p>找到andriod {xxxx} 模块</p>
-<figure data-type="image" tabindex="3"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgjq" alt="image.png" loading="lazy"></figure>
 <p>1.在前面新增:</p>
 <pre><code>def keystorePropertiesFile = rootProject.file(&quot;key.properties&quot;)
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 </code></pre>
 <p>2.屏蔽原有buildTypes：{} ：</p>
-<figure data-type="image" tabindex="4"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgju" alt="image.png" loading="lazy"></figure>
 <p>3.buildTypes同级新增：</p>
 <pre><code>signingConfigs {
  release {
@@ -122,7 +121,6 @@ buildTypes {
 }
 </code></pre>
 <p><em>signingConfigs.release 中 keystoreProperties['xxx']，xxx内容为前期第二步中key.properties 内对应Key字符串</em></p>
-<figure data-type="image" tabindex="5"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgjy" alt="image.png" loading="lazy"></figure>
 <p>此时对应文件设置已经配置完毕。</p>
 <p>4, 编译</p>
 <pre><code>// 打包成apk

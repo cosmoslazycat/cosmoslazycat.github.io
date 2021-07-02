@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
-    <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-07-02T07:24:51.892Z</updated>
+    <title>CosmosLazyCat的小宇宙</title>
+    <updated>2021-07-02T07:33:01.557Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
     <subtitle>Man Always Remember Love Because Of Romance Only</subtitle>
     <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, CosmosLazyCat的宇宙</rights>
+    <rights>All rights reserved 2021, CosmosLazyCat的小宇宙</rights>
     <entry>
         <title type="html"><![CDATA[[学习日志]flutter之旅]]></title>
         <id>https://cosmoslazycat.github.io/post/xue-xi-ri-zhi-flutter-zhi-lu/</id>
@@ -42,17 +42,14 @@ keytool -list -v -keystore c:/sign.jks -alias sign -storepass android -storepass
 <p>新建key文件夹：project/android/app，将keyName.jks复制到该文件夹下</p>
 <pre><code>storeFile=&gt;前面操作复制的apk签名文件路径位置。
 </code></pre>
-<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIggr" alt="image.png" loading="lazy"></figure>
 <p>3，配置项目/android/build.gradle文件</p>
 <p>找到andriod {xxxx} 模块</p>
-<figure data-type="image" tabindex="3"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgjq" alt="image.png" loading="lazy"></figure>
 <p>1.在前面新增:</p>
 <pre><code>def keystorePropertiesFile = rootProject.file(&quot;key.properties&quot;)
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 </code></pre>
 <p>2.屏蔽原有buildTypes：{} ：</p>
-<figure data-type="image" tabindex="4"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgju" alt="image.png" loading="lazy"></figure>
 <p>3.buildTypes同级新增：</p>
 <pre><code>signingConfigs {
  release {
@@ -69,7 +66,6 @@ buildTypes {
 }
 </code></pre>
 <p><em>signingConfigs.release 中 keystoreProperties['xxx']，xxx内容为前期第二步中key.properties 内对应Key字符串</em></p>
-<figure data-type="image" tabindex="5"><img src="C:%5CUsers%5Casd63%5CDesktop%5CFE%5Cmd_file%5Cimg%5CbVcIgjy" alt="image.png" loading="lazy"></figure>
 <p>此时对应文件设置已经配置完毕。</p>
 <p>4, 编译</p>
 <pre><code>// 打包成apk
@@ -128,8 +124,7 @@ flutter build apk
         <link href="https://cosmoslazycat.github.io/post/dai-wan-shan-xue-xi-ri-zhi-javascript-zhi-lu/">
         </link>
         <updated>2021-07-01T12:13:21.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625141677751.jpg" alt="" loading="lazy"></figure>
-<h3 id="javascript排错">JavaScript排错</h3>
+        <content type="html"><![CDATA[<h3 id="javascript排">JavaScript排</h3>
 <p>1，Error()</p>
 <pre><code>var err = new Error('Wrong!');
 err.message // wrong!
@@ -828,6 +823,27 @@ code</p>
 }
 
 </code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[技巧]如何写好一篇英语技术文章]]></title>
+        <id>https://cosmoslazycat.github.io/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/</id>
+        <link href="https://cosmoslazycat.github.io/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/">
+        </link>
+        <updated>2021-06-25T08:31:59.000Z</updated>
+        <content type="html"><![CDATA[<p>开始写成功一半</p>
+<p>文章生产：提出问题 - 解决问题</p>
+<p>问题来源<br>
+Stackoverflow<br>
+Google<br>
+quora<br>
+Twitter</p>
+<p>1，细分领域：前端开发<br>
+2，文章主题</p>
+<p>当你刚开始写的时候，很多语句会不知道表达，不要着急，慢慢写就好了，就好像小朋友学说话，说着说着就流利了。</p>
+<p>常用工具<br>
+https://ludwig.guru/ https://linggle.com/ 这两个工具可以在弄不清楚句子短语如何写的时候帮助你。<br>
+https://app.grammarly.com/ 这个可以查找纠正语法错误，错别字，一般可以在文章的Review阶段使用它。</p>
 ]]></content>
     </entry>
     <entry>
