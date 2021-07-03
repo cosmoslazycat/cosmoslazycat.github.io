@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的小宇宙</title>
-    <updated>2021-07-03T10:34:21.727Z</updated>
+    <updated>2021-07-03T10:47:12.869Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的小宇宙</rights>
     <entry>
-        <title type="html"><![CDATA[[NEW]7.3安全日报]]></title>
+        <title type="html"><![CDATA[[NEW]安全日报]]></title>
         <id>https://cosmoslazycat.github.io/post/new73-an-quan-ri-bao/</id>
         <link href="https://cosmoslazycat.github.io/post/new73-an-quan-ri-bao/">
         </link>
@@ -22,11 +22,11 @@
 3，只做有双方背书的书面授权的安全测试</p>
 <p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
 <h3 id="一-veryfitpro加密漏洞">一、VeryFitPro加密漏洞</h3>
-<p>VeryFitPro是中国深圳市爱都科技有限公司的一款功能强大的健康管理软件,需要搭配同品牌智能手环使用,使用app用戶可以实时查看行走步数、消耗卡路里、睡眠质量等信息。</p>
-<p>VeryFitPro 中存在加密漏洞问题，该漏洞源于允许通过明文HTTP与后端API进行所有通信。攻击者可通过该漏洞获得用戶敏感信息。以下产品及版本受到影响：<code>VeryFitPro For Android 3.2.8</code>。</p>
+<p>1，说明：VeryFitPro是中国深圳市爱都科技有限公司的一款功能强大的健康管理软件,需要搭配同品牌智能手环使用,使用app用戶可以实时查看行走步数、消耗卡路里、睡眠质量等信息。</p>
+<p>2，漏洞信息：VeryFitPro 中存在加密漏洞问题，该漏洞源于允许通过明文HTTP与后端API进行所有通信。攻击者可通过该漏洞获得用戶敏感信息。以下产品及版本受到影响：<code>VeryFitPro For Android 3.2.8</code>。</p>
 <h3 id="二-overlayfs-权限提升漏洞">二、Overlayfs 权限提升漏洞</h3>
-<p>Overlayfs是Linux系统中的一种堆叠文件系统，它依赖并建立在其它的文件系统之上（例如ext4fs和xfs等等），并不直接参与磁盘空间结构的划分，仅仅将原来底层文件系统中不同的目录进行“合并”，然后向用户呈现。</p>
-<p>OverlayFS漏洞允許Ubuntu下的本地用戶获得root权限。 Linux內核中overlayfs文件系统中的Ubuntu特定问题，在该问题中，它未正确验证关于用户名称空间的文件系统功能的应用程序。由于Ubuntu附带了一個允許非特权的overlayfs挂载的补丁，因此本地攻击者可以使用它來获得更高的权限。</p>
+<p>1，说明：Overlayfs是Linux系统中的一种堆叠文件系统，它依赖并建立在其它的文件系统之上（例如ext4fs和xfs等等），并不直接参与磁盘空间结构的划分，仅仅将原来底层文件系统中不同的目录进行“合并”，然后向用户呈现。</p>
+<p>2，漏洞信息：OverlayFS漏洞允许Ubuntu下的本地用戶获得root权限。 Linux內核中overlayfs文件系统中的Ubuntu特定问题，在该问题中，它未正确验证关于用户名称空间的文件系统功能的应用程序。由于Ubuntu附带了一個允许非特权的overlayfs挂载的补丁，因此本地攻击者可以使用它來获得更高的权限。</p>
 <h4 id="受影响版本">受影响版本：</h4>
 <ul>
 <li>Ubuntu 20.10</li>
@@ -34,6 +34,13 @@
 <li>Ubuntu 18.04 LTS</li>
 <li>Ubuntu 16.04 LTS</li>
 <li>Ubuntu 14.04 ESM</li>
+</ul>
+<h3 id="三-openssl拒绝服务漏洞">三、OpenSSL拒绝服务漏洞</h3>
+<p>1，说明：OpenSSL是为网络通信提供安全及数据完整性的一种安全协议，囊括了主要的密码算法、常用的密钥和证书封装管理功能以及SSL协议，并提供了丰富的应用程序供测试或其它目的使用。同时也是一个开放源代码的软件库包，而应用程序可以使用这个包来进行安全通信，避免窃听，同时确认另一端连接者的身份。</p>
+<p>2，漏洞信息：openssl 版本低于 1.1.1-k，默认配置下使用 openssl 的软件（包括 nginx 和 trojan-gfw 等），恶意构造的请求可以让服务端崩溃。</p>
+<h4 id="受影响版本-2">受影响版本：</h4>
+<ul>
+<li>&lt; 1.1.1-k</li>
 </ul>
 ]]></content>
     </entry>
