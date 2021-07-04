@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的小宇宙</title>
-    <updated>2021-07-03T11:51:32.578Z</updated>
+    <updated>2021-07-04T14:58:02.820Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -10,6 +10,51 @@
     <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的小宇宙</rights>
+    <entry>
+        <title type="html"><![CDATA[[NEWS]安全日报]]></title>
+        <id>https://cosmoslazycat.github.io/post/newsan-quan-ri-bao/</id>
+        <link href="https://cosmoslazycat.github.io/post/newsan-quan-ri-bao/">
+        </link>
+        <updated>2021-07-04T13:23:00.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
+<p>1，学安全的第一步是先学《网络安全法》。<br>
+2，未经授权的渗透测试，以及在渗透测试中超越边界的任何行为都视为违法<br>
+3，只做有双方背书的书面授权的安全测试</p>
+<p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
+<h3 id="一-lanproxy-目录遍历漏洞directory-traversal">一、Lanproxy 目录遍历漏洞（Directory traversal）</h3>
+<p>1，说明：lanproxy是一个将局域网个人电脑、服务器代理到公网的内网穿透工具，支持tcp流量转发，可支持任何tcp上层协议（访问内网网站、本地支付接口调试、ssh访问、远程桌面...）。</p>
+<p>2，漏洞信息：攻击者能通过构造某些信息并发送GET请求，在得到响应后，能在配置文件中读取到账号密码</p>
+<p>3，防范手段（前端/后端）：</p>
+<ul>
+<li>
+<p>过滤../和~/目录跳转符、%00字符截断符、dir命令等；</p>
+</li>
+<li>
+<p>合理配置Web服务器的目录权限；（最有效的方式）</p>
+</li>
+<li>
+<p>隐藏内部相关配置细节，以免程序出错时显示出来；</p>
+</li>
+<li>
+<p>对用户提交过来的文件名进行硬编码或者统一编码；</p>
+</li>
+<li>
+<p>对文件后缀进行白名单控制，对包含了恶意的符号或者空字节进行拒绝。</p>
+</li>
+</ul>
+<p>影响版本</p>
+<ul>
+<li>Lanproxy 0.1</li>
+</ul>
+<h3 id="二-gitlab-graphql邮箱信息泄露漏洞">二、GitLab Graphql邮箱信息泄露漏洞</h3>
+<p>1，说明:GraphQL 是一种针对 Graph（图状数据）进行查询特别有优势的 Query Language（查询语言）。GitLab 为此专门提供了GraphQL的API.</p>
+<p>2，漏洞信息：Gitlab本身不允许获取账号邮箱信息，这里通过调用 Graphql 的某一信息查询造成了邮箱泄露漏洞，但利用该漏洞需要有账号用户名，如果没有，则无法获取邮箱信息。不过通过构造某一语句作为请求发送，可一次性返回所有的用户名和邮箱。</p>
+<p>影响版本：</p>
+<ul>
+<li>GitLab 13.4 - 13.6.2</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[NEWS]安全日报]]></title>
         <id>https://cosmoslazycat.github.io/post/new73-an-quan-ri-bao/</id>
