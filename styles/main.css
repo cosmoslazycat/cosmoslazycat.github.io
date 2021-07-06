@@ -120,7 +120,7 @@ a:not([class]):hover {
         }
       }
     
-      body{color: white;} 
+      body{color: #E2E8F0;} 
 @media screen and (max-width: 1000px) {
                   body{color: black;}
 		}
