@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的小宇宙</title>
-    <updated>2021-07-06T15:20:42.493Z</updated>
+    <updated>2021-07-08T03:18:34.686Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -11,114 +11,74 @@
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的小宇宙</rights>
     <entry>
-        <title type="html"><![CDATA[[NEWS]0706安全日报]]></title>
-        <id>https://cosmoslazycat.github.io/post/news0706-an-quan-ri-bao/</id>
-        <link href="https://cosmoslazycat.github.io/post/news0706-an-quan-ri-bao/">
+        <title type="html"><![CDATA[如何提升网站页面加载速度]]></title>
+        <id>https://cosmoslazycat.github.io/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/</id>
+        <link href="https://cosmoslazycat.github.io/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/">
         </link>
-        <updated>2021-07-06T15:09:25.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
-<p>1，学安全的第一步是先学《网络安全法》。<br>
-2，未经授权的渗透测试，以及在渗透测试中超越边界的任何行为都视为违法<br>
-3，只做有双方背书的书面授权的安全测试</p>
-<p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
-<p>一、Saltstack 任意文件写入漏洞<br>
-1，说明：saltstack (http://www.saltstack.com) 是一个使用python开发的一款服务器基础架构集中化管理平台,开始于2011年的一个项目,具备配置和管理、远程执行、监控等功能。</p>
-<p>2，漏洞信息：saltstack在后台的一些配置文件修改编辑等处，程序开发过程中将这些配置信息未做好过滤保存到了文件中，用户可以在文件中写入任意的内容.</p>
-<p>3，防范手段:</p>
+        <updated>2021-07-08T03:04:25.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-测试网站速度">一、测试网站速度</h3>
+<p>腾讯云服务器DNS配置TXT记录：</p>
 <ul>
-<li>尽量避免在可执行文件中保存字符串内容。</li>
-<li>对写入的字符串进行完美的过滤。</li>
+<li>在控制台选择DNS解析</li>
+<li>进入DNS解析配置</li>
+<li>输入GSC提供的txt记录值</li>
 </ul>
-<p>影响版本：</p>
-<ul>
-<li>&lt;3002.5</li>
-</ul>
-<p>二、</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[NEWS]安全日报]]></title>
-        <id>https://cosmoslazycat.github.io/post/newsan-quan-ri-bao/</id>
-        <link href="https://cosmoslazycat.github.io/post/newsan-quan-ri-bao/">
-        </link>
-        <updated>2021-07-04T13:23:00.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
-<p>1，学安全的第一步是先学《网络安全法》。<br>
-2，未经授权的渗透测试，以及在渗透测试中超越边界的任何行为都视为违法<br>
-3，只做有双方背书的书面授权的安全测试</p>
-<p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
-<h3 id="一-lanproxy-目录遍历漏洞directory-traversal">一、Lanproxy 目录遍历漏洞（Directory traversal）</h3>
-<p>1，说明：lanproxy是一个将局域网个人电脑、服务器代理到公网的内网穿透工具，支持tcp流量转发，可支持任何tcp上层协议（访问内网网站、本地支付接口调试、ssh访问、远程桌面...）。</p>
-<p>2，漏洞信息：攻击者能通过构造某些信息并发送GET请求，在得到响应后，能在配置文件中读取到账号密码</p>
-<p>3，防范手段（前端/后端）：</p>
+<h4 id="1google-search-console">1，<a href="https://search.google.com/search-console/about">Google Search Console</a></h4>
+<h4 id="2pagespeed-insights">2，<a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></h4>
+<h4 id="3gtmetrix">3，<a href="https://gtmetrix.com/">GTmetrix</a></h4>
+<br />
+<h3 id="二-优化思路">二、优化思路</h3>
+<h4 id="1图片">1，图片</h4>
 <ul>
 <li>
-<p>过滤../和~/目录跳转符、%00字符截断符、dir命令等；</p>
+<p>1.1图片优化<br>
+工具：TinyPNG</p>
 </li>
 <li>
-<p>合理配置Web服务器的目录权限；（最有效的方式）</p>
+<p>1.2图片格式优化<br>
+PNG 加载慢<br>
+JPGS<br>
+WEBP</p>
 </li>
 <li>
-<p>隐藏内部相关配置细节，以免程序出错时显示出来；</p>
-</li>
-<li>
-<p>对用户提交过来的文件名进行硬编码或者统一编码；</p>
-</li>
-<li>
-<p>对文件后缀进行白名单控制，对包含了恶意的符号或者空字节进行拒绝。</p>
+<p>1.3图片分辨率优化<br>
+方案：在img标签内声明图片分辨率，以便提高浏览器的渲染速度</p>
 </li>
 </ul>
-<p>影响版本</p>
-<ul>
-<li>Lanproxy 0.1</li>
-</ul>
-<h3 id="二-gitlab-graphql邮箱信息泄露漏洞">二、GitLab Graphql邮箱信息泄露漏洞</h3>
-<p>1，说明:GraphQL 是一种针对 Graph（图状数据）进行查询特别有优势的 Query Language（查询语言）。GitLab 为此专门提供了GraphQL的API.</p>
-<p>2，漏洞信息：Gitlab本身不允许获取账号邮箱信息，这里通过调用 Graphql 的某一信息查询造成了邮箱泄露漏洞，但利用该漏洞需要有账号用户名，如果没有，则无法获取邮箱信息。不过通过构造某一语句作为请求发送，可一次性返回所有的用户名和邮箱。</p>
-<p>影响版本：</p>
-<ul>
-<li>GitLab 13.4 - 13.6.2</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[NEWS]安全日报]]></title>
-        <id>https://cosmoslazycat.github.io/post/new73-an-quan-ri-bao/</id>
-        <link href="https://cosmoslazycat.github.io/post/new73-an-quan-ri-bao/">
-        </link>
-        <updated>2021-07-03T10:20:32.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
-<p>1，学安全的第一步是先学《网络安全法》。<br>
-2，未经授权的渗透测试，以及在渗透测试中超越边界的任何行为都视为违法<br>
-3，只做有双方背书的书面授权的安全测试</p>
-<p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
-<h3 id="一-veryfitpro加密漏洞">一、VeryFitPro加密漏洞</h3>
-<p>1，说明：VeryFitPro是中国深圳市爱都科技有限公司的一款功能强大的健康管理软件,需要搭配同品牌智能手环使用,使用app用戶可以实时查看行走步数、消耗卡路里、睡眠质量等信息。</p>
-<p>2，漏洞信息：VeryFitPro 中存在加密漏洞问题，该漏洞源于允许通过明文HTTP与后端API进行所有通信。攻击者可通过该漏洞获得用戶敏感信息。以下产品及版本受到影响：<code>VeryFitPro For Android 3.2.8</code>。</p>
-<h3 id="二-overlayfs-权限提升漏洞">二、Overlayfs 权限提升漏洞</h3>
-<p>1，说明：Overlayfs是Linux系统中的一种堆叠文件系统，它依赖并建立在其它的文件系统之上（例如ext4fs和xfs等等），并不直接参与磁盘空间结构的划分，仅仅将原来底层文件系统中不同的目录进行“合并”，然后向用户呈现。</p>
-<p>2，漏洞信息：OverlayFS漏洞允许Ubuntu下的本地用戶获得root权限。 Linux內核中overlayfs文件系统中的Ubuntu特定问题，在该问题中，它未正确验证关于用户名称空间的文件系统功能的应用程序。由于Ubuntu附带了一個允许非特权的overlayfs挂载的补丁，因此本地攻击者可以使用它來获得更高的权限。</p>
-<h4 id="受影响版本">受影响版本：</h4>
-<ul>
-<li>Ubuntu 20.10</li>
-<li>Ubuntu 20.04 LTS</li>
-<li>Ubuntu 18.04 LTS</li>
-<li>Ubuntu 16.04 LTS</li>
-<li>Ubuntu 14.04 ESM</li>
-</ul>
-<h3 id="三-openssl拒绝服务漏洞">三、OpenSSL拒绝服务漏洞</h3>
-<p>1，说明：OpenSSL是为网络通信提供安全及数据完整性的一种安全协议，囊括了主要的密码算法、常用的密钥和证书封装管理功能以及SSL协议，并提供了丰富的应用程序供测试或其它目的使用。同时也是一个开放源代码的软件库包，而应用程序可以使用这个包来进行安全通信，避免窃听，同时确认另一端连接者的身份。</p>
-<p>2，漏洞信息：openssl 版本低于 1.1.1-k，默认配置下使用 openssl 的软件（包括 nginx 和 trojan-gfw 等），恶意构造的请求可以让服务端崩溃。</p>
-<h4 id="受影响版本-2">受影响版本：</h4>
-<ul>
-<li>&lt; 1.1.1-k</li>
-</ul>
-<h3 id="每日鸡汤">每日鸡汤</h3>
-<pre><code>成事和成功，永远不是外界的环境和他人推动你走，只能靠你发挥主动。
-什么城市、公司、学校、老师、同学、上司都是次要的。坚持自学、额外努力，主动思考、注重方法才重要。
-一直保持自学和阅读习惯，保持有问题多搜索多查资料自己搞懂的习惯，一直保持主动思考的习惯。对任何专业、工作，都要如此。
+<pre><code>&lt;img src=”puppy.jpg” width=”640&quot; height=”360&quot; alt=”Puppy with balloons” /&gt;
 </code></pre>
-]]></content>
+<br />
+<h4 id="2javascript和css引用min版">2，JavaScript和css引用min版</h4>
+<p>资源：</p>
+<ul>
+<li>https://cssminifier.com/</li>
+<li>https://javascript-minifier.com/</li>
+</ul>
+<p>还可以通过使用<a href="https://gtmetrix.com/enable-text-compression.html#how-to-enable-text-compression">enable Gzip compression</a> 进一步缩小引用文件的大小<br>
+<br /></p>
+<h4 id="3谨慎使用第三方脚本">3，谨慎使用第三方脚本</h4>
+<br />
+<h4 id="4使用vps托管服务">4，使用VPS托管服务</h4>
+<br />
+<h4 id="5使用cdn">5，使用CDN</h4>
+<br />
+<h4 id="6延迟javascript加载">6，延迟JavaScript加载</h4>
+<p>资料：<a href="https://flaviocopes.com/javascript-async-defer/">how to efficiently load JavaScript with <em>defer</em></a>.</p>
+<p>使用defer属性：</p>
+<pre><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<br />
+<h4 id="7利用浏览器缓存">7，利用浏览器缓存</h4>
+<p>资料：<a href="https://www.hostinger.com/tutorials/website/improving-website-performance-leveraging-browser-cache#Leveraging_Browser_Cache_Using_htaccess">enable browser caching from your .htaccess file by setting an expiration date for your assets</a>.</p>
+<p>告诉浏览器要保存缓存的方式<br>
+<br /></p>
+<h4 id="8使用懒加载lazy-loading">8，使用懒加载（lazy loading）</h4>
+<p>资料： <a href="https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/">five more ways to implement lazy loading</a></p>
+<pre><code>&lt;img src=”myimage.jpg” loading=”lazy” alt=”…” /&gt;
+&lt;iframe src=”content.html” loading=”lazy”&gt;&lt;/iframe&gt;
+</code></pre>
+<br />
+待续。。。]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[[推荐](持续更新)Interesting Blog！]]></title>
