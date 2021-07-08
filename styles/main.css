@@ -12,7 +12,7 @@ body {
 a:not([class]) {
   border-bottom-style: solid;
   border-bottom-width: 0.2rem;
-  color: #0f61ff;
+  color: #86B4EE;
   text-decoration: none;
   transition: all 0.3s ease 0s;
   border-color: rgba(15, 97, 255, 0.1);
@@ -22,7 +22,7 @@ a:not([class]):hover {
 }
 @media (prefers-color-scheme: dark) {
   a:not([class]) {
-    color: #81a5f8;
+    color: #86B4EE;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -32,10 +32,10 @@ a:not([class]):hover {
   }
 }
 .yellow-btn {
-  box-shadow: rgba(255, 214, 2, 0.6) 0px 6px 12px 0px;
+  box-shadow: rgba(146, 172, 209, 0.6) 0px 6px 12px 0px;
 }
 .yellow-btn:hover {
-  box-shadow: rgba(255, 214, 2, 0.6) 0px 2px 4px 0px;
+  box-shadow: rgba(146, 172, 209, 0.6) 0px 2px 4px 0px;
 }
 @media (prefers-color-scheme: dark) {
   .yellow-btn {
@@ -120,8 +120,29 @@ a:not([class]):hover {
         }
       }
     
-      body{color: #E2E8F0;} 
+      body {color: #E2E8F0;background:rgb(33, 37, 43)!important;}
+.btn {color: #253F63; background-color: rgb(146, 172, 209);}
+.dark\:bg-yellow-50 {color: #253F63; background-color: rgb(146, 172, 209);}
+.dark\:hover\:bg-black:hover{background-color: #253F63;}
+.markdown>pre {background-color: rgb(33, 37, 43);
+  padding: 4px;
+  margin: 0px 0px 0px 0px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  font-size: 0.9em; margin-top: 15px;
+  margin-bottom: 15px;}
+*, ::after, ::before {border-radius: .30rem;}
 @media screen and (max-width: 1000px) {
                   body{color: black;}
+                  .btn {color: #253F63; background-color: rgb(146, 172, 209);}
+                  .dark\:bg-yellow-50 {color: #253F63; background-color: rgb(146, 172, 209);}
+                  .dark\:hover\:bg-black:hover{background-color: #253F63;}
+                 .markdown>pre {background-color: rgb(33, 37, 43);
+                      padding: 4px;
+                      margin: 0px 0px 0px 0px; 
+                      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+                      font-size: 0.9em; margin-top: 15px;
+                      margin-bottom: 15px;}
+                  *, ::after, ::before {border-radius: .30rem;}
+                 @media (min-width:768px){.markdown pre{margin-left: .1rem!important;margin-right: .1rem!important}}
 		}
     

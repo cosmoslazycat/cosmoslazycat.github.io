@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的小宇宙</title>
-    <updated>2021-07-08T05:30:47.336Z</updated>
+    <updated>2021-07-08T08:25:52.396Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -150,7 +150,7 @@ WEBP</p>
         <id>https://cosmoslazycat.github.io/post/chang-jian-de-css/</id>
         <link href="https://cosmoslazycat.github.io/post/chang-jian-de-css/">
         </link>
-        <updated>2021-06-25T15:37:36.000Z</updated>
+        <updated>2021-06-22T15:37:36.000Z</updated>
         <content type="html"><![CDATA[<p>边框内圆角<br>
 code</p>
 <pre><code>//HTML
@@ -195,32 +195,11 @@ code</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[[技巧]如何写好一篇英语技术文章]]></title>
-        <id>https://cosmoslazycat.github.io/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/</id>
-        <link href="https://cosmoslazycat.github.io/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/">
-        </link>
-        <updated>2021-06-25T08:31:59.000Z</updated>
-        <content type="html"><![CDATA[<p>开始写成功一半</p>
-<p>文章生产：提出问题 - 解决问题</p>
-<p>问题来源<br>
-Stackoverflow<br>
-Google<br>
-quora<br>
-Twitter</p>
-<p>1，细分领域：前端开发<br>
-2，文章主题</p>
-<p>当你刚开始写的时候，很多语句会不知道表达，不要着急，慢慢写就好了，就好像小朋友学说话，说着说着就流利了。</p>
-<p>常用工具<br>
-https://ludwig.guru/ https://linggle.com/ 这两个工具可以在弄不清楚句子短语如何写的时候帮助你。<br>
-https://app.grammarly.com/ 这个可以查找纠正语法错误，错别字，一般可以在文章的Review阶段使用它。</p>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[[翻译]你的设计准则是什么？]]></title>
         <id>https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
         <link href="https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
         </link>
-        <updated>2021-06-21T13:42:30.000Z</updated>
+        <updated>2021-06-22T13:42:30.000Z</updated>
         <content type="html"><![CDATA[<p>一路走来，我学到了一些在设计和商业上经得起时间考验的东西</p>
 <p>我的设计生涯（如果我可以这么说的话）现在已经跨越了数十年。在90年代的某个时候，我为一个朋友的乐队创作了一张7英寸的唱片，我认为这是一个合适的设计。21世纪初，我开始设计网站。到2000年代末，我开始打造品牌。在2010年，我正在发展一项业务，并学习战略和过程的力量。随着我们进入2020年代，我正在利用我过去几十年所学到的知识，成长为一个更加独立的个体，探索新事物，并寻找设计职业给我带来的相邻的可能性ーー就像写这篇文章一样。</p>
 <p>下面的准则并不是普遍性真理，但它们是我学到的最重要的一些东西。我希望它们可以帮助你的创作之旅。</p>
@@ -284,6 +263,27 @@ Workflow:<br>
 * 6. 完成后处理一下各种消息，休息一下，开始下一个任务</p>
 <p>Tips:<br>
 * 1. 慢慢提升自己的专注时间，可对此进行对比统计</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[技巧]如何写好一篇英语技术文章]]></title>
+        <id>https://cosmoslazycat.github.io/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/</id>
+        <link href="https://cosmoslazycat.github.io/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/">
+        </link>
+        <updated>2021-06-21T08:31:59.000Z</updated>
+        <content type="html"><![CDATA[<p>开始写成功一半</p>
+<p>文章生产：提出问题 - 解决问题</p>
+<p>问题来源<br>
+Stackoverflow<br>
+Google<br>
+quora<br>
+Twitter</p>
+<p>1，细分领域：前端开发<br>
+2，文章主题</p>
+<p>当你刚开始写的时候，很多语句会不知道表达，不要着急，慢慢写就好了，就好像小朋友学说话，说着说着就流利了。</p>
+<p>常用工具<br>
+https://ludwig.guru/ https://linggle.com/ 这两个工具可以在弄不清楚句子短语如何写的时候帮助你。<br>
+https://app.grammarly.com/ 这个可以查找纠正语法错误，错别字，一般可以在文章的Review阶段使用它。</p>
 ]]></content>
     </entry>
     <entry>
