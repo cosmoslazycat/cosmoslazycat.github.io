@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://cosmoslazycat.github.io</id>
+    <id>http://localhost:4000</id>
     <title>CosmosLazyCat的小宇宙</title>
-    <updated>2021-07-08T09:13:37.315Z</updated>
+    <updated>2021-07-08T09:15:33.924Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://cosmoslazycat.github.io"/>
-    <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>Man Always Remember Love Because Of Romance Only</subtitle>
-    <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
-    <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的小宇宙</rights>
     <entry>
         <title type="html"><![CDATA[[blog]如何提升网站页面加载速度]]></title>
-        <id>https://cosmoslazycat.github.io/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/</id>
-        <link href="https://cosmoslazycat.github.io/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/">
+        <id>http://localhost:4000/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/</id>
+        <link href="http://localhost:4000/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/">
         </link>
         <updated>2021-07-08T03:04:25.000Z</updated>
         <content type="html"><![CDATA[<h3 id="一-测试网站速度">一、测试网站速度</h3>
@@ -82,8 +82,8 @@ WEBP</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[[推荐](持续更新)Interesting Blog！]]></title>
-        <id>https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/</id>
-        <link href="https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/">
+        <id>http://localhost:4000/post/tui-jian-interesting-blog/</id>
+        <link href="http://localhost:4000/post/tui-jian-interesting-blog/">
         </link>
         <updated>2021-07-02T09:43:19.000Z</updated>
         <content type="html"><![CDATA[<h3 id="blog">BLOG</h3>
@@ -98,8 +98,8 @@ WEBP</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[[翻译]如何努力工作]]></title>
-        <id>https://cosmoslazycat.github.io/post/fan-yi-ru-he-nu-li-gong-zuo/</id>
-        <link href="https://cosmoslazycat.github.io/post/fan-yi-ru-he-nu-li-gong-zuo/">
+        <id>http://localhost:4000/post/fan-yi-ru-he-nu-li-gong-zuo/</id>
+        <link href="http://localhost:4000/post/fan-yi-ru-he-nu-li-gong-zuo/">
         </link>
         <updated>2021-07-01T12:11:31.000Z</updated>
         <content type="html"><![CDATA[<p>原文: <a href="http://paulgraham.com/hwh.html">How To Work</a><br>
@@ -147,8 +147,8 @@ WEBP</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[[blog]常见的css]]></title>
-        <id>https://cosmoslazycat.github.io/post/chang-jian-de-css/</id>
-        <link href="https://cosmoslazycat.github.io/post/chang-jian-de-css/">
+        <id>http://localhost:4000/post/chang-jian-de-css/</id>
+        <link href="http://localhost:4000/post/chang-jian-de-css/">
         </link>
         <updated>2021-06-22T15:37:36.000Z</updated>
         <content type="html"><![CDATA[<p>边框内圆角<br>
@@ -169,7 +169,7 @@ code</p>
 }
 </code></pre>
 <p>review (<a href="https://codepen.io/cosmoslazycat/pen/VwpogoW">点此查看详细信息</a>)</p>
-<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1624637131011.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1624637131011.png" alt="" loading="lazy"></figure>
 <p>code</p>
 <pre><code>// HTML
 &lt;div class=&quot;elemt&quot;&gt;&lt;/div&gt;
@@ -196,8 +196,8 @@ code</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[[翻译]你的设计准则是什么？]]></title>
-        <id>https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
-        <link href="https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
+        <id>http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
+        <link href="http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
         </link>
         <updated>2021-06-22T13:42:30.000Z</updated>
         <content type="html"><![CDATA[<p>一路走来，我学到了一些在设计和商业上经得起时间考验的东西</p>
@@ -249,8 +249,8 @@ code</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[[Time Management]Time Boxing]]></title>
-        <id>https://cosmoslazycat.github.io/post/time-boxing/</id>
-        <link href="https://cosmoslazycat.github.io/post/time-boxing/">
+        <id>http://localhost:4000/post/time-boxing/</id>
+        <link href="http://localhost:4000/post/time-boxing/">
         </link>
         <updated>2021-06-21T13:00:21.000Z</updated>
         <content type="html"><![CDATA[<p>最近觉得自己的注意力挺分散的，搜索一圈之后，决定实践一下[Time Boxing]<br>
@@ -267,8 +267,8 @@ Workflow:<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[[技巧]如何写好一篇英语技术文章]]></title>
-        <id>https://cosmoslazycat.github.io/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/</id>
-        <link href="https://cosmoslazycat.github.io/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/">
+        <id>http://localhost:4000/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/</id>
+        <link href="http://localhost:4000/post/ru-he-xie-hao-yi-pian-ying-yu-ji-zhu-wen-zhang/">
         </link>
         <updated>2021-06-21T08:31:59.000Z</updated>
         <content type="html"><![CDATA[<p>开始写成功一半</p>
@@ -288,8 +288,8 @@ https://app.grammarly.com/ 这个可以查找纠正语法错误，错别字，�
     </entry>
     <entry>
         <title type="html"><![CDATA[开始使用Gridea写博客]]></title>
-        <id>https://cosmoslazycat.github.io/post/kai-shi-shi-yong-gridea-xie-bo-ke/</id>
-        <link href="https://cosmoslazycat.github.io/post/kai-shi-shi-yong-gridea-xie-bo-ke/">
+        <id>http://localhost:4000/post/kai-shi-shi-yong-gridea-xie-bo-ke/</id>
+        <link href="http://localhost:4000/post/kai-shi-shi-yong-gridea-xie-bo-ke/">
         </link>
         <updated>2021-06-20T13:36:27.000Z</updated>
         <content type="html"><![CDATA[<p>Gridea是我偶然在Twitter上看到的，看了一下感觉还不错，而且还是开源的（https://github.com/getgridea/gridea），于是就在GitHub Page上部署起来，把以前的一些文章都放上来。目前用起来还不错。</p>
@@ -297,15 +297,15 @@ https://app.grammarly.com/ 这个可以查找纠正语法错误，错别字，�
 <p>Gridea小目标：<br>
 1，改动Gridea的代码引用显示<br>
 从<br>
-<img src="https://cosmoslazycat.github.io/post-images/1625309851403.png" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1625309851403.png" alt="" loading="lazy"><br>
 改成<br>
-<img src="https://cosmoslazycat.github.io/post-images/1625309860570.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1625309860570.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://cosmoslazycat.github.io/post/hello-gridea/</id>
-        <link href="https://cosmoslazycat.github.io/post/hello-gridea/">
+        <id>http://localhost:4000/post/hello-gridea/</id>
+        <link href="http://localhost:4000/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
