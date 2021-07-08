@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的小宇宙</title>
-    <updated>2021-07-08T03:22:46.190Z</updated>
+    <updated>2021-07-08T04:49:59.395Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的小宇宙</rights>
     <entry>
-        <title type="html"><![CDATA[如何提升网站页面加载速度]]></title>
+        <title type="html"><![CDATA[[blog]如何提升网站页面加载速度]]></title>
         <id>https://cosmoslazycat.github.io/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/</id>
         <link href="https://cosmoslazycat.github.io/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/">
         </link>
@@ -146,7 +146,7 @@ WEBP</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[常见的css]]></title>
+        <title type="html"><![CDATA[[blog]常见的css]]></title>
         <id>https://cosmoslazycat.github.io/post/chang-jian-de-css/</id>
         <link href="https://cosmoslazycat.github.io/post/chang-jian-de-css/">
         </link>
@@ -269,7 +269,7 @@ https://app.grammarly.com/ 这个可以查找纠正语法错误，错别字，�
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Time Boxing]]></title>
+        <title type="html"><![CDATA[[Time Management]Time Boxing]]></title>
         <id>https://cosmoslazycat.github.io/post/time-boxing/</id>
         <link href="https://cosmoslazycat.github.io/post/time-boxing/">
         </link>
