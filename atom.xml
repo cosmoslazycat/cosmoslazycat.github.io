@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
-    <title>CosmosLazyCat的小宇宙</title>
-    <updated>2021-07-08T13:31:30.489Z</updated>
+    <title>CosmosLazyCat的实验室</title>
+    <updated>2021-07-08T13:34:04.252Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
     <subtitle>Man Always Remember Love Because Of Romance Only</subtitle>
     <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, CosmosLazyCat的小宇宙</rights>
+    <rights>All rights reserved 2021, CosmosLazyCat的实验室</rights>
     <entry>
         <title type="html"><![CDATA[[blog]如何提升网站页面加载速度]]></title>
         <id>https://cosmoslazycat.github.io/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/</id>
