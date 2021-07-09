@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的实验室</title>
-    <updated>2021-07-08T13:39:17.628Z</updated>
+    <updated>2021-07-09T06:29:15.951Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -10,6 +10,162 @@
     <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的实验室</rights>
+    <entry>
+        <title type="html"><![CDATA[[CSS]flex布局]]></title>
+        <id>https://cosmoslazycat.github.io/post/cssflex-bu-ju/</id>
+        <link href="https://cosmoslazycat.github.io/post/cssflex-bu-ju/">
+        </link>
+        <updated>2021-07-09T06:24:12.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="一-创建flex布局">一、创建flex布局</h2>
+<h3 id="1-区别">1, 区别</h3>
+<p>div（块状元素）</p>
+<pre><code>display:flex;
+</code></pre>
+<p>span（内联元素)</p>
+<pre><code>display:inline-flex;
+</code></pre>
+<h3 id="2作用区域">2，作用区域</h3>
+<table>
+<thead>
+<tr>
+<th>作用在flex容器(container)</th>
+<th>作用在flex子项(item)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flex-direction</td>
+<td>order</td>
+</tr>
+<tr>
+<td>flex-wrap</td>
+<td>flex-grow</td>
+</tr>
+<tr>
+<td>flex-flow</td>
+<td>flex-shrink</td>
+</tr>
+<tr>
+<td>justify-content</td>
+<td>flex-basis</td>
+</tr>
+<tr>
+<td>align-item</td>
+<td>flex</td>
+</tr>
+<tr>
+<td>align-content</td>
+<td>align-self</td>
+</tr>
+</tbody>
+</table>
+<h2 id="二-详细">二、详细</h2>
+<h3 id="作用在flex容器上的属性">作用在flex容器上的属性</h3>
+<h4 id="1flex-direction">1，flex-direction</h4>
+<p>row和row-reverse<br>
+column和column-reverse<br>
+<img src="https://cosmoslazycat.github.io/post-images/1625811948582.svg" alt="" loading="lazy"></p>
+<p>2，flex-wrap<br>
+<img src="https://cosmoslazycat.github.io/post-images/1625811974514.svg" alt="" loading="lazy"></p>
+<pre><code>.container {
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+</code></pre>
+<h4 id="3flex-flow">3，flex-flow</h4>
+<pre><code>.container {
+  flex-flow: column wrap;
+}
+</code></pre>
+<h4 id="4justify-content">4，justify-content</h4>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625811996366.svg" alt="" loading="lazy"></figure>
+<pre><code>.container {
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+}
+</code></pre>
+<h4 id="5-align-items">5, align-items</h4>
+<figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625812008548.svg" alt="" loading="lazy"></figure>
+<pre><code>.container {
+  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+}
+</code></pre>
+<h4 id="6-align-content">6, align-content</h4>
+<figure data-type="image" tabindex="3"><img src="https://cosmoslazycat.github.io/post-images/1625812021771.svg" alt="" loading="lazy"></figure>
+<pre><code>.container {
+  align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+}
+</code></pre>
+<h3 id="作用在flex子项item上的属性">作用在flex子项(item)上的属性</h3>
+<h4 id="1-order">1. order</h4>
+<figure data-type="image" tabindex="4"><img src="https://cosmoslazycat.github.io/post-images/1625812032539.svg" alt="" loading="lazy"></figure>
+<pre><code class="language-css">.item {
+  order: 5; /* 默认值为 0 */
+}
+</code></pre>
+<h4 id="2-flex-grow">2. flex-grow</h4>
+<figure data-type="image" tabindex="5"><img src="https://cosmoslazycat.github.io/post-images/1625812042359.svg" alt="" loading="lazy"></figure>
+<pre><code class="language-css">.item {
+  flex-grow: 4; /* default 0 */
+}
+</code></pre>
+<h4 id="3-flex-shrink">3. flex-shrink</h4>
+<pre><code class="language-css">.item {
+  flex-shrink: 3; /* default 1 */
+}
+</code></pre>
+<h4 id="4-flex-basis">4. flex-basis</h4>
+<pre><code class="language-css">.item {
+  flex-basis:  | auto; /* 默认值为 auto */
+}
+</code></pre>
+<h4 id="5-flex">5. flex</h4>
+<pre><code class="language-css">.item {
+  flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
+}
+</code></pre>
+<h4 id="6-align-self">6. align-self</h4>
+<figure data-type="image" tabindex="6"><img src="https://cosmoslazycat.github.io/post-images/1625812062868.svg" alt="" loading="lazy"></figure>
+<pre><code>.item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+</code></pre>
+<h3 id="三-实际运用">三、实际运用</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[CSS]css实现禁止用户拖拽元素]]></title>
+        <id>https://cosmoslazycat.github.io/post/csscss-shi-xian-jin-zhi-yong-hu-tuo-zhuai-yuan-su/</id>
+        <link href="https://cosmoslazycat.github.io/post/csscss-shi-xian-jin-zhi-yong-hu-tuo-zhuai-yuan-su/">
+        </link>
+        <updated>2021-06-23T23:16:08.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-用户行为相关属性">一、用户行为相关属性</h3>
+<p><code>user-select</code></p>
+<p><code>user-modefy</code></p>
+<p><code>user-drag</code></p>
+<h3 id="二-示例">二、示例</h3>
+<h4 id="1通过user-drag限制用户拖拽元素">1，通过user-drag限制用户拖拽元素</h4>
+<p>HTML</p>
+<pre><code>&lt;img src=&quot;xxx.jpg&quot; class=&quot;user-drag&quot;&gt;
+</code></pre>
+<p>CSS</p>
+<pre><code>.user-drag {
+	-webkit-user-drag: none;
+}
+</code></pre>
+<h5 id="兼容性httpscaniusecomsearch-webkit-user-drag">兼容性（https://caniuse.com/?search=-webkit-user-drag）</h5>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625786453666.png" alt="" loading="lazy"></figure>
+<p>解读：IE不支持，chrome仅支持部分功能，移动端不支持</p>
+<h4 id="2html-draggable属性">2，HTML <code>draggable</code>属性</h4>
+<pre><code>&lt;img src=&quot;xxx.jpg&quot; draggable=&quot;true&quot;&gt;  // 可拖拽
+
+&lt;img src=&quot;xxx.jpg&quot; draggable=&quot;false&quot;&gt;  //不可拖拽
+</code></pre>
+<h5 id="兼容性">兼容性</h5>
+<figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625786294969.png" alt="" loading="lazy"></figure>
+<p>解读：兼容性优秀，移动端全部支持，IE10-11浏览器也支持</p>
+<h3 id="总结">总结</h3>
+<p>在处理禁止用户使用拖拽的场景时，优先使用HTML<code>draggable</code></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[推荐](持续更新)Interesting Blog！]]></title>
         <id>https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/</id>
