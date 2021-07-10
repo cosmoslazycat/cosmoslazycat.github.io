@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的实验室</title>
-    <updated>2021-07-10T06:16:35.726Z</updated>
+    <updated>2021-07-10T06:43:54.596Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -16,7 +16,7 @@
         <link href="https://cosmoslazycat.github.io/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/">
         </link>
         <updated>2021-06-25T05:46:49.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="https://twitter.com/laixintao/status/1402663872561958915?s=20">https://twitter.com/laixintao/status/1402663872561958915?s=20</a></p>
+        <content type="html"><![CDATA[<p>原文：<a href="https://twitter.com/laixintao/status/1402663872561958915?s=20">https://twitter.com/laixintao/status/1402663872561958915?s=20</a></p>
 <p>小时候喜欢哈利波特，后来觉得学习计算机就像在学习魔法一样。</p>
 <ul>
 <li>魔咒学 - 计算机组成原理和体系结构</li>
@@ -46,8 +46,8 @@
 3，只做有双方背书的书面授权的安全测试</p>
 <p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
 <p>一、Saltstack 任意文件写入漏洞<br>
-1，说明：saltstack (<a href="http://www.saltstack.com">http://www.saltstack.com</a>) 是一个使用python开发的一款服务器基础架构集中化管理平台,开始于2011年的一个项目,具备配置和管理、远程执行、监控等功能。</p>
-<p>2，漏洞信息：saltstack在后台的一些配置文件修改编辑等处，程序开发过程中将这些配置信息未做好过滤保存到了文件中，用户可以在文件中写入任意的内容.</p>
+1，说明：saltstack (<a href="http://www.saltstack.com">http://www.saltstack.com</a>) 是使用python开发的一款服务器基础架构集中化管理平台,开始于2011年,具备配置和管理、远程执行、监控等功能。</p>
+<p>2，漏洞信息：saltstack在后台的一些配置文件修改编辑等处，程序开发过程中将这些配置信息未做好过滤就保存到了文件中，导致攻击者可以在文件中写入任意的内容.</p>
 <p>3，防范手段:</p>
 <ul>
 <li>尽量避免在可执行文件中保存字符串内容。</li>
