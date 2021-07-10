@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的实验室</title>
-    <updated>2021-07-10T05:49:55.145Z</updated>
+    <updated>2021-07-10T05:54:31.018Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -29,8 +29,8 @@
 <li>变形学 - 数据库</li>
 <li>飞行课 - 操作系统</li>
 <li>咒语解析学 - 编译原理</li>
-<li>网络：猫头鹰</li>
-<li>编程语言：魔法杖</li>
+<li>猫头鹰：互联网</li>
+<li>魔法杖：编程语言</li>
 </ul>
 ]]></content>
     </entry>
