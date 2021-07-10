@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的实验室</title>
-    <updated>2021-07-10T05:58:26.439Z</updated>
+    <updated>2021-07-10T06:16:35.726Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -16,7 +16,7 @@
         <link href="https://cosmoslazycat.github.io/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/">
         </link>
         <updated>2021-06-25T05:46:49.000Z</updated>
-        <content type="html"><![CDATA[<p>https://twitter.com/laixintao/status/1402663872561958915?s=20</p>
+        <content type="html"><![CDATA[<p><a href="https://twitter.com/laixintao/status/1402663872561958915?s=20">https://twitter.com/laixintao/status/1402663872561958915?s=20</a></p>
 <p>小时候喜欢哈利波特，后来觉得学习计算机就像在学习魔法一样。</p>
 <ul>
 <li>魔咒学 - 计算机组成原理和体系结构</li>
@@ -46,7 +46,7 @@
 3，只做有双方背书的书面授权的安全测试</p>
 <p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
 <p>一、Saltstack 任意文件写入漏洞<br>
-1，说明：saltstack (http://www.saltstack.com) 是一个使用python开发的一款服务器基础架构集中化管理平台,开始于2011年的一个项目,具备配置和管理、远程执行、监控等功能。</p>
+1，说明：saltstack (<a href="http://www.saltstack.com">http://www.saltstack.com</a>) 是一个使用python开发的一款服务器基础架构集中化管理平台,开始于2011年的一个项目,具备配置和管理、远程执行、监控等功能。</p>
 <p>2，漏洞信息：saltstack在后台的一些配置文件修改编辑等处，程序开发过程中将这些配置信息未做好过滤保存到了文件中，用户可以在文件中写入任意的内容.</p>
 <p>3，防范手段:</p>
 <ul>
@@ -149,7 +149,7 @@
         <link href="https://cosmoslazycat.github.io/post/bloggridea-zhu-ti-xiu-gai/">
         </link>
         <updated>2021-06-24T06:39:21.000Z</updated>
-        <content type="html"><![CDATA[<p>作者原主题购买： https://mianbaoduo.com/o/bread/YpWYlJ0=</p>
+        <content type="html"><![CDATA[<p>作者原主题购买： <a href="https://mianbaoduo.com/o/bread/YpWYlJ0=">https://mianbaoduo.com/o/bread/YpWYlJ0=</a></p>
 <h2 id="一-改动前">一、改动前</h2>
 <figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625812792694.png" alt="" loading="lazy"></figure>
 <figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625812811980.png" alt="" loading="lazy"></figure>
@@ -305,7 +305,7 @@ column和column-reverse<br>
 	-webkit-user-drag: none;
 }
 </code></pre>
-<h5 id="兼容性httpscaniusecomsearch-webkit-user-drag">兼容性（https://caniuse.com/?search=-webkit-user-drag）</h5>
+<h5 id="兼容性httpscaniusecomsearch-webkit-user-drag">兼容性（<a href="https://caniuse.com/?search=-webkit-user-drag">https://caniuse.com/?search=-webkit-user-drag</a>）</h5>
 <figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625786453666.png" alt="" loading="lazy"></figure>
 <p>解读：IE不支持，chrome仅支持部分功能，移动端不支持</p>
 <h4 id="2html-draggable属性">2，HTML <code>draggable</code>属性</h4>
@@ -377,8 +377,8 @@ WEBP</p>
 <h4 id="2javascript和css引用min版">2，JavaScript和css引用min版</h4>
 <p>资源：</p>
 <ul>
-<li>https://cssminifier.com/</li>
-<li>https://javascript-minifier.com/</li>
+<li><a href="https://cssminifier.com/">https://cssminifier.com/</a></li>
+<li><a href="https://javascript-minifier.com/">https://javascript-minifier.com/</a></li>
 </ul>
 <p>还可以通过使用<a href="https://gtmetrix.com/enable-text-compression.html#how-to-enable-text-compression">enable Gzip compression</a> 进一步缩小引用文件的大小<br>
 <br /></p>
