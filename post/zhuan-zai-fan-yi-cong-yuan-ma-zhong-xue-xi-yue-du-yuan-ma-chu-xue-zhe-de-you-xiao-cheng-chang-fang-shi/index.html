@@ -1,0 +1,372 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>[转载][翻译]从源码中学习（阅读源码，初学者的有效成长方式） - CosmosLazyCat的实验室</title>
+<link rel="shortcut icon" href="https://cosmoslazycat.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://cosmoslazycat.github.io/media/css/tailwind.css">
+<link rel="stylesheet" href="https://cosmoslazycat.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="[转载][翻译]从源码中学习（阅读源码，初学者的有效成长方式） - CosmosLazyCat的实验室 - Atom Feed" href="https://cosmoslazycat.github.io/atom.xml">
+
+    
+
+  <meta name="description" content="原文： Learn from Source Code (an Effective Way to Grow for Beginners) ，原作者为Nick Mose 。
+前言
+上周我在和一位年轻程序员聊天时，他问到我：“如何阅读源码？”，我..." />
+  <meta property="og:title" content="[转载][翻译]从源码中学习（阅读源码，初学者的有效成长方式） - CosmosLazyCat的实验室">
+  <meta property="og:description" content="原文： Learn from Source Code (an Effective Way to Grow for Beginners) ，原作者为Nick Mose 。
+前言
+上周我在和一位年轻程序员聊天时，他问到我：“如何阅读源码？”，我..." />
+  <meta property="og:type" content="articles">
+  <meta property="og:url" content="https://cosmoslazycat.github.io/post/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi/" />
+  <meta property="og:image" content="https://cosmoslazycat.github.io/post-images/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi.jpg">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200">
+  <meta name="twitter:title" content="[转载][翻译]从源码中学习（阅读源码，初学者的有效成长方式） - CosmosLazyCat的实验室">
+  <meta name="twitter:description" content="原文： Learn from Source Code (an Effective Way to Grow for Beginners) ，原作者为Nick Mose 。
+前言
+上周我在和一位年轻程序员聊天时，他问到我：“如何阅读源码？”，我...">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://cosmoslazycat.github.io/post/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi/">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+ 
+  
+
+  
+</head>
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <a href="https://cosmoslazycat.github.io" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
+      CosmosLazyCat的实验室
+    </a>
+    <div class="max-w-4xl w-full mx-auto">
+      <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
+        <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
+          [转载][翻译]从源码中学习（阅读源码，初学者的有效成长方式）
+        </h1>
+        
+          <img src="https://cosmoslazycat.github.io/post-images/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi.jpg" alt="[转载][翻译]从源码中学习（阅读源码，初学者的有效成长方式）" class="block w-full mb-8">
+        
+        <div class="mb-8 flex flex-wrap">
+          <div class="text-gray-400 text-sm mr-4">2021-06-26 · 13 min read</div>
+          
+            <a href="https://cosmoslazycat.github.io/tag/Reio_YQ4p/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
+              <i class="ri-hashtag"></i>
+              转载
+            </a>
+          
+            <a href="https://cosmoslazycat.github.io/tag/73dR1-PuSM/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
+              <i class="ri-hashtag"></i>
+              学习技巧
+            </a>
+          
+            <a href="https://cosmoslazycat.github.io/tag/7p7EOqQy0/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
+              <i class="ri-hashtag"></i>
+              share
+            </a>
+          
+        </div>
+        <div class="markdown mb-8" v-pre>
+          <p>原文： <a href="https://coderscat.com/learn-from-source-code/">Learn from Source Code (an Effective Way to Grow for Beginners)</a> ，原作者为Nick Mose 。</p>
+<h2 id="前言">前言</h2>
+<p>上周我在和一位年轻程序员聊天时，他问到我：“如何阅读源码？”，我们讨论了一段时间，我还列举了几种有效阅读源码的方式。 然后他说：“你应该就这个话题写篇文章，这对初学者很有帮助，而且这种经验无法从书籍和教程中获得。” 那么开始吧，下面是我关于阅读源码的小技巧。</p>
+<h2 id="为什么我们需要读源码">为什么我们需要读源码</h2>
+<p>我们程序员每天都要和源码打交道。经过数年的学习，大多数程序员可以“写”代码，或者至少是拷贝并修改代码。 而且，我们教授编程的方式强调编写代码的艺术，而不是如何阅读代码。 当我说“阅读代码”，我是指有意地专门阅读代码。</p>
+<p>众所周知，编程和写作有诸多相同之处。 唐纳德·克努特甚至引入了文学编程(literate programming) 编程范式。 编程与写作有相同的理念：表达我们的想法 。 还记得你在学校是怎么学习写作的吗？我们的写作能力来源于从小学开始直到现在的大量的文本阅读。 多年以来，我们阅读了不同难度的伟大作家的作品，并练习了多种写作技巧。</p>
+<p>“如果你没时间读，你就没时间（或工具）写，就这么简单。” —— 斯蒂芬·金，《写作这回事：创作生涯回忆录》</p>
+<p>正如斯蒂芬·金所观察到的那样，一个作家必须广泛而频繁地阅读，才能形成自己的声音， 并学会写出促使读者拿起书并痴读的句式和故事结构。 和读书一样，有意地阅读代码可以帮助程序员加速成长，尤其是对中级(intermediate)程序员而言。 这样做有三个好处。</p>
+<h3 id="站在巨人的肩膀上">站在巨人的肩膀上</h3>
+<p>我们从他人身上学习。优秀的源代码就像文学杰作，它不仅仅只提供了知识和信息，还提供了启迪。</p>
+<p>通过浏览Linux内核、Redis、Nginx、Rails或其他著名项目， 你可以从全球范围的成千上万的顶级程序员那里汲取智慧。 在这些项目中可以找到无数的良好编程示例、编程范式选择、设计和架构。 向他人学习的另一个好处是能够避免常见的坑，大多数坑早已被他人踩过。</p>
+<h3 id="解决困难问题">解决困难问题</h3>
+<p>在你的职业生涯中，你终将会碰到谷歌都无法解决的问题。 如果你还没碰到过这种问题，这只是因为你编程的时间还不足够长 😃。 阅读源码是调查这类问题的好方法，也是学习新东西的好机会。</p>
+<h3 id="扩展你的边界">扩展你的边界</h3>
+<p>大多数程序员只在少数特别领域编过程。 一般而言，如果你不时常推自己一把，你的编程技能会维持在你同事间的平均水平。 不要满足于修补bug或在现有系统中添加琐碎特性的工作。 相反，你可以试着扩展到一个新的领域，持续尝试找到一个你在日常工作中接触不到、但你感兴趣的领域。 这将从整体上拓宽你对编程的理解。</p>
+<h2 id="应该读什么样的源码">应该读什么样的源码</h2>
+<p>综上，阅读源码是有益的。 那么下一个问题，有这么多优秀作品可供选择，我们该选择并阅读什么样的源码呢？ 你必须从选择目标开始。如果不在这个步骤上下点功夫，你从源码中学习的效果就会打折扣。 这里有一些典型场景：</p>
+<p>当你想学习一门新语言。学新语言可不只是学会语法 。 不管怎样，阅读源码是一个非常有效的学习新语言的方式。我从rust-rosetta 项目中学到了很多Rust语言知识。Rosetta Code 是一个收集同一批通用任务在不同语言上的解决方案的项目，这是一个可用来学习新语言的有用资源。</p>
+<p>当你想了解一个特殊的算法或实现。 例如，我们都会使用标准库中的sort函数，你有没有好奇过它是怎么实现的？ 或者当你要使用Redis中的Set结构，它是用什么数据结构实现的？ 为了解决这些疑惑，你只需要读源码中与之相关的实现部分，通常只有很少的文件或函数。</p>
+<p>当你在特殊的框架中编程。这意味着你对该框架已经有了一定的经验， 这是个阅读一些框架本身的源码的好机会。 很显然，了解框架的源码有助于提高你对框架的理解。</p>
+<p>当你想拓展进入新的领域，你可以阅读这个领域的经典著名的项目的源码。 比如说，如果你在做Web开发的工作，你对分布式系统感兴趣吗？ 如果你的答案是“是”而且你懂Golang，也许etcd 是你的选择。你想钻研操作系统的内部构成吗？那么也许xv6 是一个好的开始。我们处在一个许多优秀开源项目都托管在了Github的好时代，请试着寻找一些这种项目。</p>
+<p>记住，选择与你当前的编程技能与知识水平相当的项目。 如果你选择了远超你当前技能水平的项目，最终你会感到沮丧。 读一些相对较小的项目，接着读更大的项目。 如果目前你不能理解某些特定的代码片段，这意味着你有个知识缺口(knowledge gap)。 把代码放到一边去，试着读一些相关的书、论文或其他文档，当你更有信心时再回来接着读代码。 我们总能在一个模式中取得进展：读（代码、书、论文），写，更多的读，更多的写。</p>
+<h2 id="如何读源码">如何读源码</h2>
+<p>《How to read a book》 是一本指导人进行明智地阅读的书。作为初学者，我们值得投入时间和精力去思考我们应该如何阅读代码。 阅读代码不是件容易的事。 光是阅读源码是不够的，你要试着去理解他人的设计和想法。</p>
+<h3 id="预先准备">预先准备</h3>
+<p>为了更有效率地阅读代码，你需要提前在手边准备这些东西：</p>
+<p>一个你可以熟练使用的编辑器。你需要拥有快速搜索关键字或变量名的能力。 有时你需要查找函数的引用和定义。和你的编辑器相处融洽些。 为了更加有效率，试着学习仅使用键盘操作编辑器。 这会使你专注于代码而不受打扰（译：指额外思考编辑器操作）。</p>
+<p>掌握基本的Git或其他版本控制工具的技能，这样你就能比较代码在版本间的差异。</p>
+<p>与源码有关的文档。文档可以为你的阅读提供参考，尤其是设计文档、编码规范等文档。</p>
+<p>具有一定的编程语言与设计模式的知识和经验。这对（阅读）大项目是强制性的。 如果你很了解一门编程语言，你也会了解关于源码组织与编程范式的最佳实践。 当然，这需要时间来积累。要有耐心。</p>
+<h3 id="流程与技巧">流程与技巧</h3>
+<p>阅读过程不是线性的。你不会就那么一个接一个地读源文件。 相反，大多数时候我们会从顶到底地阅读代码。 下面是一些更有效率阅读代码的小技巧：</p>
+<h4 id="结合上下文阅读代码">结合上下文阅读代码</h4>
+<p>当你阅读代码时，请持续提出问题。 例如，如果一个应用有缓存策略，一个好问题就是：如果键无效了会怎样？缓存中的值如何更新？ 带着这些问题阅读代码，就是结合上下文。或者说因为你有了一个目标，你会变得享受阅读的过程。 你甚至可以自己做一些假设，然后在代码中寻找验证。</p>
+<p>你有点像侦探：你想发现代码的真相，代码的逻辑，代码是如何像故事一般上下流动的。</p>
+<h4 id="把实例跑起来并与之交互">把实例跑起来并与之交互</h4>
+<p>源码就像乐高积木，只是已经组装好了。 如果你想了解它们是怎么组装在一起的，你需要和它交互，有时甚至要把它拆开。 阅读同一模块的老版本同样有帮助。从Git中阅读版本差异，试着弄清楚特定的特性是如何实现的 （修改日志在这个场景很有用）。 举个例子，我发现Lua的第一个版本相当简单，这可以帮助我了解作者最初的设计理念。</p>
+<p>Debug是另一种与代码交互的方式。试着在代码中加一些断点（或打印一些变量值）， 然后弄明白打印到控制台中的所有输出。</p>
+<p>如果你对代码了解比较透彻了，试着对代码做一些修改，重新build并把它跑起来。 最简单的方式是试着调整配置项，去看不同配置的运行结果。 之后你可以试着添加一些细微的特性。 如果这些特性对其他人也有用，你应该把代码贡献到上游。</p>
+<h4 id="了解数据结构间的关系">了解数据结构间的关系</h4>
+<p>“糟糕的程序员担心代码，优秀的程序员担心数据结构和它们的关系。” -Linus Torvalds</p>
+<p>数据结构是一个程序中最重要的元素。用笔或者你喜欢的其他工具画出数据结构间的关系。 这个图就是源码的映射。你会在阅读过程中时常参考这个图。一些工具比如scitools 可以用来生成UML类图。 （译：这个方法用在写代码中能节约翻Model声明文件的时间，推荐用纸笔，不占屏幕）</p>
+<h4 id="了解模块间的依赖关系与边界">了解模块间的依赖关系与边界</h4>
+<p>大项目中会包含许多模块，一个模块经常只拥有单一职责。 这有助于我们减少代码复杂度，在适当的层级上做抽象。 模块的接口是抽象的边界，我们可以一个接一个地阅读模块。 如果你在阅读一个使用Make构建的C/C++项目，Makefile是了解模块间如何组织的好切入点。</p>
+<p>边界本身也很有用。优秀的代码组织得很好，变量名与函数名的命名风格体现着可读性。 你不需要阅读全部源文件，你可以忽略不重要的或你熟悉的部分。 如果你确定一个模块是仅仅是为了被解析而设计的(just designed for parsing)， 那么你已经大致了解了它的功能；那么你就可以跳过不读这个模块。 当然，这将大大节约时间。</p>
+<h4 id="使用测试用例">使用测试用例</h4>
+<p>测试用例也是帮助代码理解的一个很好的补充。测试用例就是文档。 当你在阅读一个类时，试着把对应的测试代码一起读了。 测试用例能帮你弄清一个类的接口，和该类的典型用法。 集成测试用例可以让你顺着走过程序的整体流程，适合输入一些特殊值并debug运行。</p>
+<h4 id="点评">点评</h4>
+<p>为什么不在花了不少时间阅读一个项目后，写一篇代码点评呢？就像写一篇书评一样。 你可以写下代码中好的和不好的部分，还可以记下你从中学到了什么。 攥写这类文章可以帮助你阐明自己的理解，也有助于其他人阅读源码。</p>
+<h2 id="一些好书">一些好书</h2>
+<p>我发现阅读代码是一个远超我想象的广泛话题。没有系统性训练该技能的方法。 总而言之，不断练习，找到你自己的方式。下面是一些帮助你提升代码阅读能力的好书：</p>
+<ul>
+<li>《Design Patterns: Elements of Reusable Object-Oriented Software》</li>
+<li></li>
+<li>《Clean Architecture: A Craftsman’s Guide to Software Structure and Design》</li>
+<li></li>
+<li>《How to Read a Book: The Classic Guide to Intelligent Reading》</li>
+</ul>
+<p>啊哈，这本书对程序员也很有用。</p>
+<h2 id="译者的话">译者的话</h2>
+<p>这篇文章是为苦于不知从何开始阅读陌生项目代码的人（包括我）准备的。 截止撰文时间为止，我认为这篇文章是在同话题中较为务实的一篇， 不仅包含理念，还包含不少具体可实践的建议，因此我想把它分享给更多人。 而且我想如果它有中文版本，愿意读下去的人会多一些，我也方便向周围的人分享，于是我向Nic申请了翻译权。 我把标题改了改，这样搜索“源码”“学习”、“阅读源码”都能搜到。</p>
+<p>这篇文章对我而言，最大作用是帮我突破了“不需要有意地专门阅读代码”的心理障碍。 我一直以为既然“写代码的时间中十之六七都是花在读既有代码上”（语出《Clean Code》）， 就没必要再花时间专门读代码，我大错特错。</p>
+<p>个人经验：驱动我“专门读代码”的最大动机是好奇心，和小孩拆小物件为了看内部构造差不多。 学习OO设计模式，我建议阅读《Head First 设计模式》 ，这本书超有趣，比四人帮那本删减了一些不常用的模式，但是你能轻松读下去。</p>
+<p>阅读了解项目代码是参与（开源）项目的第一步，希望这篇文章能帮助你参与到心仪的项目中去。 这也可以帮助你在工作中了解同组同事的工作，而“了解同组同事的工作对工作有诸多潜在益处” 。 来吧，花点时间挑一个看上眼的项目（或者就读你手头的项目别人写的部分）， 找到你最感兴趣的功能，读一读它是怎么实现的。</p>
+
+        </div>
+        <!-- Share to Twitter, Weibo, Telegram -->
+        <div class="flex items-center">
+          <div class="mr-4 flex items-center">
+            <i class="ri-share-forward-line text-gray-500"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTwitter">
+            <i class="ri-twitter-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex" @click="shareToWeibo">
+            <i class="ri-weibo-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTelegram">
+            <i class="ri-telegram-line"></i>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</footer>
+    </div>
+
+    <!-- TOC Container -->
+    <div class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight" @click="showToc = true">
+      <i class="ri-file-list-line"></i>
+    </div>
+
+    <div class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast" :class="{ '-mr-64': !showToc }">
+      <div class="flex mb-4 justify-end">
+        <div class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast" @click="showToc = false">
+          <i class="ri-close-line text-lg"></i>
+        </div>
+      </div>
+      <div class="post-toc-container">
+        <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E8%AF%BB%E6%BA%90%E7%A0%81">为什么我们需要读源码</a>
+<ul>
+<li><a href="#%E7%AB%99%E5%9C%A8%E5%B7%A8%E4%BA%BA%E7%9A%84%E8%82%A9%E8%86%80%E4%B8%8A">站在巨人的肩膀上</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E5%9B%B0%E9%9A%BE%E9%97%AE%E9%A2%98">解决困难问题</a></li>
+<li><a href="#%E6%89%A9%E5%B1%95%E4%BD%A0%E7%9A%84%E8%BE%B9%E7%95%8C">扩展你的边界</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BA%94%E8%AF%A5%E8%AF%BB%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E6%BA%90%E7%A0%81">应该读什么样的源码</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E8%AF%BB%E6%BA%90%E7%A0%81">如何读源码</a>
+<ul>
+<li><a href="#%E9%A2%84%E5%85%88%E5%87%86%E5%A4%87">预先准备</a></li>
+<li><a href="#%E6%B5%81%E7%A8%8B%E4%B8%8E%E6%8A%80%E5%B7%A7">流程与技巧</a>
+<ul>
+<li><a href="#%E7%BB%93%E5%90%88%E4%B8%8A%E4%B8%8B%E6%96%87%E9%98%85%E8%AF%BB%E4%BB%A3%E7%A0%81">结合上下文阅读代码</a></li>
+<li><a href="#%E6%8A%8A%E5%AE%9E%E4%BE%8B%E8%B7%91%E8%B5%B7%E6%9D%A5%E5%B9%B6%E4%B8%8E%E4%B9%8B%E4%BA%A4%E4%BA%92">把实例跑起来并与之交互</a></li>
+<li><a href="#%E4%BA%86%E8%A7%A3%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB">了解数据结构间的关系</a></li>
+<li><a href="#%E4%BA%86%E8%A7%A3%E6%A8%A1%E5%9D%97%E9%97%B4%E7%9A%84%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E4%B8%8E%E8%BE%B9%E7%95%8C">了解模块间的依赖关系与边界</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B">使用测试用例</a></li>
+<li><a href="#%E7%82%B9%E8%AF%84">点评</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E4%B8%80%E4%BA%9B%E5%A5%BD%E4%B9%A6">一些好书</a></li>
+<li><a href="#%E8%AF%91%E8%80%85%E7%9A%84%E8%AF%9D">译者的话</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <div class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200" @click="backToUp" v-show="scrolled">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+  </div>
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe. 
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg">
+  </div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter">
+        </div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip">
+        </div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cosmoslazycat.github.io/media/scripts/main.js"></script>
+  
+  <!-- Code Highlight -->
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+  <script>
+    //拿到预览框架，也就是上面的html代码
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    //定义图片数组变量
+    var imgitems;
+    /**
+    * 用于显示预览界面
+    * @param index 图片数组下标
+    */
+    function viewImg(index) {
+      //其它选项这里不做过多阐述，详情见官网
+      var pswpoptions = {
+        index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+        bgOpacity: 0.7, // 背景透明度，0-1
+        maxSpreadZoom: 3, // 缩放级别，不要太大
+      };
+      //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgitems, pswpoptions);
+      gallery.init()
+    }
+    /**
+    * 用于添加图片点击事件
+    * @param img 图片元素
+    * @param index 所属下标（在imgitems中的位置）
+    */
+    function addImgClick(img, index) {
+      img.onclick = function() {
+        viewImg(index)
+      }
+    }
+    /**
+    * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+    * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+    * 异步加载图片可在图片元素创建完成后调用此方法
+    */
+    function initImg() {
+      //重置图片数组
+      imgitems = [];
+      //查找class:markdown 下的所有img元素并遍历
+      var imgs = document.querySelectorAll('.markdown img');
+      for (var i = 0; i < imgs.length; i++) {
+        var img = imgs[i];
+        //本站相册初始为loading图片，真实图片放在data-src
+        var ds = img.getAttribute("data-src");
+        //创建image对象，用于获取图片宽高
+        var imgtemp = new Image();
+        //判断是否存在data-src
+        if (ds != null && ds.length > 0) {
+          imgtemp.src = ds
+        } else {
+          imgtemp.src = img.src
+        }
+        //判断是否存在缓存
+        if (imgtemp.complete) {
+          var imgobj = {
+            "src": imgtemp.src,
+            "w": imgtemp.width,
+            "h": imgtemp.height,
+          };
+          imgitems[i] = imgobj;
+          addImgClick(img, i);
+        } else {
+          console.log('进来了2')
+          imgtemp.index = i;
+          imgtemp.img = img;
+          imgtemp.onload = function() {
+            var imgobj = {
+              "src": this.src,
+              "w": this.width,
+              "h": this.height,
+            };
+            //不要使用push，因为onload前后顺序会不同
+            imgitems[this.index] = imgobj
+            //添加点击事件
+            addImgClick(this.img, this.index);
+          }
+        }
+      }
+    }
+    //初始化
+    initImg();
+  </script>
+  
+  
+</body>
+
+</html>
