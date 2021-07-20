@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的实验室</title>
-    <updated>2021-07-20T06:08:56.476Z</updated>
+    <updated>2021-07-20T14:22:40.556Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的实验室</rights>
+    <entry>
+        <title type="html"><![CDATA[[推荐]城市路网生成工具！]]></title>
+        <id>https://cosmoslazycat.github.io/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/</id>
+        <link href="https://cosmoslazycat.github.io/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/">
+        </link>
+        <updated>2021-07-20T14:16:23.000Z</updated>
+        <content type="html"><![CDATA[<p>地址：https://anvaka.github.io/</p>
+<h3 id="特点">特点：</h3>
+<ul>
+<li>可用滚轮放大缩小</li>
+<li>背景颜色、网格线颜色自定义</li>
+<li>可生成SVG/PNG格式</li>
+</ul>
+<h3 id="图片展示">图片展示</h3>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1626790788396.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[blog](持续更新)Interesting Website！]]></title>
         <id>https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/</id>
@@ -409,41 +426,6 @@
 <figure data-type="image" tabindex="8"><img src="https://cosmoslazycat.github.io/post-images/1625896691340.png" alt="" loading="lazy"></figure>
 <h2 id="总结">总结</h2>
 <p>改成自己喜欢的样子，确实增加了不少写博客的兴趣，努力更新博客！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[CSS]css实现禁止用户拖拽元素]]></title>
-        <id>https://cosmoslazycat.github.io/post/csscss-shi-xian-jin-zhi-yong-hu-tuo-zhuai-yuan-su/</id>
-        <link href="https://cosmoslazycat.github.io/post/csscss-shi-xian-jin-zhi-yong-hu-tuo-zhuai-yuan-su/">
-        </link>
-        <updated>2021-06-23T23:16:08.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="一-用户行为相关属性">一、用户行为相关属性</h3>
-<p><code>user-select</code></p>
-<p><code>user-modefy</code></p>
-<p><code>user-drag</code></p>
-<h3 id="二-示例">二、示例</h3>
-<h4 id="1通过user-drag限制用户拖拽元素">1，通过user-drag限制用户拖拽元素</h4>
-<p>HTML</p>
-<pre><code>&lt;img src=&quot;xxx.jpg&quot; class=&quot;user-drag&quot;&gt;
-</code></pre>
-<p>CSS</p>
-<pre><code>.user-drag {
-	-webkit-user-drag: none;
-}
-</code></pre>
-<h5 id="兼容性httpscaniusecomsearch-webkit-user-drag">兼容性（<a href="https://caniuse.com/?search=-webkit-user-drag">https://caniuse.com/?search=-webkit-user-drag</a>）</h5>
-<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625786453666.png" alt="" loading="lazy"></figure>
-<p>解读：IE不支持，chrome仅支持部分功能，移动端不支持</p>
-<h4 id="2html-draggable属性">2，HTML <code>draggable</code>属性</h4>
-<pre><code>&lt;img src=&quot;xxx.jpg&quot; draggable=&quot;true&quot;&gt;  // 可拖拽
-
-&lt;img src=&quot;xxx.jpg&quot; draggable=&quot;false&quot;&gt;  //不可拖拽
-</code></pre>
-<h5 id="兼容性">兼容性</h5>
-<figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625786294969.png" alt="" loading="lazy"></figure>
-<p>解读：兼容性优秀，移动端全部支持，IE10-11浏览器也支持</p>
-<h3 id="总结">总结</h3>
-<p>在处理禁止用户使用拖拽的场景时，优先使用HTML<code>draggable</code></p>
 ]]></content>
     </entry>
 </feed>
