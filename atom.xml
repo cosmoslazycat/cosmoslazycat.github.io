@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的实验室</title>
-    <updated>2021-07-20T16:08:34.066Z</updated>
+    <updated>2021-07-20T16:13:07.509Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://cosmoslazycat.github.io"/>
+    <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
     <subtitle>Man Always Remember Love Because Of Romance Only</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
+    <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的实验室</rights>
     <entry>
         <title type="html"><![CDATA[[推荐]城市路网生成工具！]]></title>
-        <id>http://localhost:4000/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/</id>
-        <link href="http://localhost:4000/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/">
+        <id>https://cosmoslazycat.github.io/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/</id>
+        <link href="https://cosmoslazycat.github.io/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/">
         </link>
         <updated>2021-07-20T14:16:23.000Z</updated>
         <content type="html"><![CDATA[<p>地址：https://anvaka.github.io/</p>
@@ -24,13 +24,13 @@
 <li>可生成SVG/PNG格式</li>
 </ul>
 <h3 id="图片展示">图片展示</h3>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1626790788396.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1626790788396.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[[blog](持续更新)Interesting Website！]]></title>
-        <id>http://localhost:4000/post/tui-jian-interesting-blog/</id>
-        <link href="http://localhost:4000/post/tui-jian-interesting-blog/">
+        <id>https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/</id>
+        <link href="https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/">
         </link>
         <updated>2021-07-17T14:25:20.000Z</updated>
         <content type="html"><![CDATA[<h2 id="blog">BLOG</h2>
@@ -58,8 +58,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[转载]如何做一个有质量的技术分享]]></title>
-        <id>http://localhost:4000/post/zhuan-zai-ru-he-zuo-yi-ge-you-zhi-liang-de-ji-zhu-fen-xiang/</id>
-        <link href="http://localhost:4000/post/zhuan-zai-ru-he-zuo-yi-ge-you-zhi-liang-de-ji-zhu-fen-xiang/">
+        <id>https://cosmoslazycat.github.io/post/zhuan-zai-ru-he-zuo-yi-ge-you-zhi-liang-de-ji-zhu-fen-xiang/</id>
+        <link href="https://cosmoslazycat.github.io/post/zhuan-zai-ru-he-zuo-yi-ge-you-zhi-liang-de-ji-zhu-fen-xiang/">
         </link>
         <updated>2021-07-13T07:02:29.000Z</updated>
         <content type="html"><![CDATA[<p>原文地址：https://coolshell.cn/articles/21589.html<br>
@@ -150,8 +150,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[NEWS]安全日报]]></title>
-        <id>http://localhost:4000/post/newsan-quan-ri-bao/</id>
-        <link href="http://localhost:4000/post/newsan-quan-ri-bao/">
+        <id>https://cosmoslazycat.github.io/post/newsan-quan-ri-bao/</id>
+        <link href="https://cosmoslazycat.github.io/post/newsan-quan-ri-bao/">
         </link>
         <updated>2021-07-08T13:23:00.000Z</updated>
         <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
@@ -195,8 +195,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[NEWS]安全日报]]></title>
-        <id>http://localhost:4000/post/news0706-an-quan-ri-bao/</id>
-        <link href="http://localhost:4000/post/news0706-an-quan-ri-bao/">
+        <id>https://cosmoslazycat.github.io/post/news0706-an-quan-ri-bao/</id>
+        <link href="https://cosmoslazycat.github.io/post/news0706-an-quan-ri-bao/">
         </link>
         <updated>2021-07-02T15:09:25.000Z</updated>
         <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
@@ -220,8 +220,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[翻译]你的设计准则是什么？]]></title>
-        <id>http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
-        <link href="http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
+        <id>https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
+        <link href="https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
         </link>
         <updated>2021-06-29T13:42:30.000Z</updated>
         <content type="html"><![CDATA[<p> 一路走来，我学到了一些在设计和商业上经得起时间考验的东西</p>
@@ -273,8 +273,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[转载][翻译]从源码中学习（阅读源码，初学者的有效成长方式）]]></title>
-        <id>http://localhost:4000/post/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi/</id>
-        <link href="http://localhost:4000/post/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi/">
+        <id>https://cosmoslazycat.github.io/post/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi/</id>
+        <link href="https://cosmoslazycat.github.io/post/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi/">
         </link>
         <updated>2021-06-26T00:38:31.000Z</updated>
         <content type="html"><![CDATA[<p>原文： <a href="https://coderscat.com/learn-from-source-code/">Learn from Source Code (an Effective Way to Grow for Beginners)</a> ，原作者为Nick Mose 。</p>
@@ -346,8 +346,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[分享]计算机学科有意思的比喻]]></title>
-        <id>http://localhost:4000/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/</id>
-        <link href="http://localhost:4000/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/">
+        <id>https://cosmoslazycat.github.io/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/</id>
+        <link href="https://cosmoslazycat.github.io/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/">
         </link>
         <updated>2021-06-25T05:46:49.000Z</updated>
         <content type="html"><![CDATA[<p>原文：<a href="https://twitter.com/laixintao/status/1402663872561958915?s=20">https://twitter.com/laixintao/status/1402663872561958915?s=20</a></p>
@@ -370,8 +370,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[NEWS]安全日报]]></title>
-        <id>http://localhost:4000/post/new73-an-quan-ri-bao/</id>
-        <link href="http://localhost:4000/post/new73-an-quan-ri-bao/">
+        <id>https://cosmoslazycat.github.io/post/new73-an-quan-ri-bao/</id>
+        <link href="https://cosmoslazycat.github.io/post/new73-an-quan-ri-bao/">
         </link>
         <updated>2021-06-24T10:20:32.000Z</updated>
         <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
@@ -409,21 +409,21 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[blog]Gridea主题修改]]></title>
-        <id>http://localhost:4000/post/bloggridea-zhu-ti-xiu-gai/</id>
-        <link href="http://localhost:4000/post/bloggridea-zhu-ti-xiu-gai/">
+        <id>https://cosmoslazycat.github.io/post/bloggridea-zhu-ti-xiu-gai/</id>
+        <link href="https://cosmoslazycat.github.io/post/bloggridea-zhu-ti-xiu-gai/">
         </link>
         <updated>2021-06-24T06:39:21.000Z</updated>
         <content type="html"><![CDATA[<p>作者原主题购买： <a href="https://mianbaoduo.com/o/bread/YpWYlJ0=">https://mianbaoduo.com/o/bread/YpWYlJ0=</a></p>
 <h2 id="一-改动前">一、改动前</h2>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1625812792694.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1625812811980.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="3"><img src="http://localhost:4000/post-images/1625812821711.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="4"><img src="http://localhost:4000/post-images/1625812965629.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625812792694.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625812811980.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://cosmoslazycat.github.io/post-images/1625812821711.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://cosmoslazycat.github.io/post-images/1625812965629.png" alt="" loading="lazy"></figure>
 <h2 id="二-改动后">二、改动后</h2>
-<figure data-type="image" tabindex="5"><img src="http://localhost:4000/post-images/1625896665955.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="6"><img src="http://localhost:4000/post-images/1625896675520.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="7"><img src="http://localhost:4000/post-images/1625896683796.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="8"><img src="http://localhost:4000/post-images/1625896691340.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://cosmoslazycat.github.io/post-images/1625896665955.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://cosmoslazycat.github.io/post-images/1625896675520.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://cosmoslazycat.github.io/post-images/1625896683796.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://cosmoslazycat.github.io/post-images/1625896691340.png" alt="" loading="lazy"></figure>
 <h2 id="总结">总结</h2>
 <p>改成自己喜欢的样子，确实增加了不少写博客的兴趣，努力更新博客！</p>
 ]]></content>
