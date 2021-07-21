@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙实验室</title>
-    <updated>2021-07-21T02:40:50.332Z</updated>
+    <updated>2021-07-21T02:43:56.075Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -58,9 +58,12 @@
         <updated>2021-07-20T16:20:19.000Z</updated>
         <content type="html"><![CDATA[<p>作者原主题购买： <a href="https://mianbaoduo.com/o/bread/YpWYlJ0=">https://mianbaoduo.com/o/bread/YpWYlJ0=</a></p>
 <h2 id="一-改动前">一、改动前</h2>
+<h4 id="导航栏-主页设计">导航栏 + 主页设计</h4>
 <figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625812792694.png" alt="" loading="lazy"></figure>
 <figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625812811980.png" alt="" loading="lazy"></figure>
+<h4 id="内容页设计">内容页设计</h4>
 <figure data-type="image" tabindex="3"><img src="https://cosmoslazycat.github.io/post-images/1625812821711.png" alt="" loading="lazy"></figure>
+<h4 id="代码输入框设计">代码输入框设计</h4>
 <figure data-type="image" tabindex="4"><img src="https://cosmoslazycat.github.io/post-images/1625812965629.png" alt="" loading="lazy"></figure>
 <h2 id="二-改动后">二、改动后</h2>
 <figure data-type="image" tabindex="5"><img src="https://cosmoslazycat.github.io/post-images/1625896665955.png" alt="" loading="lazy"></figure>
