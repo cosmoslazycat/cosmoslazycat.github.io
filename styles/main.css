@@ -131,7 +131,4 @@ a:not([class]):hover {
   font-size: 0.9em; margin-top: 15px;
   margin-bottom: 15px;}
 *, ::after, ::before {border-radius: .30rem;}
-@media screen and (max-width: 1000px) {
-                  body{color: black;}
-		}
     
