@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙实验室</title>
-    <updated>2021-07-20T16:26:50.473Z</updated>
+    <updated>2021-07-21T02:40:50.332Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -10,6 +10,46 @@
     <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的宇宙实验室</rights>
+    <entry>
+        <title type="html"><![CDATA[[blog](持续更新)Interesting Website！]]></title>
+        <id>https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/</id>
+        <link href="https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/">
+        </link>
+        <updated>2021-07-21T02:35:45.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<h2 id="website">WebSite</h2>
+</blockquote>
+<p><a href="www.stackoverflow.com">stackoverflow</a> - 常用的提问和解惑网站<br>
+<a href="www.freecodecamp.org">freecodecamp</a> - 我的启蒙网站之一<br>
+<a href="www.codepen.io">codepen</a> - 很喜欢里面的一些前端设计<br>
+<a href="www.github.com">github</a> - 用的不是很多，以后有能力会贡献自己的代码<br>
+<a href="www.numerade.com">Numerade</a> - 一个专门为书籍上的问题解惑的网站<br>
+<a href="https://teachyourselfcs.com/">teachyourselfcs</a>  - 我的启蒙网站之一<br>
+<a href="www.youtube.com">youtube</a> - 常用的自学视频搜索网站<br>
+<a href="https://www.yuque.com/zaotalk">前端早早聊</a> - 一个内容质量非常不错的国内前端分享频道（付费）<br>
+<a href="www.fullstackopen.com">FullStackOpen</a> - 我的启蒙网站之一</p>
+<blockquote>
+<h2 id="youtube">YouTube</h2>
+</blockquote>
+<p><a href="https://www.youtube.com/channel/UCKRDt89WYkaRyvmvKoBvNWg">Stuart Davies</a> - 我喜欢的画家之一，画的都是我喜欢的风格<br>
+<a href="https://www.youtube.com/channel/UC9ky7GmqwwRTBOjkK8hZ6FA">PhiloArt</a> - 我喜欢的画家之一，自学画画和编程，超厉害的人</p>
+<blockquote>
+<h2 id="blog">BLOG</h2>
+</blockquote>
+<p><a href="https://www.kawabangga.com/">卡瓦邦噶</a> - 捕蛇者说主播之一<br>
+<a href="http://laker.me/blog/">一位进击的程序媛</a><br>
+<a href="coolshell.cn">酷壳</a>  - 耗子叔的个人博客，我的启蒙人之一<br>
+<a href="https://godbasin.github.io/front-end-playground/">被删的前端游乐场</a> - 一个努力学习的人<br>
+<a href="https://www.tangshuang.net/">唐霜</a> - Robust播客的主理人</p>
+<blockquote>
+<h2 id="podcast">Podcast</h2>
+</blockquote>
+<p><a href="https://pythonhunter.org/">捕蛇者说</a> - 喜欢的播客和博客网站<br>
+<a href="https://anobody.im/">阿乐杂货铺</a> - 一个在荷兰生活的前端程序媛<br>
+<a href="https://www.tangshuang.net/fm">Robust: 程序员的TALK PLACE</a> - 内容和时长都比较硬核的播客<br>
+<a href="https://frontendhappyhour.com/">Front End Happy Hour</a> - 内容如其名的播客</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[blog]Gridea主题修改]]></title>
         <id>https://cosmoslazycat.github.io/post/bloggridea-zhu-ti-xiu-gai/</id>
@@ -54,35 +94,6 @@
 </ul>
 <h3 id="图片展示">图片展示</h3>
 <figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1626790788396.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[blog](持续更新)Interesting Website！]]></title>
-        <id>https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/</id>
-        <link href="https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/">
-        </link>
-        <updated>2021-07-17T14:25:20.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="blog">BLOG</h2>
-<p><a href="https://www.kawabangga.com/">卡瓦邦噶</a> - 捕蛇者说主播之一<br>
-<a href="http://laker.me/blog/">一位进击的程序媛</a><br>
-<a href="coolshell.cn">酷壳</a>  - 耗子叔的个人博客，我的启蒙人之一<br>
-<a href="https://godbasin.github.io/front-end-playground/">被删的前端游乐场</a> - 一个努力学习的人<br>
-<a href="https://www.tangshuang.net/">唐霜</a> - Robust播客的主理人</p>
-<h2 id="podcast">Podcast</h2>
-<p><a href="https://pythonhunter.org/">捕蛇者说</a> - 喜欢的播客和博客网站<br>
-<a href="https://anobody.im/">阿乐杂货铺</a> - 一个在荷兰生活的前端程序媛<br>
-<a href="https://www.tangshuang.net/fm">Robust: 程序员的TALK PLACE</a> - 内容和时长都比较硬核的播客<br>
-<a href="https://frontendhappyhour.com/">Front End Happy Hour</a> - 内容如其名的播客</p>
-<h2 id="website">WEBSITE</h2>
-<p><a href="www.stackoverflow.com">stackoverflow</a> - 常用的提问和解惑网站<br>
-<a href="www.freecodecamp.org">freecodecamp</a> - 我的启蒙网站之一<br>
-<a href="www.codepen.io">codepen</a> - 很喜欢里面的一些前端设计<br>
-<a href="www.github.com">github</a> - 用的不是很多，以后有能力会贡献自己的代码<br>
-<a href="www.numerade.com">Numerade</a> - 一个专门为书籍上的问题解惑的网站<br>
-<a href="https://teachyourselfcs.com/">teachyourselfcs</a>  - 我的启蒙网站之一<br>
-<a href="www.youtube.com">youtube</a> - 常用的自学视频搜索网站<br>
-<a href="https://www.yuque.com/zaotalk">前端早早聊</a> - 一个内容质量非常不错的国内前端分享频道（付费）<br>
-<a href="www.fullstackopen.com">FullStackOpen</a> - 我的启蒙网站之一</p>
 ]]></content>
     </entry>
     <entry>
