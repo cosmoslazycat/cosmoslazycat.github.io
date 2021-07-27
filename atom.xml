@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-07-27T08:01:40.972Z</updated>
+    <updated>2021-07-27T12:37:24.047Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://cosmoslazycat.github.io"/>
+    <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
     <subtitle>自律，才有更大的自由</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
+    <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的宇宙</rights>
     <entry>
         <title type="html"><![CDATA[[blog](持续更新)Interesting Website！]]></title>
-        <id>http://localhost:4000/post/tui-jian-interesting-blog/</id>
-        <link href="http://localhost:4000/post/tui-jian-interesting-blog/">
+        <id>https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/</id>
+        <link href="https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/">
         </link>
         <updated>2021-07-21T02:35:45.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
@@ -53,24 +53,24 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[blog]Gridea主题修改]]></title>
-        <id>http://localhost:4000/post/bloggridea-zhu-ti-xiu-gai/</id>
-        <link href="http://localhost:4000/post/bloggridea-zhu-ti-xiu-gai/">
+        <id>https://cosmoslazycat.github.io/post/bloggridea-zhu-ti-xiu-gai/</id>
+        <link href="https://cosmoslazycat.github.io/post/bloggridea-zhu-ti-xiu-gai/">
         </link>
         <updated>2021-07-20T16:20:19.000Z</updated>
         <content type="html"><![CDATA[<p>作者原主题购买： <a href="https://mianbaoduo.com/o/bread/YpWYlJ0=">https://mianbaoduo.com/o/bread/YpWYlJ0=</a></p>
 <h2 id="一-改动前">一、改动前</h2>
 <h4 id="导航栏-主页设计">导航栏 + 主页设计</h4>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1625812792694.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1625812811980.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625812792694.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625812811980.png" alt="" loading="lazy"></figure>
 <h4 id="内容页设计">内容页设计</h4>
-<figure data-type="image" tabindex="3"><img src="http://localhost:4000/post-images/1625812821711.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://cosmoslazycat.github.io/post-images/1625812821711.png" alt="" loading="lazy"></figure>
 <h4 id="代码输入框设计">代码输入框设计</h4>
-<figure data-type="image" tabindex="4"><img src="http://localhost:4000/post-images/1625812965629.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://cosmoslazycat.github.io/post-images/1625812965629.png" alt="" loading="lazy"></figure>
 <h2 id="二-改动后">二、改动后</h2>
-<figure data-type="image" tabindex="5"><img src="http://localhost:4000/post-images/1625896665955.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="6"><img src="http://localhost:4000/post-images/1625896675520.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="7"><img src="http://localhost:4000/post-images/1625896683796.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="8"><img src="http://localhost:4000/post-images/1625896691340.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://cosmoslazycat.github.io/post-images/1625896665955.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://cosmoslazycat.github.io/post-images/1625896675520.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://cosmoslazycat.github.io/post-images/1625896683796.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://cosmoslazycat.github.io/post-images/1625896691340.png" alt="" loading="lazy"></figure>
 <h2 id="总结">总结</h2>
 <p>改成自己喜欢的样子，确实增加了不少写博客的兴趣，努力更新博客！</p>
 <h2 id="0720更新">0720更新</h2>
@@ -78,15 +78,15 @@
 <p>修改图片背景色，使页面与图片背景颜色一致</p>
 </blockquote>
 <p>改前<br>
-<img src="http://localhost:4000/post-images/1626797976162.png" alt="" loading="lazy"></p>
+<img src="https://cosmoslazycat.github.io/post-images/1626797976162.png" alt="" loading="lazy"></p>
 <p>改后<br>
-<img src="http://localhost:4000/post-images/1626797996036.png" alt="" loading="lazy"></p>
+<img src="https://cosmoslazycat.github.io/post-images/1626797996036.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[[推荐]城市路网生成工具！]]></title>
-        <id>http://localhost:4000/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/</id>
-        <link href="http://localhost:4000/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/">
+        <id>https://cosmoslazycat.github.io/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/</id>
+        <link href="https://cosmoslazycat.github.io/post/blogtui-jian-cheng-shi-lu-wang-sheng-cheng-gong-ju/">
         </link>
         <updated>2021-07-20T14:16:23.000Z</updated>
         <content type="html"><![CDATA[<p>地址：https://anvaka.github.io/</p>
@@ -97,175 +97,48 @@
 <li>可生成SVG/PNG格式</li>
 </ul>
 <h3 id="图片展示">图片展示</h3>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1626790788396.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1626790788396.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[[转载]如何做一个有质量的技术分享]]></title>
-        <id>http://localhost:4000/post/zhuan-zai-ru-he-zuo-yi-ge-you-zhi-liang-de-ji-zhu-fen-xiang/</id>
-        <link href="http://localhost:4000/post/zhuan-zai-ru-he-zuo-yi-ge-you-zhi-liang-de-ji-zhu-fen-xiang/">
+        <title type="html"><![CDATA[[blog][CSS]CSS实现禁止用户拖拽元素]]></title>
+        <id>https://cosmoslazycat.github.io/post/csscss-shi-xian-jin-zhi-yong-hu-tuo-zhuai-yuan-su/</id>
+        <link href="https://cosmoslazycat.github.io/post/csscss-shi-xian-jin-zhi-yong-hu-tuo-zhuai-yuan-su/">
         </link>
-        <updated>2021-07-13T07:02:29.000Z</updated>
-        <content type="html"><![CDATA[<p>原文地址：https://coolshell.cn/articles/21589.html<br>
-</br><br>
-分享信息并不难，大多数人都能做到，就算是不善言谈性格内向的技术人员，通过博客或社交媒体，或是不正式的交流，他们都能或多或少的做到。但是如果你想要做一个有质量有高度的分享，这个就难了，所谓的有质量和有高度，我心里面的定义有两点：1）分享内容的保鲜期是很长的，2）会被大范围的传递。我们团队内每周都在做技术分享，虽然分享的主题都很有价值，但是分享的质量参差不齐，所以，想写下这篇文章 。供大家参考。</p>
-<p>首先，我们先扪心自问一下，我们自己觉得读到的好的技术文章是什么？我不知道大家的是什么，我个人认为的好的文章是下面这样的：</p>
-<p>把复杂的问题讲解的很简单也很清楚。比如我高中时期读到这本1978年出版的《从一到无穷大》，用各种简单通俗通懂的话把各种复杂的科学知识讲的清清楚楚。还有看过的几本很好的书，一本是《Windows程序设计》，从一个hello world的程序开始一步一步教你Windows下的原生态编程。<br>
-有各种各样的推导和方案的比较，让你知其然知其所以然。有了不同方案的比较，才可能让人有全面的认识。这个方面的经典作著是《Effective C++》。<br>
-原理，为什么，思路，方法论会让人一通百通。这里面最经典的恐怕就是《十万个为什么》了，在计算机方面也有几本经典书，一本是《Unix编程艺术》、《设计模式》、《深入理解计算机系统》等书，以及《The C10K Problem》等很多技术论文。<br>
-其实，从教科书，到专业书，再到论文，都有上面这些不错的特质。</p>
-<p>所以，如果你想做一个好的技术分享的话，下面是我总结出来的，几个“要”和“不要”。</p>
-<ul>
-<li>先描述好一个问题。这样能够听众带入进来，如果这个问题是他们感同身受的，那是最好了。千万不要一上来就说What，或是直接冲进答案里。这样的分享是在灌输和填鸭。把Why说清楚，没有Why，直接谈What的技术分享，通常来说价值不大。</li>
-<li>How比What重要。在讲How的时候，也就是如何解这个问题。</li>
-<li>先要把问题模型说清楚，有了问题模型这个框框后，方案才有意义。</li>
-<li>然后要有不同技术的比较。有了比较后，听众才会更相信你。</li>
-<li>一定要有Best Practice或方法论总结，否则上不了档次的。也就是分享的重要收获。<br>
-</br><br>
-说明了这个模型就是：问题 –&gt; 方案 –&gt; 总结。这其中是有一定的心理学模型的，具体表现如下：</li>
-<li>用问题来吸引受众，带着受众来一起思考</li>
-<li>用问题模型来框住受众的思考范围，让受众聚焦</li>
-<li>给出几种不同的解决方案，比较他们的优缺点，让受众有一种解决问题的参与感。</li>
-<li>最后，给出最佳实践，方法论或套路，因为有了前三步的铺垫，受众欣然接受。</li>
-<li>整个过程受众会有强烈的成长感和收获感。<br>
-这里有几个示例，也是我在我司 MegaEase 内部的技术分享，供你参考（我个人的YouTube频道）</li>
-</ul>
-<p>技术分享：<a href="https://youtu.be/qB40kqhTyYM">Prometheus是怎么存储数据的（Youtube）</a></p>
-<p>技术分享：<a href="https://youtu.be/VnbC5RG1fEo">Distributed Lock Manager（Youtube）</a></p>
-<p>下面是我写在我们公司内的Knowledge Sharing中的Best Practice，供参考</p>
-<h3 id="sharing-guideline">Sharing Guideline</h3>
-<p>Please follow the following sharing protocols<br>
-</br></p>
-<h3 id="understand-sharing">Understand Sharing</h3>
-<ul>
-<li>Sharing is the hard way to learn knowledge. The presenter gains the biggest advantages. not audience. 分享是学习知识的最难的方式。分享者获得的好处最最多的，而不是观众。</li>
-<li>Sharing can open the knowledge door for the audience, but you have to walk to knowledge by yourself. 分享可以为听众打开知识的大门，但你能不能获得知识还要靠你自己。<br>
-</br></li>
-</ul>
-<h3 id="best-practices">Best Practices</h3>
-<p>To perform a great sharing, please follow the below practices.</p>
-<ul>
-<li>
-<p>Do not share a big topic, a small topic is better. A big topic could make the audience lose focus. Remember, Less is More!</p>
-</li>
-<li>
-<p>Sharing time less than 60 mins is the best.</p>
-</li>
-<li>
-<p>English language for slides is preferred.</p>
-</li>
-<li>
-<p>While prepare the sharing contents, it’s better to discuss with the senior people to help you to see the whole picture, understand the good side and bad side, know what you don’t know … etc.</p>
-</li>
-<li>
-<p>Strong Recommend Materials Outlines</p>
-</li>
-<li>
-<p>What’s the Problem?</p>
-</li>
-<li>
-<p>How to Solve the Problem?</p>
-</li>
-<li>
-<p>The Best Solution or Practice.</p>
-</li>
-<li>
-<p>The Mechanism, Key Techniques, and Source Code</p>
-</li>
-<li>
-<p>Pros/Cons</p>
-</li>
-<li>
-<p>References (Further reading)</p>
-</li>
-<li>
-<p>For example, if you want to sharing a topic about Docker. the following outlines would be good one:</p>
-<ul>
-<li>What’s the major problems need to solve. (Provision, Environment, Isolation etc.)</li>
-<li>The Alternative solutions. (Puppet/Chef/Ansible, VM, LXC etc.)</li>
-<li>The Best Solution – Docker. Why?</li>
-<li>Docker’s key techniques – image, cgroup, union fs, namespace…</li>
-<li>Docker’s Pros/Cons</li>
-<li>Further reading list.</li>
-</ul>
-</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[NEWS]安全日报]]></title>
-        <id>http://localhost:4000/post/newsan-quan-ri-bao/</id>
-        <link href="http://localhost:4000/post/newsan-quan-ri-bao/">
-        </link>
-        <updated>2021-07-08T13:23:00.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
-<p>1，学安全的第一步是先学《网络安全法》。<br>
-2，未经授权的渗透测试，以及在渗透测试中超越边界的任何行为都视为违法<br>
-3，只做有双方背书的书面授权的安全测试</p>
-<p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
-<h3 id="一-lanproxy-目录遍历漏洞directory-traversal">一、Lanproxy 目录遍历漏洞（Directory traversal）</h3>
-<p>1，说明：lanproxy是一个将局域网个人电脑、服务器代理到公网的内网穿透工具，支持tcp流量转发，可支持任何tcp上层协议（访问内网网站、本地支付接口调试、ssh访问、远程桌面...）。</p>
-<p>2，漏洞信息：攻击者能通过构造某些信息并发送GET请求，在得到响应后，能在配置文件中读取到账号密码</p>
-<p>3，防范手段（前端/后端）：</p>
-<ul>
-<li>
-<p>过滤../和~/目录跳转符、%00字符截断符、dir命令等；</p>
-</li>
-<li>
-<p>合理配置Web服务器的目录权限；（最有效的方式）</p>
-</li>
-<li>
-<p>隐藏内部相关配置细节，以免程序出错时显示出来；</p>
-</li>
-<li>
-<p>对用户提交过来的文件名进行硬编码或者统一编码；</p>
-</li>
-<li>
-<p>对文件后缀进行白名单控制，对包含了恶意的符号或者空字节进行拒绝。</p>
-</li>
-</ul>
-<p>影响版本</p>
-<ul>
-<li>Lanproxy 0.1</li>
-</ul>
-<h3 id="二-gitlab-graphql邮箱信息泄露漏洞">二、GitLab Graphql邮箱信息泄露漏洞</h3>
-<p>1，说明:GraphQL 是一种针对 Graph（图状数据）进行查询特别有优势的 Query Language（查询语言）。GitLab 为此专门提供了GraphQL的API.</p>
-<p>2，漏洞信息：Gitlab本身不允许获取账号邮箱信息，这里通过调用 Graphql 的某一信息查询造成了邮箱泄露漏洞，但利用该漏洞需要有账号用户名，如果没有，则无法获取邮箱信息。不过通过构造某一语句作为请求发送，可一次性返回所有的用户名和邮箱。</p>
-<p>影响版本：</p>
-<ul>
-<li>GitLab 13.4 - 13.6.2</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[NEWS]安全日报]]></title>
-        <id>http://localhost:4000/post/news0706-an-quan-ri-bao/</id>
-        <link href="http://localhost:4000/post/news0706-an-quan-ri-bao/">
-        </link>
-        <updated>2021-07-02T15:09:25.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
-<p>1，学安全的第一步是先学《网络安全法》。<br>
-2，未经授权的渗透测试，以及在渗透测试中超越边界的任何行为都视为违法<br>
-3，只做有双方背书的书面授权的安全测试</p>
-<p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
-<p>一、Saltstack 任意文件写入漏洞<br>
-1，说明：saltstack (<a href="http://www.saltstack.com">http://www.saltstack.com</a>) 是使用python开发的一款服务器基础架构集中化管理平台,开始于2011年,具备配置和管理、远程执行、监控等功能。</p>
-<p>2，漏洞信息：saltstack在后台的一些配置文件修改编辑等处，程序开发过程中将这些配置信息未做好过滤就保存到了文件中，导致攻击者可以在文件中写入任意的内容.</p>
-<p>3，防范手段:</p>
-<ul>
-<li>尽量避免在可执行文件中保存字符串内容。</li>
-<li>对写入的字符串进行完美的过滤。</li>
-</ul>
-<p>影响版本：</p>
-<ul>
-<li>&lt;3002.5</li>
-</ul>
+        <updated>2021-07-05T23:16:08.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-用户行为相关属性">一、用户行为相关属性</h3>
+<p><code>user-select</code></p>
+<p><code>user-modefy</code></p>
+<p><code>user-drag</code></p>
+<h3 id="二-示例">二、示例</h3>
+<h4 id="1通过user-drag限制用户拖拽元素">1，通过user-drag限制用户拖拽元素</h4>
+<p>HTML</p>
+<pre><code>&lt;img src=&quot;xxx.jpg&quot; class=&quot;user-drag&quot;&gt;
+</code></pre>
+<p>CSS</p>
+<pre><code>.user-drag {
+	-webkit-user-drag: none;
+}
+</code></pre>
+<h5 id="兼容性httpscaniusecomsearch-webkit-user-drag">兼容性（<a href="https://caniuse.com/?search=-webkit-user-drag">https://caniuse.com/?search=-webkit-user-drag</a>）</h5>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625786453666.png" alt="" loading="lazy"></figure>
+<p>解读：IE不支持，chrome仅支持部分功能，移动端不支持</p>
+<h4 id="2html-draggable属性">2，HTML <code>draggable</code>属性</h4>
+<pre><code>&lt;img src=&quot;xxx.jpg&quot; draggable=&quot;true&quot;&gt;  // 可拖拽
+
+&lt;img src=&quot;xxx.jpg&quot; draggable=&quot;false&quot;&gt;  //不可拖拽
+</code></pre>
+<h5 id="兼容性">兼容性</h5>
+<figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625786294969.png" alt="" loading="lazy"></figure>
+<p>解读：兼容性优秀，移动端全部支持，IE10-11浏览器也支持</p>
+<h3 id="总结">总结</h3>
+<p>在处理禁止用户使用拖拽的场景时，优先使用HTML<code>draggable</code></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[[翻译]你的设计准则是什么？]]></title>
-        <id>http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
-        <link href="http://localhost:4000/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
+        <id>https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/</id>
+        <link href="https://cosmoslazycat.github.io/post/fan-yi-ni-de-she-ji-zhun-ze-shi-shi-me/">
         </link>
         <updated>2021-06-29T13:42:30.000Z</updated>
         <content type="html"><![CDATA[<p> 一路走来，我学到了一些在设计和商业上经得起时间考验的东西</p>
@@ -316,82 +189,79 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[[转载][翻译]从源码中学习（阅读源码，初学者的有效成长方式）]]></title>
-        <id>http://localhost:4000/post/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi/</id>
-        <link href="http://localhost:4000/post/zhuan-zai-fan-yi-cong-yuan-ma-zhong-xue-xi-yue-du-yuan-ma-chu-xue-zhe-de-you-xiao-cheng-chang-fang-shi/">
+        <title type="html"><![CDATA[[blog]如何提升网站页面加载速度]]></title>
+        <id>https://cosmoslazycat.github.io/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/</id>
+        <link href="https://cosmoslazycat.github.io/post/ru-he-ti-sheng-wang-zhan-ye-mian-jia-zai-su-du/">
         </link>
-        <updated>2021-06-26T00:38:31.000Z</updated>
-        <content type="html"><![CDATA[<p>原文： <a href="https://coderscat.com/learn-from-source-code/">Learn from Source Code (an Effective Way to Grow for Beginners)</a> ，原作者为Nick Mose 。</p>
-<p>翻译者：<a href="https://boholder.github.io/blogs/learn-from-source-code/#">从源码中学习（阅读源码，初学者的有效成长方式）</a></p>
-<h2 id="前言">前言</h2>
-<p>上周我在和一位年轻程序员聊天时，他问到我：“如何阅读源码？”，我们讨论了一段时间，我还列举了几种有效阅读源码的方式。 然后他说：“你应该就这个话题写篇文章，这对初学者很有帮助，而且这种经验无法从书籍和教程中获得。” 那么开始吧，下面是我关于阅读源码的小技巧。</p>
-<h2 id="为什么我们需要读源码">为什么我们需要读源码</h2>
-<p>我们程序员每天都要和源码打交道。经过数年的学习，大多数程序员可以“写”代码，或者至少是拷贝并修改代码。 而且，我们教授编程的方式强调编写代码的艺术，而不是如何阅读代码。 当我说“阅读代码”，我是指有意地专门阅读代码。</p>
-<p>众所周知，编程和写作有诸多相同之处。 唐纳德·克努特甚至引入了文学编程(literate programming) 编程范式。 编程与写作有相同的理念：表达我们的想法 。 还记得你在学校是怎么学习写作的吗？我们的写作能力来源于从小学开始直到现在的大量的文本阅读。 多年以来，我们阅读了不同难度的伟大作家的作品，并练习了多种写作技巧。</p>
-<p>“如果你没时间读，你就没时间（或工具）写，就这么简单。” —— 斯蒂芬·金，《写作这回事：创作生涯回忆录》</p>
-<p>正如斯蒂芬·金所观察到的那样，一个作家必须广泛而频繁地阅读，才能形成自己的声音， 并学会写出促使读者拿起书并痴读的句式和故事结构。 和读书一样，有意地阅读代码可以帮助程序员加速成长，尤其是对中级(intermediate)程序员而言。 这样做有三个好处。</p>
-<h3 id="站在巨人的肩膀上">站在巨人的肩膀上</h3>
-<p>我们从他人身上学习。优秀的源代码就像文学杰作，它不仅仅只提供了知识和信息，还提供了启迪。</p>
-<p>通过浏览Linux内核、Redis、Nginx、Rails或其他著名项目， 你可以从全球范围的成千上万的顶级程序员那里汲取智慧。 在这些项目中可以找到无数的良好编程示例、编程范式选择、设计和架构。 向他人学习的另一个好处是能够避免常见的坑，大多数坑早已被他人踩过。</p>
-<h3 id="解决困难问题">解决困难问题</h3>
-<p>在你的职业生涯中，你终将会碰到谷歌都无法解决的问题。 如果你还没碰到过这种问题，这只是因为你编程的时间还不足够长 😃。 阅读源码是调查这类问题的好方法，也是学习新东西的好机会。</p>
-<h3 id="扩展你的边界">扩展你的边界</h3>
-<p>大多数程序员只在少数特别领域编过程。 一般而言，如果你不时常推自己一把，你的编程技能会维持在你同事间的平均水平。 不要满足于修补bug或在现有系统中添加琐碎特性的工作。 相反，你可以试着扩展到一个新的领域，持续尝试找到一个你在日常工作中接触不到、但你感兴趣的领域。 这将从整体上拓宽你对编程的理解。</p>
-<h2 id="应该读什么样的源码">应该读什么样的源码</h2>
-<p>综上，阅读源码是有益的。 那么下一个问题，有这么多优秀作品可供选择，我们该选择并阅读什么样的源码呢？ 你必须从选择目标开始。如果不在这个步骤上下点功夫，你从源码中学习的效果就会打折扣。 这里有一些典型场景：</p>
-<p>当你想学习一门新语言。学新语言可不只是学会语法 。 不管怎样，阅读源码是一个非常有效的学习新语言的方式。我从rust-rosetta 项目中学到了很多Rust语言知识。Rosetta Code 是一个收集同一批通用任务在不同语言上的解决方案的项目，这是一个可用来学习新语言的有用资源。</p>
-<p>当你想了解一个特殊的算法或实现。 例如，我们都会使用标准库中的sort函数，你有没有好奇过它是怎么实现的？ 或者当你要使用Redis中的Set结构，它是用什么数据结构实现的？ 为了解决这些疑惑，你只需要读源码中与之相关的实现部分，通常只有很少的文件或函数。</p>
-<p>当你在特殊的框架中编程。这意味着你对该框架已经有了一定的经验， 这是个阅读一些框架本身的源码的好机会。 很显然，了解框架的源码有助于提高你对框架的理解。</p>
-<p>当你想拓展进入新的领域，你可以阅读这个领域的经典著名的项目的源码。 比如说，如果你在做Web开发的工作，你对分布式系统感兴趣吗？ 如果你的答案是“是”而且你懂Golang，也许etcd 是你的选择。你想钻研操作系统的内部构成吗？那么也许xv6 是一个好的开始。我们处在一个许多优秀开源项目都托管在了Github的好时代，请试着寻找一些这种项目。</p>
-<p>记住，选择与你当前的编程技能与知识水平相当的项目。 如果你选择了远超你当前技能水平的项目，最终你会感到沮丧。 读一些相对较小的项目，接着读更大的项目。 如果目前你不能理解某些特定的代码片段，这意味着你有个知识缺口(knowledge gap)。 把代码放到一边去，试着读一些相关的书、论文或其他文档，当你更有信心时再回来接着读代码。 我们总能在一个模式中取得进展：读（代码、书、论文），写，更多的读，更多的写。</p>
-<h2 id="如何读源码">如何读源码</h2>
-<p>《How to read a book》 是一本指导人进行明智地阅读的书。作为初学者，我们值得投入时间和精力去思考我们应该如何阅读代码。 阅读代码不是件容易的事。 光是阅读源码是不够的，你要试着去理解他人的设计和想法。</p>
-<h3 id="预先准备">预先准备</h3>
-<p>为了更有效率地阅读代码，你需要提前在手边准备这些东西：</p>
-<p>一个你可以熟练使用的编辑器。你需要拥有快速搜索关键字或变量名的能力。 有时你需要查找函数的引用和定义。和你的编辑器相处融洽些。 为了更加有效率，试着学习仅使用键盘操作编辑器。 这会使你专注于代码而不受打扰（译：指额外思考编辑器操作）。</p>
-<p>掌握基本的Git或其他版本控制工具的技能，这样你就能比较代码在版本间的差异。</p>
-<p>与源码有关的文档。文档可以为你的阅读提供参考，尤其是设计文档、编码规范等文档。</p>
-<p>具有一定的编程语言与设计模式的知识和经验。这对（阅读）大项目是强制性的。 如果你很了解一门编程语言，你也会了解关于源码组织与编程范式的最佳实践。 当然，这需要时间来积累。要有耐心。</p>
-<h3 id="流程与技巧">流程与技巧</h3>
-<p>阅读过程不是线性的。你不会就那么一个接一个地读源文件。 相反，大多数时候我们会从顶到底地阅读代码。 下面是一些更有效率阅读代码的小技巧：</p>
-<h4 id="结合上下文阅读代码">结合上下文阅读代码</h4>
-<p>当你阅读代码时，请持续提出问题。 例如，如果一个应用有缓存策略，一个好问题就是：如果键无效了会怎样？缓存中的值如何更新？ 带着这些问题阅读代码，就是结合上下文。或者说因为你有了一个目标，你会变得享受阅读的过程。 你甚至可以自己做一些假设，然后在代码中寻找验证。</p>
-<p>你有点像侦探：你想发现代码的真相，代码的逻辑，代码是如何像故事一般上下流动的。</p>
-<h4 id="把实例跑起来并与之交互">把实例跑起来并与之交互</h4>
-<p>源码就像乐高积木，只是已经组装好了。 如果你想了解它们是怎么组装在一起的，你需要和它交互，有时甚至要把它拆开。 阅读同一模块的老版本同样有帮助。从Git中阅读版本差异，试着弄清楚特定的特性是如何实现的 （修改日志在这个场景很有用）。 举个例子，我发现Lua的第一个版本相当简单，这可以帮助我了解作者最初的设计理念。</p>
-<p>Debug是另一种与代码交互的方式。试着在代码中加一些断点（或打印一些变量值）， 然后弄明白打印到控制台中的所有输出。</p>
-<p>如果你对代码了解比较透彻了，试着对代码做一些修改，重新build并把它跑起来。 最简单的方式是试着调整配置项，去看不同配置的运行结果。 之后你可以试着添加一些细微的特性。 如果这些特性对其他人也有用，你应该把代码贡献到上游。</p>
-<h4 id="了解数据结构间的关系">了解数据结构间的关系</h4>
-<p>“糟糕的程序员担心代码，优秀的程序员担心数据结构和它们的关系。” -Linus Torvalds</p>
-<p>数据结构是一个程序中最重要的元素。用笔或者你喜欢的其他工具画出数据结构间的关系。 这个图就是源码的映射。你会在阅读过程中时常参考这个图。一些工具比如scitools 可以用来生成UML类图。 （译：这个方法用在写代码中能节约翻Model声明文件的时间，推荐用纸笔，不占屏幕）</p>
-<h4 id="了解模块间的依赖关系与边界">了解模块间的依赖关系与边界</h4>
-<p>大项目中会包含许多模块，一个模块经常只拥有单一职责。 这有助于我们减少代码复杂度，在适当的层级上做抽象。 模块的接口是抽象的边界，我们可以一个接一个地阅读模块。 如果你在阅读一个使用Make构建的C/C++项目，Makefile是了解模块间如何组织的好切入点。</p>
-<p>边界本身也很有用。优秀的代码组织得很好，变量名与函数名的命名风格体现着可读性。 你不需要阅读全部源文件，你可以忽略不重要的或你熟悉的部分。 如果你确定一个模块是仅仅是为了被解析而设计的(just designed for parsing)， 那么你已经大致了解了它的功能；那么你就可以跳过不读这个模块。 当然，这将大大节约时间。</p>
-<h4 id="使用测试用例">使用测试用例</h4>
-<p>测试用例也是帮助代码理解的一个很好的补充。测试用例就是文档。 当你在阅读一个类时，试着把对应的测试代码一起读了。 测试用例能帮你弄清一个类的接口，和该类的典型用法。 集成测试用例可以让你顺着走过程序的整体流程，适合输入一些特殊值并debug运行。</p>
-<h4 id="点评">点评</h4>
-<p>为什么不在花了不少时间阅读一个项目后，写一篇代码点评呢？就像写一篇书评一样。 你可以写下代码中好的和不好的部分，还可以记下你从中学到了什么。 攥写这类文章可以帮助你阐明自己的理解，也有助于其他人阅读源码。</p>
-<h2 id="一些好书">一些好书</h2>
-<p>我发现阅读代码是一个远超我想象的广泛话题。没有系统性训练该技能的方法。 总而言之，不断练习，找到你自己的方式。下面是一些帮助你提升代码阅读能力的好书：</p>
+        <updated>2021-06-27T03:04:25.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-测试网站速度">一、测试网站速度</h3>
+<p>腾讯云服务器DNS配置TXT记录：</p>
 <ul>
-<li>《Design Patterns: Elements of Reusable Object-Oriented Software》</li>
-<li></li>
-<li>《Clean Architecture: A Craftsman’s Guide to Software Structure and Design》</li>
-<li></li>
-<li>《How to Read a Book: The Classic Guide to Intelligent Reading》</li>
+<li>在控制台选择DNS解析</li>
+<li>进入DNS解析配置</li>
+<li>输入GSC提供的txt记录值</li>
 </ul>
-<p>啊哈，这本书对程序员也很有用。</p>
-<h2 id="译者的话">译者的话</h2>
-<p>这篇文章是为苦于不知从何开始阅读陌生项目代码的人（包括我）准备的。 截止撰文时间为止，我认为这篇文章是在同话题中较为务实的一篇， 不仅包含理念，还包含不少具体可实践的建议，因此我想把它分享给更多人。 而且我想如果它有中文版本，愿意读下去的人会多一些，我也方便向周围的人分享，于是我向Nic申请了翻译权。 我把标题改了改，这样搜索“源码”“学习”、“阅读源码”都能搜到。</p>
-<p>这篇文章对我而言，最大作用是帮我突破了“不需要有意地专门阅读代码”的心理障碍。 我一直以为既然“写代码的时间中十之六七都是花在读既有代码上”（语出《Clean Code》）， 就没必要再花时间专门读代码，我大错特错。</p>
-<p>个人经验：驱动我“专门读代码”的最大动机是好奇心，和小孩拆小物件为了看内部构造差不多。 学习OO设计模式，我建议阅读《Head First 设计模式》 ，这本书超有趣，比四人帮那本删减了一些不常用的模式，但是你能轻松读下去。</p>
-<p>阅读了解项目代码是参与（开源）项目的第一步，希望这篇文章能帮助你参与到心仪的项目中去。 这也可以帮助你在工作中了解同组同事的工作，而“了解同组同事的工作对工作有诸多潜在益处” 。 来吧，花点时间挑一个看上眼的项目（或者就读你手头的项目别人写的部分）， 找到你最感兴趣的功能，读一读它是怎么实现的。</p>
-]]></content>
+<h4 id="1google-search-console">1，<a href="https://search.google.com/search-console/about">Google Search Console</a></h4>
+<h4 id="2pagespeed-insights">2，<a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></h4>
+<h4 id="3gtmetrix">3，<a href="https://gtmetrix.com/">GTmetrix</a></h4>
+<br />
+<h3 id="二-优化思路">二、优化思路</h3>
+<h4 id="1图片">1，图片</h4>
+<ul>
+<li>
+<p>1.1图片优化<br>
+工具：TinyPNG</p>
+</li>
+<li>
+<p>1.2图片格式优化<br>
+PNG 加载慢<br>
+JPGS<br>
+WEBP</p>
+</li>
+<li>
+<p>1.3图片分辨率优化<br>
+方案：在img标签内声明图片分辨率，以便提高浏览器的渲染速度</p>
+</li>
+</ul>
+<pre><code>&lt;img src=”puppy.jpg” width=”640&quot; height=”360&quot; alt=”Puppy with balloons” /&gt;
+</code></pre>
+<br />
+<h4 id="2javascript和css引用min版">2，JavaScript和css引用min版</h4>
+<p>资源：</p>
+<ul>
+<li><a href="https://cssminifier.com/">https://cssminifier.com/</a></li>
+<li><a href="https://javascript-minifier.com/">https://javascript-minifier.com/</a></li>
+</ul>
+<p>还可以通过使用<a href="https://gtmetrix.com/enable-text-compression.html#how-to-enable-text-compression">enable Gzip compression</a> 进一步缩小引用文件的大小<br>
+<br /></p>
+<h4 id="3谨慎使用第三方脚本">3，谨慎使用第三方脚本</h4>
+<br />
+<h4 id="4使用vps托管服务">4，使用VPS托管服务</h4>
+<br />
+<h4 id="5使用cdn">5，使用CDN</h4>
+<br />
+<h4 id="6延迟javascript加载">6，延迟JavaScript加载</h4>
+<p>资料：<a href="https://flaviocopes.com/javascript-async-defer/">how to efficiently load JavaScript with <em>defer</em></a>.</p>
+<p>使用defer属性：</p>
+<pre><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<br />
+<h4 id="7利用浏览器缓存">7，利用浏览器缓存</h4>
+<p>资料：<a href="https://www.hostinger.com/tutorials/website/improving-website-performance-leveraging-browser-cache#Leveraging_Browser_Cache_Using_htaccess">enable browser caching from your .htaccess file by setting an expiration date for your assets</a>.</p>
+<p>告诉浏览器要保存缓存的方式<br>
+<br /></p>
+<h4 id="8使用懒加载lazy-loading">8，使用懒加载（lazy loading）</h4>
+<p>资料： <a href="https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/">five more ways to implement lazy loading</a></p>
+<pre><code>&lt;img src=”myimage.jpg” loading=”lazy” alt=”…” /&gt;
+&lt;iframe src=”content.html” loading=”lazy”&gt;&lt;/iframe&gt;
+</code></pre>
+<br />
+待续。。。]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[[分享]计算机学科有意思的比喻]]></title>
-        <id>http://localhost:4000/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/</id>
-        <link href="http://localhost:4000/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/">
+        <id>https://cosmoslazycat.github.io/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/</id>
+        <link href="https://cosmoslazycat.github.io/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/">
         </link>
         <updated>2021-06-25T05:46:49.000Z</updated>
         <content type="html"><![CDATA[<p>原文：<a href="https://twitter.com/laixintao/status/1402663872561958915?s=20">https://twitter.com/laixintao/status/1402663872561958915?s=20</a></p>
@@ -413,42 +283,327 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[[NEWS]安全日报]]></title>
-        <id>http://localhost:4000/post/new73-an-quan-ri-bao/</id>
-        <link href="http://localhost:4000/post/new73-an-quan-ri-bao/">
+        <title type="html"><![CDATA[[blog][CSS]flex布局]]></title>
+        <id>https://cosmoslazycat.github.io/post/cssflex-bu-ju/</id>
+        <link href="https://cosmoslazycat.github.io/post/cssflex-bu-ju/">
         </link>
-        <updated>2021-06-24T10:20:32.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="信安守则">信安守则：</h1>
-<p>1，学安全的第一步是先学《网络安全法》。<br>
-2，未经授权的渗透测试，以及在渗透测试中超越边界的任何行为都视为违法<br>
-3，只做有双方背书的书面授权的安全测试</p>
-<p>此系列博文不分享任何漏洞编号、POC代码、使用教程，旨在提醒自己注意代码安全问题。</p>
-<h3 id="一-veryfitpro加密漏洞">一、VeryFitPro加密漏洞</h3>
-<p>1，说明：VeryFitPro是中国深圳市爱都科技有限公司的一款功能强大的健康管理软件,需要搭配同品牌智能手环使用,使用app用戶可以实时查看行走步数、消耗卡路里、睡眠质量等信息。</p>
-<p>2，漏洞信息：VeryFitPro 中存在加密漏洞问题，该漏洞源于允许通过明文HTTP与后端API进行所有通信。攻击者可通过该漏洞获得用戶敏感信息。以下产品及版本受到影响：<code>VeryFitPro For Android 3.2.8</code>。</p>
-<h3 id="二-overlayfs-权限提升漏洞">二、Overlayfs 权限提升漏洞</h3>
-<p>1，说明：Overlayfs是Linux系统中的一种堆叠文件系统，它依赖并建立在其它的文件系统之上（例如ext4fs和xfs等等），并不直接参与磁盘空间结构的划分，仅仅将原来底层文件系统中不同的目录进行“合并”，然后向用户呈现。</p>
-<p>2，漏洞信息：OverlayFS漏洞允许Ubuntu下的本地用戶获得root权限。 Linux內核中overlayfs文件系统中的Ubuntu特定问题，在该问题中，它未正确验证关于用户名称空间的文件系统功能的应用程序。由于Ubuntu附带了一個允许非特权的overlayfs挂载的补丁，因此本地攻击者可以使用它來获得更高的权限。</p>
-<h4 id="受影响版本">受影响版本：</h4>
-<ul>
-<li>Ubuntu 20.10</li>
-<li>Ubuntu 20.04 LTS</li>
-<li>Ubuntu 18.04 LTS</li>
-<li>Ubuntu 16.04 LTS</li>
-<li>Ubuntu 14.04 ESM</li>
-</ul>
-<h3 id="三-openssl拒绝服务漏洞">三、OpenSSL拒绝服务漏洞</h3>
-<p>1，说明：OpenSSL是为网络通信提供安全及数据完整性的一种安全协议，囊括了主要的密码算法、常用的密钥和证书封装管理功能以及SSL协议，并提供了丰富的应用程序供测试或其它目的使用。同时也是一个开放源代码的软件库包，而应用程序可以使用这个包来进行安全通信，避免窃听，同时确认另一端连接者的身份。</p>
-<p>2，漏洞信息：openssl 版本低于 1.1.1-k，默认配置下使用 openssl 的软件（包括 nginx 和 trojan-gfw 等），恶意构造的请求可以让服务端崩溃。</p>
-<h4 id="受影响版本-2">受影响版本：</h4>
-<ul>
-<li>&lt; 1.1.1-k</li>
-</ul>
-<h3 id="每日鸡汤">每日鸡汤</h3>
-<pre><code>成事和成功，永远不是外界的环境和他人推动你走，只能靠你发挥主动。
-什么城市、公司、学校、老师、同学、上司都是次要的。坚持自学、额外努力，主动思考、注重方法才重要。
-一直保持自学和阅读习惯，保持有问题多搜索多查资料自己搞懂的习惯，一直保持主动思考的习惯。对任何专业、工作，都要如此。
+        <updated>2021-06-18T06:24:12.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="一-创建flex布局">一、创建flex布局</h2>
+<h3 id="1-区别">1, 区别</h3>
+<p>div（块状元素）</p>
+<pre><code>display:flex;
 </code></pre>
+<p>span（内联元素)</p>
+<pre><code>display:inline-flex;
+</code></pre>
+<h3 id="2作用区域">2，作用区域</h3>
+<table>
+<thead>
+<tr>
+<th>作用在flex容器(container)</th>
+<th>作用在flex子项(item)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flex-direction</td>
+<td>order</td>
+</tr>
+<tr>
+<td>flex-wrap</td>
+<td>flex-grow</td>
+</tr>
+<tr>
+<td>flex-flow</td>
+<td>flex-shrink</td>
+</tr>
+<tr>
+<td>justify-content</td>
+<td>flex-basis</td>
+</tr>
+<tr>
+<td>align-item</td>
+<td>flex</td>
+</tr>
+<tr>
+<td>align-content</td>
+<td>align-self</td>
+</tr>
+</tbody>
+</table>
+<h2 id="二-详细">二、详细</h2>
+<h3 id="作用在flex容器上的属性">作用在flex容器上的属性</h3>
+<h4 id="1flex-direction">1，flex-direction</h4>
+<p>row和row-reverse<br>
+column和column-reverse<br>
+<img src="https://cosmoslazycat.github.io/post-images/1625811948582.svg" alt="" loading="lazy"></p>
+<p>2，flex-wrap<br>
+<img src="https://cosmoslazycat.github.io/post-images/1625811974514.svg" alt="" loading="lazy"></p>
+<pre><code>.container {
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+</code></pre>
+<h4 id="3flex-flow">3，flex-flow</h4>
+<pre><code>.container {
+  flex-flow: column wrap;
+}
+</code></pre>
+<h4 id="4justify-content">4，justify-content</h4>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625811996366.svg" alt="" loading="lazy"></figure>
+<pre><code>.container {
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+}
+</code></pre>
+<h4 id="5-align-items">5, align-items</h4>
+<figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625812008548.svg" alt="" loading="lazy"></figure>
+<pre><code>.container {
+  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+}
+</code></pre>
+<h4 id="6-align-content">6, align-content</h4>
+<figure data-type="image" tabindex="3"><img src="https://cosmoslazycat.github.io/post-images/1625812021771.svg" alt="" loading="lazy"></figure>
+<pre><code>.container {
+  align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+}
+</code></pre>
+<h3 id="作用在flex子项item上的属性">作用在flex子项(item)上的属性</h3>
+<h4 id="1-order">1. order</h4>
+<figure data-type="image" tabindex="4"><img src="https://cosmoslazycat.github.io/post-images/1625812032539.svg" alt="" loading="lazy"></figure>
+<pre><code class="language-css">.item {
+  order: 5; /* 默认值为 0 */
+}
+</code></pre>
+<h4 id="2-flex-grow">2. flex-grow</h4>
+<figure data-type="image" tabindex="5"><img src="https://cosmoslazycat.github.io/post-images/1625812042359.svg" alt="" loading="lazy"></figure>
+<pre><code class="language-css">.item {
+  flex-grow: 4; /* default 0 */
+}
+</code></pre>
+<h4 id="3-flex-shrink">3. flex-shrink</h4>
+<pre><code class="language-css">.item {
+  flex-shrink: 3; /* default 1 */
+}
+</code></pre>
+<h4 id="4-flex-basis">4. flex-basis</h4>
+<pre><code class="language-css">.item {
+  flex-basis:  | auto; /* 默认值为 auto */
+}
+</code></pre>
+<h4 id="5-flex">5. flex</h4>
+<pre><code class="language-css">.item {
+  flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
+}
+</code></pre>
+<h4 id="6-align-self">6. align-self</h4>
+<figure data-type="image" tabindex="6"><img src="https://cosmoslazycat.github.io/post-images/1625812062868.svg" alt="" loading="lazy"></figure>
+<pre><code>.item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+</code></pre>
+<h3 id="三-实际运用">三、实际运用</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[blog]性能优化之预加载]]></title>
+        <id>https://cosmoslazycat.github.io/post/bloggxing-neng-you-hua-zhi-yu-jia-zai/</id>
+        <link href="https://cosmoslazycat.github.io/post/bloggxing-neng-you-hua-zhi-yu-jia-zai/">
+        </link>
+        <updated>2021-06-07T07:52:25.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-资料来源">一、资料来源</h3>
+<p><a href="https://alienzhou.github.io/fe-performance-journey/7-preload/#_1-%E9%A2%84%E5%8A%A0%E8%BD%BD%E6%8A%80%E6%9C%AF">前端性能优化</a></p>
+<p><a href="https://segmentfault.com/a/1190000021154893">懒加载在前端性能优化的应用及原理</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/146977355">前端性能优化之预加载和懒加载</a></p>
+<p><a href="https://www.w3.org/TR/resource-hints/">ResourceHints</a> - 预加载的相关标准</p>
+<h3 id="二-实现原理">二、实现原理</h3>
+<p>预加载的意思是快用户一步，在空闲的时候就把用户将要用到的资源加载完，等用户实际需要使用时，资源已经存在在本地，自然就跳过了整个加载的等待时间。</p>
+<p>预加载可以细分为以下几个点：<code>DNS-prefetch</code>、<code>subresource</code> 、 <code>prefetch</code>、<code>preconnect</code>、<code>prerender</code>。</p>
+<h5 id="1dns-预解析-dns-prefetch">1，DNS 预解析 DNS-Prefetch</h5>
+<p>通过 DNS 预解析来告诉浏览器未来我们可能从某个特定的 URL 获取资源，当浏览器真正使用到该域中的某个资源时就可以尽快地完成 DNS 解析。</p>
+<pre><code>// 可能从 http://example.com 获取资源（图片、音频等）
+// 此请求无需等待DNS解析
+&lt;link rel=&quot;dns-prefetch&quot; href=&quot;//example.com&quot;&gt;
+</code></pre>
+<h5 id="2预连接-preconnect">2，预连接 Preconnect</h5>
+<p>与 DNS 预解析类似，preconnect 不仅完成 DNS 预解析，同时还将进行 TCP 握手和建立传输层协议</p>
+<pre><code>&lt;link rel=&quot;preconnect&quot; href=&quot;http://example.com&quot;&gt;
+</code></pre>
+<h5 id="3-预获取-prefetching">3, 预获取 Prefetching</h5>
+<p>如果我们确定某个资源将来一定会被使用到，我们可以让浏览器预先请求该资源并放入浏览器缓存中，也就是说如果我们猜测用户接下来将要访问哪个具体的资源，那就可以用prefetching来预加载确定的资源了</p>
+<pre><code>&lt;link rel=&quot;prefetch&quot; href=&quot;image.png&quot;&gt;
+</code></pre>
+<h5 id="4subresources">4，Subresources</h5>
+<p>这种方式指定的预获取资源具有最高的优先级，在所有 prefetch 项之前进行</p>
+<pre><code>&lt;link rel=&quot;subresource&quot; href=&quot;styles.css&quot;&gt;
+</code></pre>
+<h5 id="5预渲染-prerender">5，预渲染 Prerender</h5>
+<p>prerender 可以预先加载文档的所有资源，类似于在隐藏的tab 页中打开了某个链接 – 将下载所有资源、创建 DOM 结构、完成页面布局、应用 CSS 样式和执行 JavaScript 脚本等。</p>
+<p>当用户真正访问该链接时，隐藏的页面就切换为可见，使页面看起来就是瞬间加载完成一样。</p>
+<pre><code>&lt;link rel=&quot;prerender&quot; href=&quot;http://example.com&quot;&gt;
+</code></pre>
+<h5 id="6预加载之image对象">6，预加载之Image对象</h5>
+<pre><code class="language-js">&lt;script src=&quot;./imagePreload.js&quot;&gt;&lt;/script&gt;
+
+// imagePreload.js文件
+var image= new Image()
+image.src=&quot;https://xxx.xx.com/image.jpg&quot;
+</code></pre>
+<h5 id="高可信场景汇总">高可信场景汇总：</h5>
+<ul>
+<li>如果用户完成一个带有明显结果的搜索，那么结果页面很可能会被加载。</li>
+<li>如果用户进入到登陆页面，那么登陆成功的页面很可能会被加载。</li>
+<li>如果用户阅读一个多页的文章或访问一个分页的结果集，那么下一页很可能会被加载。</li>
+</ul>
+<h3 id="三-总结">三、总结：</h3>
+<p>我主要是使用在首屏加载时需要的资源，以及一个资源过大的文件上，避免页面长时间空白，减少等待时间，优化体验。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[翻译]一位软件工程师的心里话]]></title>
+        <id>https://cosmoslazycat.github.io/post/translationyi-wei-ruan-jian-gong-cheng-shi-de-xin-li-hua/</id>
+        <link href="https://cosmoslazycat.github.io/post/translationyi-wei-ruan-jian-gong-cheng-shi-de-xin-li-hua/">
+        </link>
+        <updated>2021-06-05T03:45:03.000Z</updated>
+        <content type="html"><![CDATA[<p>原文：<a href="https://old.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/">Drunk Post: Things I've learned as a Sr Engineer</a></p>
+<h3 id="我喝醉了我可能会后悔但这是我在过去10年里作为工程师学到的心得的排名">我喝醉了，我可能会后悔，但这是我在过去10年里作为工程师学到的心得的排名。</h3>
+<ul>
+<li>技术栈其实并不重要，因为在我的领域里，有15种基本的软件工程模式是适用的。我在数据领域工作，所以它不会与webdev或嵌入式相同。但所有的领域都有大约10-20个核心原则，技术栈只是试图使这些事情变得更容易，所以不要为它而烦恼。</li>
+<li>人们建议找工作是有原因的。如果我对一份工作不满意，可能是时候继续前进了。</li>
+<li>在我工作过的公司里，我结识了一些好的、终生的朋友。我不需要把这作为我工作的每个地方的要求。在那些我没有和同事建立友谊的地方工作，我非常开心；在那些我交了一些好朋友的地方，我也不开心。</li>
+<li>我已经学会了对我的经理坦诚相待。不要太诚实，但要恰到好处，这样我才能以真心对待工作。最糟糕的情况是什么？他解雇我？我能在两周内找到一份新工作。</li>
+<li>如果我每季度因待命而在凌晨2点被叫醒超过一次，那么事情就严重了，我要么解决它，要么辞职。</li>
+</ul>
+<h3 id="再来一杯酒">再来一杯酒</h3>
+<ul>
+<li>一个好经理的素质与一个好工程师的素质有很多相同之处。</li>
+<li>当我刚开始工作时，我对技术、编程和计算机科学很着迷。我已经看开了。</li>
+<li>好的代码是可以被一个初级工程师理解的代码。优秀的代码可以被计算机科学一年级的新生理解。最好的代码是根本没有代码。</li>
+<li>作为一个工程师，最被低估的技能是如何记录。妈的，谁来教教我如何写好文档。说真的，如果有任何推荐，我会认真地支付一门课程（比如可能是很多钱，也许1千块钱的课程，如果它保证我可以写出好的文档。）</li>
+<li>与此相关，写好修改建议是一项伟大的技能。</li>
+<li>几乎所有的圣战（vim vs emacs, mac vs linux, 等等）都不重要...除了一个。见下文。</li>
+<li>年龄越大，我就越欣赏动态语言。操，我说了。来互相伤害啊。</li>
+<li>如果我发现自己认为自己是房间里最聪明的人，那就是时候离开了。</li>
+<li>我不知道为什么全栈网络工程师的工资这么低。不，真的，他们应该得到50万的年薪，且这只是基本工资。他妈的，他们必须了解前端和后端，以及不同的浏览器如何工作，网络，数据库和缓存，以及网络和移动之间的差异，这还没完，OMG，公司他妈的有另一个框架想要使用？说真的，为什么网络工程师的工资这么低。</li>
+<li>我们应该雇用更多的实习生，他们很了不起。这些精力充沛的小家伙们有自己的想法。如果他们能质疑或批评一些东西，那就更好了。我爱实习生。</li>
+</ul>
+<h3 id="抿一口">抿一口</h3>
+<ul>
+<li>不要见你的偶像。我花了5千美元参加了我的一个偶像的课程。他是一个杰出的人，但在课程结束时，我意识到他和我们其他人一样是临场瞎编。</li>
+<li>技术栈很重要。好吧，我刚才说技术栈不重要，但请听我说。如果你听到Python开发和C++开发，你会想到非常不同的事情，对吗？这是因为特定工具在特定工作上真的很出色。如果你不确定你想做什么，就做Java吧。它是一种几乎能做任何事的垃圾的编程语言。</li>
+<li>有史以来最伟大的编程语言是lisp。我应该学习lisp。</li>
+<li>对于初学者来说，最有利可图的编程语言是SQL。所有其他语言给我去死。如果你只懂SQL而不懂其他，你就能赚到钱。薪资专家？也许5万刀。知道SQL的工资专家？9万刀. 在大公司有组织能力的普通人？4万刀. 有组织能力且会SQL的普通人？把自己当成产品经理，毫不费劲拿到15万薪资。</li>
+<li>测试很重要，但TDD（测试驱动开发 Test-Driven Development）是一个该死的邪教。</li>
+<li>舒适的政府工作不像他人所描述的那样，至少对于早期到中期的工程师来说是这样。当然，12万+福利+养老金听起来很香，但你将会出卖你的灵魂来从事深奥的专利技术工作。我非常尊重政府工作人员，但说真的，这些地方的工程师的中位年龄是50岁以上是有原因的。这条建议并不适用于政府承包商。</li>
+<li>第三方招聘人员是吸血鬼。然而，如果你找到一个好的，认真地与他们建立良好的关系，他们可以帮助引导你的职业生涯。你怎么知道你是否有一个好的？如果他们已经在第三方招聘机构工作了3年以上，他们多半不咋地。好的招聘人员通常出自大公司。</li>
+<li>期权要么没有价值的，要么可以使你成为百万富翁。他们可能一文不值，除非工程部的人数超过了100人，那至少在这十年内，它们也许是有价值的。</li>
+<li>在家工作是最棒的。但不能白板协作真的很糟糕。</li>
+<li>我没有在FAANG工作过，所以我不知道我错过了什么。但我曾经雇用过（或没有雇用过）FAANG的工程师，他们也不知道自己在做什么。</li>
+<li>我的自我价值不是一个函数，也和我的总收入多少毫无关联。资本主义一个糟糕的体现自我价值的方法。</li>
+<li>经理们的权力比你想象的要小得多得多。如果你曾经想过，为什么XYZ经理不解雇某人，那是因为他们做不到。</li>
+<li>头衔大多并不重要。不管是什么公司的首席杰出员、首席工程师，还是什么。你做了什么，你取得了什么成就，才是人们关心的全部。</li>
+<li>说到头衔：在你职业生涯的早期，头衔的变化是不错的；初级到中级，中级到高级，高级到领导。在你职业生涯的后期，头衔向下变化也很好；这样，你可以得到相同的报酬，但当你升职时，又会得到增加。换句话说，在你职业生涯的早期（&lt;10年），职称上升是好事，因为它让你的技能和责任得到增长。后来，职称下降是好事，因为它可以让你的工资增长。</li>
+<li>把我们的400万养老金都用完。</li>
+<li>善待每个人。不是因为这对你的事业有帮助（当然也会的），而是因为善良本身就很有意义。</li>
+<li>如果我在过去的一个月里没有从初级工程师或实习生那里学到什么，那就是我没有注意。</li>
+</ul>
+<h3 id="哎呀我酒杯见底了">哎呀，我酒杯见底了。</h3>
+<ul>
+<li>为课程、书籍、会议付费是值得的。我参加过一些会议，一些1万5刀的课程，很多书，还有一个订阅服务。都是值得的。这样，我可以更好地假装我在做什么。</li>
+<li>说真的，为什么webdevs的工资不高呢？他们样样精通！！。</li>
+<li>腕关节综合征和腰肌劳损可不是玩笑。现在就把这1千刀在好的设备上。</li>
+<li>我所有老板中最聪明的人是一个数学博士。我从那个人身上学到了很多东西。我希望他一切安好。</li>
+<li>有一次，在高中时，有一个女孩是我的一个好朋友。在那几年里，我们聊天，相处，分享了很多私人的东西。然后有流言蜚语说我喜欢她，或者说我们在约会还是怎么的。她对此颇为不爽，所以就开始忽视我。这感觉真不好受，我想这就是当下流行用语所指的 &quot;Ghosting&quot;。不过我并不会对她有任何埋怨，我希望她过得还好。我很自责没有更好地处理这件事情。</li>
+<li>我在八年级时有一个女朋友，尽管我不再喜欢她了，我也不想和她分手，所以我就开始忽视她了。那真是太糟糕了。我很抱歉，莉娜。</li>
+<li>你知道一个软件工程师工作中最好的部分是什么吗？你可以遇到和你想法一样的人并和他们交流。不一定有相同的兴趣，比如体育和电视节目之类的。但他们思考问题的方式和你一样。这非常酷。</li>
+<li>技术领域没有足够的女性，多么糟糕的一个行业。这需要改变。我一直在努力对我们组织中的女性工程师给予更多的鼓励和帮助，但我不知道还能做什么。</li>
+<li>黑人工程师也一样很少。这到底是怎么回事？</li>
+<li>我从来没有真正开始讨厌一种语言或技术，直到我开始亲密地熟悉它。另外，如果我讨厌一项技术的同时我认为它是好的，我还是会向客户推荐它。詹金斯我操你妈，但我不认为我把它推荐给新客户会是对软件的渎职行为。</li>
+<li>也就是说，git很糟糕，但我没办法只能使用它。另外，GUI的git工具可以去死了，赶紧给我命令行吧，总共只需要背下7个命令行，其他的都可以用谷歌搜索。</li>
+<li>因为我是做数据工作的，所以我将给出一个数据方面的教训。去他妈的Pandas（一个Python数据库）。</li>
+<li>我的工作比较容易，因为我的团队里有半技术性的分析师。半技术性是因为他们知道编程，但不知道软件工程。这是一个福音，因为如果有些东西对他们来无法理解，那就意味着它可能设计得很糟糕。我喜欢团队中的分析员；他们对我成长的帮助比最出色的工程师要大得多。</li>
+<li>暗模式很好，直到你被迫使用亮模式（网页或不支持的应用程序）。这就是为什么我使用亮模式。</li>
+<li>我对安全问题仅有的了解让我明白我对安全问题一窍不通。</li>
+</ul>
+<h3 id="糟糕我没酒了">糟糕，我没酒了。</h3>
+<ul>
+<li>成为一名优秀的工程师意味着了解最佳实践。作为一名高级工程师意味着知道什么时候应该打破最佳实践。</li>
+<li>如果人们试图将责任归咎于一个错误或故障，那么就应该继续前进。</li>
+<li>很多进步的公司，特别是初创公司，都在谈论要带着 &quot;真实的自我&quot;。那么，如果你的真实自我都是在看A片呢？是的，在你的工作和个人生活之间保持一个屏障是健康的。</li>
+<li>我喜欢在欢乐时光里和同事们一起喝酒。我宁愿花时间和孩子、家人或朋友在一起。</li>
+<li>伟大的领导力的最好表现是，我的领导为一个100%是我的错误背了黑锅。你最好相信我愿意为她赴汤蹈火。</li>
+<li>同样，我有幸在其手下工作的最好的领导，他们既尽力主张我的意见，也向我解释其他与我的意见相冲突的意见。我正在努力成为他们那样的人。</li>
+<li>去他妈的副业。如果你喜欢做这些，那随你! 即使我有时间做副业，我也太他妈忙于喝醉了在reddit上发帖了。</li>
+<li>算法和数据的限制是很重要的——在一定程度上。我不认为药剂师面试会测试关于有机化学的琐事。我们这个行业的面试过程有问题。</li>
+<li>该死的，那些搞开发的男男女女真他妈聪明。不过，至少这些人薪酬合理。</li>
+<li>做我喜欢的事并不重要。更重要的是做我不讨厌的事情。</li>
+<li>我越接近产品，越接近推动收入的工作，我就越觉得有价值，无论我的工作有多大的技术含量。即使是最与时俱进的公司也是如此。</li>
+<li>即使当我一直在Windows系统中工作时，也觉得Linux很重要。为什么？因为我最终就在Linux系统中工作。那些我搞砸了安装Arch的周末是我的快乐时光。</li>
+<li>我已经学会了对像“大数据”这样模棱两可的流行语保持时刻警惕。什么是 &quot;大 &quot;数据？我曾经在Spark和Kafka中处理过每10分钟1万行的数据流，在Python和MySQL中处理过每小时10亿行的数据。这些标签可以去他妈的了。</li>
+<li>并非所有的好工作都在硅谷。但有很多都是。</li>
+<li>最后，如果你真的想伤害我，就不要给踩我的帖子，我不关心这个。只要不理会这个帖子就可以了。没有什么比我写了一个长帖子，然后没有人回应更让我难过的了。所以如果你讨厌这个帖子，就无视它吧。</li>
+</ul>
+<h3 id="哦该死我找到啤酒了让我们接着聊">哦，该死，我找到啤酒了：让我们接着聊。</h3>
+<h3 id="关于编程语言">关于编程语言。</h3>
+<ul>
+<li>我曾经讨厌一种编程语言（C#），直到我开始使用它。现在我还是讨厌它，但认为它很有用。</li>
+<li>然后我开始讨厌一种编程语言（C#），摒弃它后又回过头来看它。哇，那门编程语言真的进步了。</li>
+<li>函数式语言最伟大的地方在于，函数是一流的，所有其他的程序员都知道这一点。</li>
+<li>无论一门语言有多伟大或多优越，如果人们不使用它，那就没任何卵用。</li>
+<li>学习一门语言并不难。学习生态系统才是难题。</li>
+</ul>
+<h3 id="关于同事">关于同事</h3>
+<ul>
+<li>合作对编程很好，只是需要大量的时间，而公司通常不愿意花费这些时间。</li>
+<li>与聪明的工程师一起工作，使我成了一个更好的编码者。与聪明的非技术性同事一起工作，使我成了一个更好的工程师。</li>
+<li>不要在朝九晚五的工作时间之外花时间工作。除非你想这样做是因为你有一个令人振奋的项目，而且你正处于兴奋状态。那是很棒的事情。</li>
+<li>各个团队的欢乐时光和社交时间，99%都是放松和认识同事的时间，这很好。偶尔，这1%的时间是关于一个关键的项目和关键的代码，你很高兴你在社交场合提起工作，因为不这样就会有麻烦了。我并不是说基于此观点，我应该在工作之外和其他团队一起玩。我只是想联络感情。但这确实是一个很好的福利。</li>
+<li>关于在家工作</li>
+<li>如果公司一半是远程人员，一半是现场人员，那么确定远程人员是否被当作二等公民是很重要的。如果重大决定是在 &quot;饮水机 &quot;上做出的，那么最好尝试改变公司文化（很难），或者转到另一家把远程员工当作一等公民的公司。</li>
+<li>在家工作的第二个最坏的主要缺点是没有白板。</li>
+<li>在家工作的第一大弊端是很难向同事学习。除非我(a)有信心和自信地提出问题，以及(b)公司有一种文化，使远程员工与现场员工平等，否则我认为在我职业生涯的前5年里，最好在现场工作。</li>
+</ul>
+<h3 id="关于技术">关于技术</h3>
+<ul>
+<li>每个人都知道，技术在变化。在过去的10年里，科技领域发生了巨大的变化。但基本面并没有什么变化，尤其是适用于我的领域的基本面。</li>
+<li>Hacker News和r/programming只适合于获得一般的想法和保持最新的情况。评论几乎毫无价值。</li>
+<li>有很多对技术有强烈观点的业余爱好者，包括很多在 &quot;可敬的 &quot;期刊和博客上发表文章的业余人士。我发现要跟上谣言的步伐的同时要有自己想办法。</li>
+<li>我在一家尖端的创业公司工作，我们不使用ABC尖端科技公司的最新XYZ技术。结果我发现，他们通常展示的只是他们工程部门的一小部分，且他们中的大多数人都在使用与我们同样的技术。</li>
+<li>话虽如此，但看清这些迹象是很重要的。如果你想用现代技术工作，而你的公司仍然在用jQuery做大部分的开发，可能是时候重新评估你的职业生涯了。</li>
+</ul>
+<h3 id="关于数据工程">关于数据工程</h3>
+<ul>
+<li>他妈的，我是一个数据工程师，我索性就给你们写些更具体的、有针对性的建议/经验吧</li>
+<li>SQL是王道。像MySQL、Postgres、Oracle、SQL Server这样的数据库，SQLite仍然是最牛的。即使你与新技术打交道，大部分技术最终还是会转移。</li>
+<li>大多数公司都不做流媒体。这很难，也很复杂。如果你已经工作了10年，还不知道如何处理每秒1万条记录，那也不用担心，外面还有的是工作等着你。</li>
+<li>Airflow是狗屎，没错。外面还有其他产品，但可恨的是Airflow是最广泛使用的那个。</li>
+<li>机器学习项目是非常容易失败的。它们很复杂，很难实现。不相信我？编写他妈的单元测试一个机器学习模型有多容易？懂了吧。</li>
+<li>我们的领域是新的。没有关于数据工程的好书，只能放手去 &quot;做&quot;。不能通过训练营和别的垃圾方法来学习它。这可能会在10年后发生变化，因为我们都逐渐理清了我们到底他妈的在做什么。</li>
+<li></li>
+</ul>
+<h3 id="关于生活">关于生活</h3>
+<ul>
+<li>人会死。你希望你的代码成为你的遗产吗？如果是的话，那就花很多时间在上面，然后去死，因为那是你他妈的遗产! 但是，如果你像我一样，你的遗产被家人、朋友和你生活中的人所包围，而不是你写的代码。那就不要太在意代码了。</li>
+<li>好的员工会写出低劣的代码。聪明的员工也会写出烂代码。优秀的程序员和优秀的工程师也会写低劣的代码。不要让代码质量成为你自我价值的一个考量标准。</li>
+<li>我进入技术和编码领域是因为技术是我的爱好。现在我的爱好和工作是一样的，它毁了我的爱好。所以现在如果我想享受技术，我需要放弃我的爱好。或者我需要接受科技不再是我的爱好的事实，并找到新的爱好。</li>
+<li>编程和计算机科学大概有80年历史了吧？与任何其他工程学科相比。是的，我们总体上不知道我们在做什么。</li>
+<li>我赚的钱绝对不少。要心存感激，懂得感恩。还有，要节约。</li>
+</ul>
+<h3 id="其他琐碎">其他琐碎</h3>
+<ul>
+<li>多年来，我建立了很多大型平台和数据库，被多个团队和人员使用。然而由于某些原因，我最自豪的是被我自己使用的我写的小脚本。</li>
+<li>我职业生涯中最自豪的成就是帮助其他人更好地完成他们的工作。这可能是因为我注定要成为一个人事经理，所以这可能对你们没有啥帮助。</li>
+<li>有一次当我在找工作的时候，我创建并更新了我的Linkedin。我得到了狗屎般的回复，然后就把账号注销了。而现在我用Linkedin来寻找其他候选人加入我的公司。一句话，Linkedin充斥着很多噪音。因为现在我的部分工作就是为这些噪音做贡献，我才觉得它很有用处。</li>
+<li>有一次，我在大学里发现一个女孩喜欢我。因为我不怎么自信，我不太相信这是真的，但后来她主动约我。尽管她真的很酷，但我还是告诉她我不感兴趣。那是我一生中最自豪的时刻之一，因为我在19岁时就足够成熟，可以用成熟的方式拒绝对方。</li>
+<li>r/cscareerquestions是这样一个充满自我和错误信息的污水池，我不知道该面对它。就像，我操，我想吸引所有这些人的注意力，并试图向他们解释世界的真实情况，但他们不会相信我。</li>
+<li>关于我现在的总体感觉</li>
+<li>我喝醉了，而我通常不喝酒，所以我会认为我说的每一句话都可能是蹩脚的或糟糕的。</li>
+<li>我强烈认为，人们应该储蓄和投资金钱。如果你有6位数的工资，请尽力把你的401k做到最大。</li>
+<li>我已经成为我一直讨厌的人了：在职业生涯中从事技术工作，但在现实生活中避开技术。也许那是随着年龄的增长而来的。</li>
+<li>r/ExperiencedDevs是一个相当酷的社区。谢谢你们，管理员。你们得到的赞赏比你们应得的少。说真的，谢谢你们。</li>
+<li>我的事业、我的薪水、我的生活可能都归功于Reddit。Reddit被喷得屎去活来，但这里的社区让我摆脱了贫困（在加油站工作，赚取最低工资），学习Linux、SQL、Python、C#、Python和其他，让我有了今天的成就。</li>
+<li>有孩子很好啊，我没有选择生孩子。为什么？因为我喜欢孩子，而且我很害怕自己会成为一个什么样的父亲。哦，该死，在这里发这个是不是太私人了？</li>
+<li>有一次，有人问我崇拜谁，我说Conan O'brien（TBS电视网柯南秀主持人），他们就笑我了。但我是认真的，因为在他最后一次在《今夜秀》的节目中，他告诉他的观众要善良，要努力工作。这发生在我生命中的一个困难时期，当我看着他说这句话时，我说，你知道吗，我也要这样做。因为我有什么可失去的呢？而且你知道吗？我遇到了一些杰出的人，因为我对他们不赖，我10多年以来从他们身上学到了很多东西。通过努力工作和不害怕尝试新事物，我成长了很多。因为这些话，我的生活无限地、无限地变得更美好。因此，是的，说我因为在生活中取得了一定程度的成就归功于一档深夜秀节目，可能看起来很傻，甚至可笑。但你知道吗，滚你妈的，这是我的人生，我会自豪地说，我所取得的任何成功都是因为深夜电视上的一个该死的喜剧大师。</li>
+</ul>
+<h3 id="我酒醉不已所以请无视我所说的一切-另外对我的抱怨表示歉意">我酒醉不已，所以请无视我所说的一切。另外，对我的抱怨表示歉意。</h3>
 ]]></content>
     </entry>
 </feed>
