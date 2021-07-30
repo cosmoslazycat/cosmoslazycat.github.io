@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-07-30T05:53:47.728Z</updated>
+    <updated>2021-07-30T09:44:58.585Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -493,26 +493,37 @@ image.src=&quot;https://xxx.xx.com/image.jpg&quot;
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[[blog][CSS]实现水平居中的方案]]></title>
+        <title type="html"><![CDATA[[blog][CSS]水平居中方案]]></title>
         <id>https://cosmoslazycat.github.io/post/blogcssshi-xian-shui-ping-ju-zhong-de-fang-an/</id>
         <link href="https://cosmoslazycat.github.io/post/blogcssshi-xian-shui-ping-ju-zhong-de-fang-an/">
         </link>
         <updated>2021-02-15T05:49:14.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="css水平居中">CSS水平居中</h3>
+        <content type="html"><![CDATA[<h3 id="css水平居中"><strong>CSS水平居中</strong></h3>
 <ol>
-<li><code>margin: auto</code></li>
-<li><code>text-align</code> + <code>inline-block</code></li>
-<li><code>fit-content</code> + <code>margin</code></li>
+<li>
+<p><code>margin: auto</code></p>
+</li>
+<li>
+<p><code>text-align</code> + <code>inline-block</code></p>
+</li>
+<li>
+<p><code>fit-content</code> + <code>margin</code></p>
+</li>
 </ol>
-<h4 id="一-margin-auto">一、margin: auto</h4>
-<pre><code>.inner {
+<h4 id="一-margin-auto"><strong>一、margin: auto</strong></h4>
+<pre><code>
+.inner {
+
   display: block; // 还可以是 table | flex | grid，但不能是 inline-xxx 
+
   margin: 0 auto;
+
 }
+
 </code></pre>
 <p>原理：元素被设置成块级后，会独占一行，如果其宽度没有占满横向空间，那么剩余的空间就处于待分配状态，此时设置 <code>margin: auto;</code> 意味着把剩余的空间分配给 <code>margin</code>，并且左右均分，所以就实现了水平居中</p>
 <p>缺点：需要固定居中元素的宽。</p>
-<h4 id="二-text-align-inline-block">二、text-align + inline-block</h4>
+<h4 id="二-text-align-inline-block"><strong>二、text-align + inline-block</strong></h4>
 <pre><code>.outer {
   text-align: center;
 }
@@ -525,28 +536,26 @@ image.src=&quot;https://xxx.xx.com/image.jpg&quot;
 <p>该方案的原理是：上面代码中的 <code>text-align: center;</code> 会使文本居中，但是对块级元素无效，如果将元素设置为 <code>inline-block</code>，该元素就会被当做文本对待，从而实现元素居中。</p>
 <p>缺点：为了居中元素，使文本也居中了，因此可能需要重置文本位置。</p>
 <p>优点：不需要固定居中元素的宽。</p>
-<h4 id="三-fit-content-margin">三、fit-content + margin</h4>
+<h4 id="三-fit-content-margin"><strong>三、fit-content + margin</strong></h4>
 <p>该方案用法有两种，一种是直接应用于元素上，另一种是应用于元素的父元素上。</p>
 <ul>
-<li>
-<p>直接应用于元素上</p>
+<li>直接应用于元素上</li>
+</ul>
 <pre><code>.inner {
-  width: fit-content;
-  margin: auto;
-}
+   width: fit-content;
+   margin: auto;
+ }
 </code></pre>
 <p>缺点：会使元素的宽度改变（同内容宽度）。</p>
-</li>
-<li>
-<p>应用于元素的父元素上</p>
-<pre><code>.outer {
-  width: fit-content;
-  margin: auto;
-}
+<ul>
+<li>应用于元素的父元素上</li>
+</ul>
+<pre><code>  .outer {
+	 width: fit-content;
+	 margin: auto;
+  }
 </code></pre>
 <p>优点：即使子元素是浮动元素也适用。</p>
-</li>
-</ul>
 <p>由于目前 <code>fit-content</code> 属性兼容性较差，因此该方案不推荐使用</p>
 ]]></content>
     </entry>

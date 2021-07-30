@@ -4,50 +4,74 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>[blog][CSS]实现水平居中的方案 - CosmosLazyCat的宇宙</title>
+<title>[blog][CSS]水平居中方案 - CosmosLazyCat的宇宙</title>
 <link rel="shortcut icon" href="https://cosmoslazycat.github.io/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 <link rel="stylesheet" href="https://cosmoslazycat.github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://cosmoslazycat.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="[blog][CSS]实现水平居中的方案 - CosmosLazyCat的宇宙 - Atom Feed" href="https://cosmoslazycat.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="[blog][CSS]水平居中方案 - CosmosLazyCat的宇宙 - Atom Feed" href="https://cosmoslazycat.github.io/atom.xml">
 
     
 
   <meta name="description" content="CSS水平居中
 
+
 margin: auto
+
+
 text-align + inline-block
+
+
 fit-content + margin
 
+
 一、margin: auto
+
 .inner {
-  display: block; // 还可以是 ..." />
-  <meta property="og:title" content="[blog][CSS]实现水平居中的方案 - CosmosLazyCat的宇宙">
+
+  display: block; ..." />
+  <meta property="og:title" content="[blog][CSS]水平居中方案 - CosmosLazyCat的宇宙">
   <meta property="og:description" content="CSS水平居中
 
+
 margin: auto
+
+
 text-align + inline-block
+
+
 fit-content + margin
 
+
 一、margin: auto
+
 .inner {
-  display: block; // 还可以是 ..." />
+
+  display: block; ..." />
   <meta property="og:type" content="articles">
   <meta property="og:url" content="https://cosmoslazycat.github.io/post/blogcssshi-xian-shui-ping-ju-zhong-de-fang-an/" />
   <meta property="og:image" content="https://cosmoslazycat.github.io/post-images/blogcssshi-xian-shui-ping-ju-zhong-de-fang-an.jpg">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="[blog][CSS]实现水平居中的方案 - CosmosLazyCat的宇宙">
+  <meta name="twitter:title" content="[blog][CSS]水平居中方案 - CosmosLazyCat的宇宙">
   <meta name="twitter:description" content="CSS水平居中
 
+
 margin: auto
+
+
 text-align + inline-block
+
+
 fit-content + margin
 
+
 一、margin: auto
+
 .inner {
-  display: block; // 还可以是 ...">
+
+  display: block; ...">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://cosmoslazycat.github.io/post/blogcssshi-xian-shui-ping-ju-zhong-de-fang-an/">
 
@@ -67,31 +91,42 @@ fit-content + margin
     <div class="max-w-4xl w-full mx-auto">
       <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
         <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
-          [blog][CSS]实现水平居中的方案
+          [blog][CSS]水平居中方案
         </h1>
         
-          <img src="https://cosmoslazycat.github.io/post-images/blogcssshi-xian-shui-ping-ju-zhong-de-fang-an.jpg" alt="[blog][CSS]实现水平居中的方案" class="block w-full mb-8">
+          <img src="https://cosmoslazycat.github.io/post-images/blogcssshi-xian-shui-ping-ju-zhong-de-fang-an.jpg" alt="[blog][CSS]水平居中方案" class="block w-full mb-8">
         
         <div class="mb-8 flex flex-wrap">
           <div class="text-gray-400 text-sm mr-4">2021-02-15 · 2 min read</div>
           
         </div>
         <div class="markdown mb-8" v-pre>
-          <h3 id="css水平居中">CSS水平居中</h3>
+          <h3 id="css水平居中"><strong>CSS水平居中</strong></h3>
 <ol>
-<li><code>margin: auto</code></li>
-<li><code>text-align</code> + <code>inline-block</code></li>
-<li><code>fit-content</code> + <code>margin</code></li>
+<li>
+<p><code>margin: auto</code></p>
+</li>
+<li>
+<p><code>text-align</code> + <code>inline-block</code></p>
+</li>
+<li>
+<p><code>fit-content</code> + <code>margin</code></p>
+</li>
 </ol>
-<h4 id="一-margin-auto">一、margin: auto</h4>
-<pre><code>.inner {
+<h4 id="一-margin-auto"><strong>一、margin: auto</strong></h4>
+<pre><code>
+.inner {
+
   display: block; // 还可以是 table | flex | grid，但不能是 inline-xxx 
+
   margin: 0 auto;
+
 }
+
 </code></pre>
 <p>原理：元素被设置成块级后，会独占一行，如果其宽度没有占满横向空间，那么剩余的空间就处于待分配状态，此时设置 <code>margin: auto;</code> 意味着把剩余的空间分配给 <code>margin</code>，并且左右均分，所以就实现了水平居中</p>
 <p>缺点：需要固定居中元素的宽。</p>
-<h4 id="二-text-align-inline-block">二、text-align + inline-block</h4>
+<h4 id="二-text-align-inline-block"><strong>二、text-align + inline-block</strong></h4>
 <pre><code>.outer {
   text-align: center;
 }
@@ -104,28 +139,26 @@ fit-content + margin
 <p>该方案的原理是：上面代码中的 <code>text-align: center;</code> 会使文本居中，但是对块级元素无效，如果将元素设置为 <code>inline-block</code>，该元素就会被当做文本对待，从而实现元素居中。</p>
 <p>缺点：为了居中元素，使文本也居中了，因此可能需要重置文本位置。</p>
 <p>优点：不需要固定居中元素的宽。</p>
-<h4 id="三-fit-content-margin">三、fit-content + margin</h4>
+<h4 id="三-fit-content-margin"><strong>三、fit-content + margin</strong></h4>
 <p>该方案用法有两种，一种是直接应用于元素上，另一种是应用于元素的父元素上。</p>
 <ul>
-<li>
-<p>直接应用于元素上</p>
+<li>直接应用于元素上</li>
+</ul>
 <pre><code>.inner {
-  width: fit-content;
-  margin: auto;
-}
+   width: fit-content;
+   margin: auto;
+ }
 </code></pre>
 <p>缺点：会使元素的宽度改变（同内容宽度）。</p>
-</li>
-<li>
-<p>应用于元素的父元素上</p>
-<pre><code>.outer {
-  width: fit-content;
-  margin: auto;
-}
+<ul>
+<li>应用于元素的父元素上</li>
+</ul>
+<pre><code>  .outer {
+	 width: fit-content;
+	 margin: auto;
+  }
 </code></pre>
 <p>优点：即使子元素是浮动元素也适用。</p>
-</li>
-</ul>
 <p>由于目前 <code>fit-content</code> 属性兼容性较差，因此该方案不推荐使用</p>
 
         </div>
@@ -172,11 +205,11 @@ fit-content + margin
 <ul>
 <li>
 <ul>
-<li><a href="#css%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD">CSS水平居中</a>
+<li><a href="#css%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD"><strong>CSS水平居中</strong></a>
 <ul>
-<li><a href="#%E4%B8%80-margin-auto">一、margin: auto</a></li>
-<li><a href="#%E4%BA%8C-text-align-inline-block">二、text-align + inline-block</a></li>
-<li><a href="#%E4%B8%89-fit-content-margin">三、fit-content + margin</a></li>
+<li><a href="#%E4%B8%80-margin-auto"><strong>一、margin: auto</strong></a></li>
+<li><a href="#%E4%BA%8C-text-align-inline-block"><strong>二、text-align + inline-block</strong></a></li>
+<li><a href="#%E4%B8%89-fit-content-margin"><strong>三、fit-content + margin</strong></a></li>
 </ul>
 </li>
 </ul>
