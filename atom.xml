@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-07-29T08:54:45.784Z</updated>
+    <updated>2021-07-30T05:53:47.728Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -493,6 +493,64 @@ image.src=&quot;https://xxx.xx.com/image.jpg&quot;
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[[blog][CSS]实现水平居中的方案]]></title>
+        <id>https://cosmoslazycat.github.io/post/blogcssshi-xian-shui-ping-ju-zhong-de-fang-an/</id>
+        <link href="https://cosmoslazycat.github.io/post/blogcssshi-xian-shui-ping-ju-zhong-de-fang-an/">
+        </link>
+        <updated>2021-02-15T05:49:14.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="css水平居中">CSS水平居中</h3>
+<ol>
+<li><code>margin: auto</code></li>
+<li><code>text-align</code> + <code>inline-block</code></li>
+<li><code>fit-content</code> + <code>margin</code></li>
+</ol>
+<h4 id="一-margin-auto">一、margin: auto</h4>
+<pre><code>.inner {
+  display: block; // 还可以是 table | flex | grid，但不能是 inline-xxx 
+  margin: 0 auto;
+}
+</code></pre>
+<p>原理：元素被设置成块级后，会独占一行，如果其宽度没有占满横向空间，那么剩余的空间就处于待分配状态，此时设置 <code>margin: auto;</code> 意味着把剩余的空间分配给 <code>margin</code>，并且左右均分，所以就实现了水平居中</p>
+<p>缺点：需要固定居中元素的宽。</p>
+<h4 id="二-text-align-inline-block">二、text-align + inline-block</h4>
+<pre><code>.outer {
+  text-align: center;
+}
+
+.inner {
+  display: inline-block;
+  text-align: left; /* 重置文字位置（如果需要） */
+}
+</code></pre>
+<p>该方案的原理是：上面代码中的 <code>text-align: center;</code> 会使文本居中，但是对块级元素无效，如果将元素设置为 <code>inline-block</code>，该元素就会被当做文本对待，从而实现元素居中。</p>
+<p>缺点：为了居中元素，使文本也居中了，因此可能需要重置文本位置。</p>
+<p>优点：不需要固定居中元素的宽。</p>
+<h4 id="三-fit-content-margin">三、fit-content + margin</h4>
+<p>该方案用法有两种，一种是直接应用于元素上，另一种是应用于元素的父元素上。</p>
+<ul>
+<li>
+<p>直接应用于元素上</p>
+<pre><code>.inner {
+  width: fit-content;
+  margin: auto;
+}
+</code></pre>
+<p>缺点：会使元素的宽度改变（同内容宽度）。</p>
+</li>
+<li>
+<p>应用于元素的父元素上</p>
+<pre><code>.outer {
+  width: fit-content;
+  margin: auto;
+}
+</code></pre>
+<p>优点：即使子元素是浮动元素也适用。</p>
+</li>
+</ul>
+<p>由于目前 <code>fit-content</code> 属性兼容性较差，因此该方案不推荐使用</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[[blog][CSS]水平垂直居中方案]]></title>
         <id>https://cosmoslazycat.github.io/post/blogcssshui-ping-chui-zhi-ju-zhong-fang-an/</id>
         <link href="https://cosmoslazycat.github.io/post/blogcssshui-ping-chui-zhi-ju-zhong-fang-an/">
@@ -615,127 +673,6 @@ image.src=&quot;https://xxx.xx.com/image.jpg&quot;
 <li>IE 6+, Chrome 4+, Firefox 2+</li>
 <li>Android 2.3+, iOS 6+</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[blog][CSS]flex布局]]></title>
-        <id>https://cosmoslazycat.github.io/post/cssflex-bu-ju/</id>
-        <link href="https://cosmoslazycat.github.io/post/cssflex-bu-ju/">
-        </link>
-        <updated>2021-02-05T06:24:12.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="一-创建flex布局">一、创建flex布局</h2>
-<h3 id="1-区别">1, 区别</h3>
-<p>div（块状元素）</p>
-<pre><code>display:flex;
-</code></pre>
-<p>span（内联元素)</p>
-<pre><code>display:inline-flex;
-</code></pre>
-<h3 id="2作用区域">2，作用区域</h3>
-<table>
-<thead>
-<tr>
-<th>作用在flex容器(container)</th>
-<th>作用在flex子项(item)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>flex-direction</td>
-<td>order</td>
-</tr>
-<tr>
-<td>flex-wrap</td>
-<td>flex-grow</td>
-</tr>
-<tr>
-<td>flex-flow</td>
-<td>flex-shrink</td>
-</tr>
-<tr>
-<td>justify-content</td>
-<td>flex-basis</td>
-</tr>
-<tr>
-<td>align-item</td>
-<td>flex</td>
-</tr>
-<tr>
-<td>align-content</td>
-<td>align-self</td>
-</tr>
-</tbody>
-</table>
-<h2 id="二-详细">二、详细</h2>
-<h3 id="作用在flex容器上的属性">作用在flex容器上的属性</h3>
-<h4 id="1flex-direction">1，flex-direction</h4>
-<p>row和row-reverse<br>
-column和column-reverse<br>
-<img src="https://cosmoslazycat.github.io/post-images/1625811948582.svg" alt="" loading="lazy"></p>
-<p>2，flex-wrap<br>
-<img src="https://cosmoslazycat.github.io/post-images/1625811974514.svg" alt="" loading="lazy"></p>
-<pre><code>.container {
-  flex-wrap: nowrap | wrap | wrap-reverse;
-}
-</code></pre>
-<h4 id="3flex-flow">3，flex-flow</h4>
-<pre><code>.container {
-  flex-flow: column wrap;
-}
-</code></pre>
-<h4 id="4justify-content">4，justify-content</h4>
-<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1625811996366.svg" alt="" loading="lazy"></figure>
-<pre><code>.container {
-  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
-}
-</code></pre>
-<h4 id="5-align-items">5, align-items</h4>
-<figure data-type="image" tabindex="2"><img src="https://cosmoslazycat.github.io/post-images/1625812008548.svg" alt="" loading="lazy"></figure>
-<pre><code>.container {
-  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
-}
-</code></pre>
-<h4 id="6-align-content">6, align-content</h4>
-<figure data-type="image" tabindex="3"><img src="https://cosmoslazycat.github.io/post-images/1625812021771.svg" alt="" loading="lazy"></figure>
-<pre><code>.container {
-  align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
-}
-</code></pre>
-<h3 id="作用在flex子项item上的属性">作用在flex子项(item)上的属性</h3>
-<h4 id="1-order">1. order</h4>
-<figure data-type="image" tabindex="4"><img src="https://cosmoslazycat.github.io/post-images/1625812032539.svg" alt="" loading="lazy"></figure>
-<pre><code class="language-css">.item {
-  order: 5; /* 默认值为 0 */
-}
-</code></pre>
-<h4 id="2-flex-grow">2. flex-grow</h4>
-<figure data-type="image" tabindex="5"><img src="https://cosmoslazycat.github.io/post-images/1625812042359.svg" alt="" loading="lazy"></figure>
-<pre><code class="language-css">.item {
-  flex-grow: 4; /* default 0 */
-}
-</code></pre>
-<h4 id="3-flex-shrink">3. flex-shrink</h4>
-<pre><code class="language-css">.item {
-  flex-shrink: 3; /* default 1 */
-}
-</code></pre>
-<h4 id="4-flex-basis">4. flex-basis</h4>
-<pre><code class="language-css">.item {
-  flex-basis:  | auto; /* 默认值为 auto */
-}
-</code></pre>
-<h4 id="5-flex">5. flex</h4>
-<pre><code class="language-css">.item {
-  flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
-}
-</code></pre>
-<h4 id="6-align-self">6. align-self</h4>
-<figure data-type="image" tabindex="6"><img src="https://cosmoslazycat.github.io/post-images/1625812062868.svg" alt="" loading="lazy"></figure>
-<pre><code>.item {
-  align-self: auto | flex-start | flex-end | center | baseline | stretch;
-}
-</code></pre>
-<h3 id="三-实际运用">三、实际运用</h3>
 ]]></content>
     </entry>
 </feed>
