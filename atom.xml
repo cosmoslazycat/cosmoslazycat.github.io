@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-08-03T09:54:08.526Z</updated>
+    <updated>2021-08-03T10:10:46.414Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -10,6 +10,70 @@
     <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的宇宙</rights>
+    <entry>
+        <title type="html"><![CDATA[[blog][持续更新]智能家居相关资料推荐]]></title>
+        <id>https://cosmoslazycat.github.io/post/blogchi-xu-geng-xin-zhi-neng-jia-ju-xiang-guan-zi-liao-tui-jian/</id>
+        <link href="https://cosmoslazycat.github.io/post/blogchi-xu-geng-xin-zhi-neng-jia-ju-xiang-guan-zi-liao-tui-jian/">
+        </link>
+        <updated>2021-08-02T10:04:37.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="资料推荐">资料推荐：</h3>
+<p><a href="https://www.awesome-ha.com/">Awesome Home Assistant - 开源的智能家居控制平台</a></p>
+<p><a href="https://github.com/pkozul/ha-floorplan">Floorplan for Home Assistant</a></p>
+<p><a href="https://github.com/raspberrypi/documentation">树莓派</a></p>
+<p><a href="https://www.hachina.io/index.html">智能家居搭建教程</a></p>
+<h3 id="网站推荐">网站推荐</h3>
+<p>quora -- 物联网、智能家居板块</p>
+<p><a href="https://link.zhihu.com/?target=http%3A//postscapes.com">http://postscapes.com</a> --- tracking the internet of things</p>
+<p><a href="https://www.switch-bot.com/">卧安科技</a></p>
+<p><a href="https://www.tuya.com/cn">涂鸦智能</a></p>
+<p><a href="https://www.hificat.com/index.html">KinCony晶控</a></p>
+<p>https://bbs.hassbian.com/forum.php</p>
+<p><a href="https://link.zhihu.com/?target=http%3A//bbs.hassbian.com/forum.php">瀚思彼岸 - HomeAssistant智能家居技术论坛</a></p>
+<p><a href="https://www.loxone.com/enen/">loxone - 德国智能建筑供应商</a></p>
+<h3 id="播客推荐">播客推荐</h3>
+<p><a href="https://avocadotoast.live/">智能家居 - 牛油果烤面包</a></p>
+<h3 id="视频博主推荐">视频博主推荐</h3>
+<p><a href="https://www.youtube.com/channel/UCwOBG77Tm8cE24FPxHb_abw">Smart Home Solver</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[blog]网站SEO优化的一些想法]]></title>
+        <id>https://cosmoslazycat.github.io/post/blogwang-zhan-seo-you-hua-ded-yi-xie-xiang-fa/</id>
+        <link href="https://cosmoslazycat.github.io/post/blogwang-zhan-seo-you-hua-ded-yi-xie-xiang-fa/">
+        </link>
+        <updated>2021-08-02T10:00:09.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-收集网站数据">一、收集网站数据</h3>
+<p>关键词数据</p>
+<p>网站目录数据</p>
+<p>网站架构技术信息</p>
+<p>外链分析</p>
+<p>网站性能分析</p>
+<h3 id="二-分析网站seo的优缺点">二、分析网站SEO的优缺点</h3>
+<h3 id="三-制定seo优化策略">三、制定SEO优化策略</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[blog]SEO常用工具]]></title>
+        <id>https://cosmoslazycat.github.io/post/blogseo-chang-yong-gong-ju/</id>
+        <link href="https://cosmoslazycat.github.io/post/blogseo-chang-yong-gong-ju/">
+        </link>
+        <updated>2021-08-01T05:54:38.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-网站推荐">一、网站推荐</h3>
+<p><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></p>
+<p><a href="https://search.google.com/test/mobile-friendly">网站移动端友好性测试</a></p>
+<p><a href="https://ahrefs.com/zh/site-explorer">外链分析工具</a></p>
+<p><a href="http://keywordshitter.com/">Keyword Shitter-关键词</a></p>
+<p><a href="https://trends.google.com/trends/?geo=US">Google Trends-关键词</a></p>
+<p><a href="https://ahrefs.com/zh/keywords-explorer">(付费)arhefs - 关键词分析工具</a></p>
+<h3 id="chrome插件推荐">Chrome插件推荐</h3>
+<p>Wappalyzer</p>
+<p>Lighthouse</p>
+<h3 id="文章推荐">文章推荐</h3>
+<p><a href="https://www.google.com/intl/en_us/search/howsearchworks/">How Google Search works</a></p>
+<p><a href="https://help.shopify.com/en/manual/products/add-update-products">Shopify Help Center</a></p>
+<p><a href="https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=zh-tw">搜尋引擎最佳化 (SEO) 入門指南</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[blog]Google搜索引擎是如何进行网站排名的]]></title>
         <id>https://cosmoslazycat.github.io/post/bloggoogle-sou-suo-yin-qing-shi-ru-he-jin-xing-wang-zhan-pai-ming-de/</id>
@@ -323,232 +387,5 @@ WEBP</p>
 </code></pre>
 <br />
 待续。。。]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[分享]计算机学科有意思的比喻]]></title>
-        <id>https://cosmoslazycat.github.io/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/</id>
-        <link href="https://cosmoslazycat.github.io/post/fen-xiang-ji-suan-ji-xue-ke-you-yi-si-de-bi-yu/">
-        </link>
-        <updated>2021-06-25T05:46:49.000Z</updated>
-        <content type="html"><![CDATA[<p>原文：<a href="https://twitter.com/laixintao/status/1402663872561958915?s=20">https://twitter.com/laixintao/status/1402663872561958915?s=20</a></p>
-<p>小时候喜欢哈利波特，后来觉得学习计算机就像在学习魔法一样。</p>
-<ul>
-<li>魔咒学 - 计算机组成原理和体系结构</li>
-<li>树枝占卜学 - 机器学习</li>
-<li>黑魔法防御术 - 信息安全技术</li>
-<li>魔法理论 - 可计算理论</li>
-<li>魔法史 - Unix发展史</li>
-<li>草药学 - 数学</li>
-<li>魔药学 - 算法和数据结构</li>
-<li>变形学 - 数据库</li>
-<li>飞行课 - 操作系统</li>
-<li>咒语解析学 - 编译原理</li>
-<li>猫头鹰：互联网</li>
-<li>魔法杖：编程语言</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[blog]性能优化之预加载]]></title>
-        <id>https://cosmoslazycat.github.io/post/bloggxing-neng-you-hua-zhi-yu-jia-zai/</id>
-        <link href="https://cosmoslazycat.github.io/post/bloggxing-neng-you-hua-zhi-yu-jia-zai/">
-        </link>
-        <updated>2021-06-07T07:52:25.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="一-资料来源">一、资料来源</h3>
-<p><a href="https://alienzhou.github.io/fe-performance-journey/7-preload/#_1-%E9%A2%84%E5%8A%A0%E8%BD%BD%E6%8A%80%E6%9C%AF">前端性能优化</a></p>
-<p><a href="https://segmentfault.com/a/1190000021154893">懒加载在前端性能优化的应用及原理</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/146977355">前端性能优化之预加载和懒加载</a></p>
-<p><a href="https://www.w3.org/TR/resource-hints/">ResourceHints</a> - 预加载的相关标准</p>
-<h3 id="二-实现原理">二、实现原理</h3>
-<p>预加载的意思是快用户一步，在空闲的时候就把用户将要用到的资源加载完，等用户实际需要使用时，资源已经存在在本地，自然就跳过了整个加载的等待时间。</p>
-<p>预加载可以细分为以下几个点：<code>DNS-prefetch</code>、<code>subresource</code> 、 <code>prefetch</code>、<code>preconnect</code>、<code>prerender</code>。</p>
-<h5 id="1dns-预解析-dns-prefetch">1，DNS 预解析 DNS-Prefetch</h5>
-<p>通过 DNS 预解析来告诉浏览器未来我们可能从某个特定的 URL 获取资源，当浏览器真正使用到该域中的某个资源时就可以尽快地完成 DNS 解析。</p>
-<pre><code>// 可能从 http://example.com 获取资源（图片、音频等）
-// 此请求无需等待DNS解析
-&lt;link rel=&quot;dns-prefetch&quot; href=&quot;//example.com&quot;&gt;
-</code></pre>
-<h5 id="2预连接-preconnect">2，预连接 Preconnect</h5>
-<p>与 DNS 预解析类似，preconnect 不仅完成 DNS 预解析，同时还将进行 TCP 握手和建立传输层协议</p>
-<pre><code>&lt;link rel=&quot;preconnect&quot; href=&quot;http://example.com&quot;&gt;
-</code></pre>
-<h5 id="3-预获取-prefetching">3, 预获取 Prefetching</h5>
-<p>如果我们确定某个资源将来一定会被使用到，我们可以让浏览器预先请求该资源并放入浏览器缓存中，也就是说如果我们猜测用户接下来将要访问哪个具体的资源，那就可以用prefetching来预加载确定的资源了</p>
-<pre><code>&lt;link rel=&quot;prefetch&quot; href=&quot;image.png&quot;&gt;
-</code></pre>
-<h5 id="4subresources">4，Subresources</h5>
-<p>这种方式指定的预获取资源具有最高的优先级，在所有 prefetch 项之前进行</p>
-<pre><code>&lt;link rel=&quot;subresource&quot; href=&quot;styles.css&quot;&gt;
-</code></pre>
-<h5 id="5预渲染-prerender">5，预渲染 Prerender</h5>
-<p>prerender 可以预先加载文档的所有资源，类似于在隐藏的tab 页中打开了某个链接 – 将下载所有资源、创建 DOM 结构、完成页面布局、应用 CSS 样式和执行 JavaScript 脚本等。</p>
-<p>当用户真正访问该链接时，隐藏的页面就切换为可见，使页面看起来就是瞬间加载完成一样。</p>
-<pre><code>&lt;link rel=&quot;prerender&quot; href=&quot;http://example.com&quot;&gt;
-</code></pre>
-<h5 id="6预加载之image对象">6，预加载之Image对象</h5>
-<pre><code class="language-js">&lt;script src=&quot;./imagePreload.js&quot;&gt;&lt;/script&gt;
-
-// imagePreload.js文件
-var image= new Image()
-image.src=&quot;https://xxx.xx.com/image.jpg&quot;
-</code></pre>
-<h5 id="高可信场景汇总">高可信场景汇总：</h5>
-<ul>
-<li>如果用户完成一个带有明显结果的搜索，那么结果页面很可能会被加载。</li>
-<li>如果用户进入到登陆页面，那么登陆成功的页面很可能会被加载。</li>
-<li>如果用户阅读一个多页的文章或访问一个分页的结果集，那么下一页很可能会被加载。</li>
-</ul>
-<h3 id="三-总结">三、总结：</h3>
-<p>我主要是使用在首屏加载时需要的资源，以及一个资源过大的文件上，避免页面长时间空白，减少等待时间，优化体验。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[翻译]一位软件工程师的心里话]]></title>
-        <id>https://cosmoslazycat.github.io/post/translationyi-wei-ruan-jian-gong-cheng-shi-de-xin-li-hua/</id>
-        <link href="https://cosmoslazycat.github.io/post/translationyi-wei-ruan-jian-gong-cheng-shi-de-xin-li-hua/">
-        </link>
-        <updated>2021-06-05T03:45:03.000Z</updated>
-        <content type="html"><![CDATA[<p>原文：<a href="https://old.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/">Drunk Post: Things I've learned as a Sr Engineer</a></p>
-<h3 id="我喝醉了我可能会后悔但这是我在过去10年里作为工程师学到的心得的排名">我喝醉了，我可能会后悔，但这是我在过去10年里作为工程师学到的心得的排名。</h3>
-<ul>
-<li>技术栈其实并不重要，因为在我的领域里，有15种基本的软件工程模式是适用的。我在数据领域工作，所以它不会与webdev或嵌入式相同。但所有的领域都有大约10-20个核心原则，技术栈只是试图使这些事情变得更容易，所以不要为它而烦恼。</li>
-<li>人们建议找工作是有原因的。如果我对一份工作不满意，可能是时候继续前进了。</li>
-<li>在我工作过的公司里，我结识了一些好的、终生的朋友。我不需要把这作为我工作的每个地方的要求。在那些我没有和同事建立友谊的地方工作，我非常开心；在那些我交了一些好朋友的地方，我也不开心。</li>
-<li>我已经学会了对我的经理坦诚相待。不要太诚实，但要恰到好处，这样我才能以真心对待工作。最糟糕的情况是什么？他解雇我？我能在两周内找到一份新工作。</li>
-<li>如果我每季度因待命而在凌晨2点被叫醒超过一次，那么事情就严重了，我要么解决它，要么辞职。</li>
-</ul>
-<h3 id="再来一杯酒">再来一杯酒</h3>
-<ul>
-<li>一个好经理的素质与一个好工程师的素质有很多相同之处。</li>
-<li>当我刚开始工作时，我对技术、编程和计算机科学很着迷。我已经看开了。</li>
-<li>好的代码是可以被一个初级工程师理解的代码。优秀的代码可以被计算机科学一年级的新生理解。最好的代码是根本没有代码。</li>
-<li>作为一个工程师，最被低估的技能是如何记录。妈的，谁来教教我如何写好文档。说真的，如果有任何推荐，我会认真地支付一门课程（比如可能是很多钱，也许1千块钱的课程，如果它保证我可以写出好的文档。）</li>
-<li>与此相关，写好修改建议是一项伟大的技能。</li>
-<li>几乎所有的圣战（vim vs emacs, mac vs linux, 等等）都不重要...除了一个。见下文。</li>
-<li>年龄越大，我就越欣赏动态语言。操，我说了。来互相伤害啊。</li>
-<li>如果我发现自己认为自己是房间里最聪明的人，那就是时候离开了。</li>
-<li>我不知道为什么全栈网络工程师的工资这么低。不，真的，他们应该得到50万的年薪，且这只是基本工资。他妈的，他们必须了解前端和后端，以及不同的浏览器如何工作，网络，数据库和缓存，以及网络和移动之间的差异，这还没完，OMG，公司他妈的有另一个框架想要使用？说真的，为什么网络工程师的工资这么低。</li>
-<li>我们应该雇用更多的实习生，他们很了不起。这些精力充沛的小家伙们有自己的想法。如果他们能质疑或批评一些东西，那就更好了。我爱实习生。</li>
-</ul>
-<h3 id="抿一口">抿一口</h3>
-<ul>
-<li>不要见你的偶像。我花了5千美元参加了我的一个偶像的课程。他是一个杰出的人，但在课程结束时，我意识到他和我们其他人一样是临场瞎编。</li>
-<li>技术栈很重要。好吧，我刚才说技术栈不重要，但请听我说。如果你听到Python开发和C++开发，你会想到非常不同的事情，对吗？这是因为特定工具在特定工作上真的很出色。如果你不确定你想做什么，就做Java吧。它是一种几乎能做任何事的垃圾的编程语言。</li>
-<li>有史以来最伟大的编程语言是lisp。我应该学习lisp。</li>
-<li>对于初学者来说，最有利可图的编程语言是SQL。所有其他语言给我去死。如果你只懂SQL而不懂其他，你就能赚到钱。薪资专家？也许5万刀。知道SQL的工资专家？9万刀. 在大公司有组织能力的普通人？4万刀. 有组织能力且会SQL的普通人？把自己当成产品经理，毫不费劲拿到15万薪资。</li>
-<li>测试很重要，但TDD（测试驱动开发 Test-Driven Development）是一个该死的邪教。</li>
-<li>舒适的政府工作不像他人所描述的那样，至少对于早期到中期的工程师来说是这样。当然，12万+福利+养老金听起来很香，但你将会出卖你的灵魂来从事深奥的专利技术工作。我非常尊重政府工作人员，但说真的，这些地方的工程师的中位年龄是50岁以上是有原因的。这条建议并不适用于政府承包商。</li>
-<li>第三方招聘人员是吸血鬼。然而，如果你找到一个好的，认真地与他们建立良好的关系，他们可以帮助引导你的职业生涯。你怎么知道你是否有一个好的？如果他们已经在第三方招聘机构工作了3年以上，他们多半不咋地。好的招聘人员通常出自大公司。</li>
-<li>期权要么没有价值的，要么可以使你成为百万富翁。他们可能一文不值，除非工程部的人数超过了100人，那至少在这十年内，它们也许是有价值的。</li>
-<li>在家工作是最棒的。但不能白板协作真的很糟糕。</li>
-<li>我没有在FAANG工作过，所以我不知道我错过了什么。但我曾经雇用过（或没有雇用过）FAANG的工程师，他们也不知道自己在做什么。</li>
-<li>我的自我价值不是一个函数，也和我的总收入多少毫无关联。资本主义一个糟糕的体现自我价值的方法。</li>
-<li>经理们的权力比你想象的要小得多得多。如果你曾经想过，为什么XYZ经理不解雇某人，那是因为他们做不到。</li>
-<li>头衔大多并不重要。不管是什么公司的首席杰出员、首席工程师，还是什么。你做了什么，你取得了什么成就，才是人们关心的全部。</li>
-<li>说到头衔：在你职业生涯的早期，头衔的变化是不错的；初级到中级，中级到高级，高级到领导。在你职业生涯的后期，头衔向下变化也很好；这样，你可以得到相同的报酬，但当你升职时，又会得到增加。换句话说，在你职业生涯的早期（&lt;10年），职称上升是好事，因为它让你的技能和责任得到增长。后来，职称下降是好事，因为它可以让你的工资增长。</li>
-<li>把我们的400万养老金都用完。</li>
-<li>善待每个人。不是因为这对你的事业有帮助（当然也会的），而是因为善良本身就很有意义。</li>
-<li>如果我在过去的一个月里没有从初级工程师或实习生那里学到什么，那就是我没有注意。</li>
-</ul>
-<h3 id="哎呀我酒杯见底了">哎呀，我酒杯见底了。</h3>
-<ul>
-<li>为课程、书籍、会议付费是值得的。我参加过一些会议，一些1万5刀的课程，很多书，还有一个订阅服务。都是值得的。这样，我可以更好地假装我在做什么。</li>
-<li>说真的，为什么webdevs的工资不高呢？他们样样精通！！。</li>
-<li>腕关节综合征和腰肌劳损可不是玩笑。现在就把这1千刀在好的设备上。</li>
-<li>我所有老板中最聪明的人是一个数学博士。我从那个人身上学到了很多东西。我希望他一切安好。</li>
-<li>有一次，在高中时，有一个女孩是我的一个好朋友。在那几年里，我们聊天，相处，分享了很多私人的东西。然后有流言蜚语说我喜欢她，或者说我们在约会还是怎么的。她对此颇为不爽，所以就开始忽视我。这感觉真不好受，我想这就是当下流行用语所指的 &quot;Ghosting&quot;。不过我并不会对她有任何埋怨，我希望她过得还好。我很自责没有更好地处理这件事情。</li>
-<li>我在八年级时有一个女朋友，尽管我不再喜欢她了，我也不想和她分手，所以我就开始忽视她了。那真是太糟糕了。我很抱歉，莉娜。</li>
-<li>你知道一个软件工程师工作中最好的部分是什么吗？你可以遇到和你想法一样的人并和他们交流。不一定有相同的兴趣，比如体育和电视节目之类的。但他们思考问题的方式和你一样。这非常酷。</li>
-<li>技术领域没有足够的女性，多么糟糕的一个行业。这需要改变。我一直在努力对我们组织中的女性工程师给予更多的鼓励和帮助，但我不知道还能做什么。</li>
-<li>黑人工程师也一样很少。这到底是怎么回事？</li>
-<li>我从来没有真正开始讨厌一种语言或技术，直到我开始亲密地熟悉它。另外，如果我讨厌一项技术的同时我认为它是好的，我还是会向客户推荐它。詹金斯我操你妈，但我不认为我把它推荐给新客户会是对软件的渎职行为。</li>
-<li>也就是说，git很糟糕，但我没办法只能使用它。另外，GUI的git工具可以去死了，赶紧给我命令行吧，总共只需要背下7个命令行，其他的都可以用谷歌搜索。</li>
-<li>因为我是做数据工作的，所以我将给出一个数据方面的教训。去他妈的Pandas（一个Python数据库）。</li>
-<li>我的工作比较容易，因为我的团队里有半技术性的分析师。半技术性是因为他们知道编程，但不知道软件工程。这是一个福音，因为如果有些东西对他们来无法理解，那就意味着它可能设计得很糟糕。我喜欢团队中的分析员；他们对我成长的帮助比最出色的工程师要大得多。</li>
-<li>暗模式很好，直到你被迫使用亮模式（网页或不支持的应用程序）。这就是为什么我使用亮模式。</li>
-<li>我对安全问题仅有的了解让我明白我对安全问题一窍不通。</li>
-</ul>
-<h3 id="糟糕我没酒了">糟糕，我没酒了。</h3>
-<ul>
-<li>成为一名优秀的工程师意味着了解最佳实践。作为一名高级工程师意味着知道什么时候应该打破最佳实践。</li>
-<li>如果人们试图将责任归咎于一个错误或故障，那么就应该继续前进。</li>
-<li>很多进步的公司，特别是初创公司，都在谈论要带着 &quot;真实的自我&quot;。那么，如果你的真实自我都是在看A片呢？是的，在你的工作和个人生活之间保持一个屏障是健康的。</li>
-<li>我喜欢在欢乐时光里和同事们一起喝酒。我宁愿花时间和孩子、家人或朋友在一起。</li>
-<li>伟大的领导力的最好表现是，我的领导为一个100%是我的错误背了黑锅。你最好相信我愿意为她赴汤蹈火。</li>
-<li>同样，我有幸在其手下工作的最好的领导，他们既尽力主张我的意见，也向我解释其他与我的意见相冲突的意见。我正在努力成为他们那样的人。</li>
-<li>去他妈的副业。如果你喜欢做这些，那随你! 即使我有时间做副业，我也太他妈忙于喝醉了在reddit上发帖了。</li>
-<li>算法和数据的限制是很重要的——在一定程度上。我不认为药剂师面试会测试关于有机化学的琐事。我们这个行业的面试过程有问题。</li>
-<li>该死的，那些搞开发的男男女女真他妈聪明。不过，至少这些人薪酬合理。</li>
-<li>做我喜欢的事并不重要。更重要的是做我不讨厌的事情。</li>
-<li>我越接近产品，越接近推动收入的工作，我就越觉得有价值，无论我的工作有多大的技术含量。即使是最与时俱进的公司也是如此。</li>
-<li>即使当我一直在Windows系统中工作时，也觉得Linux很重要。为什么？因为我最终就在Linux系统中工作。那些我搞砸了安装Arch的周末是我的快乐时光。</li>
-<li>我已经学会了对像“大数据”这样模棱两可的流行语保持时刻警惕。什么是 &quot;大 &quot;数据？我曾经在Spark和Kafka中处理过每10分钟1万行的数据流，在Python和MySQL中处理过每小时10亿行的数据。这些标签可以去他妈的了。</li>
-<li>并非所有的好工作都在硅谷。但有很多都是。</li>
-<li>最后，如果你真的想伤害我，就不要给踩我的帖子，我不关心这个。只要不理会这个帖子就可以了。没有什么比我写了一个长帖子，然后没有人回应更让我难过的了。所以如果你讨厌这个帖子，就无视它吧。</li>
-</ul>
-<h3 id="哦该死我找到啤酒了让我们接着聊">哦，该死，我找到啤酒了：让我们接着聊。</h3>
-<h3 id="关于编程语言">关于编程语言。</h3>
-<ul>
-<li>我曾经讨厌一种编程语言（C#），直到我开始使用它。现在我还是讨厌它，但认为它很有用。</li>
-<li>然后我开始讨厌一种编程语言（C#），摒弃它后又回过头来看它。哇，那门编程语言真的进步了。</li>
-<li>函数式语言最伟大的地方在于，函数是一流的，所有其他的程序员都知道这一点。</li>
-<li>无论一门语言有多伟大或多优越，如果人们不使用它，那就没任何卵用。</li>
-<li>学习一门语言并不难。学习生态系统才是难题。</li>
-</ul>
-<h3 id="关于同事">关于同事</h3>
-<ul>
-<li>合作对编程很好，只是需要大量的时间，而公司通常不愿意花费这些时间。</li>
-<li>与聪明的工程师一起工作，使我成了一个更好的编码者。与聪明的非技术性同事一起工作，使我成了一个更好的工程师。</li>
-<li>不要在朝九晚五的工作时间之外花时间工作。除非你想这样做是因为你有一个令人振奋的项目，而且你正处于兴奋状态。那是很棒的事情。</li>
-<li>各个团队的欢乐时光和社交时间，99%都是放松和认识同事的时间，这很好。偶尔，这1%的时间是关于一个关键的项目和关键的代码，你很高兴你在社交场合提起工作，因为不这样就会有麻烦了。我并不是说基于此观点，我应该在工作之外和其他团队一起玩。我只是想联络感情。但这确实是一个很好的福利。</li>
-<li>关于在家工作</li>
-<li>如果公司一半是远程人员，一半是现场人员，那么确定远程人员是否被当作二等公民是很重要的。如果重大决定是在 &quot;饮水机 &quot;上做出的，那么最好尝试改变公司文化（很难），或者转到另一家把远程员工当作一等公民的公司。</li>
-<li>在家工作的第二个最坏的主要缺点是没有白板。</li>
-<li>在家工作的第一大弊端是很难向同事学习。除非我(a)有信心和自信地提出问题，以及(b)公司有一种文化，使远程员工与现场员工平等，否则我认为在我职业生涯的前5年里，最好在现场工作。</li>
-</ul>
-<h3 id="关于技术">关于技术</h3>
-<ul>
-<li>每个人都知道，技术在变化。在过去的10年里，科技领域发生了巨大的变化。但基本面并没有什么变化，尤其是适用于我的领域的基本面。</li>
-<li>Hacker News和r/programming只适合于获得一般的想法和保持最新的情况。评论几乎毫无价值。</li>
-<li>有很多对技术有强烈观点的业余爱好者，包括很多在 &quot;可敬的 &quot;期刊和博客上发表文章的业余人士。我发现要跟上谣言的步伐的同时要有自己想办法。</li>
-<li>我在一家尖端的创业公司工作，我们不使用ABC尖端科技公司的最新XYZ技术。结果我发现，他们通常展示的只是他们工程部门的一小部分，且他们中的大多数人都在使用与我们同样的技术。</li>
-<li>话虽如此，但看清这些迹象是很重要的。如果你想用现代技术工作，而你的公司仍然在用jQuery做大部分的开发，可能是时候重新评估你的职业生涯了。</li>
-</ul>
-<h3 id="关于数据工程">关于数据工程</h3>
-<ul>
-<li>他妈的，我是一个数据工程师，我索性就给你们写些更具体的、有针对性的建议/经验吧</li>
-<li>SQL是王道。像MySQL、Postgres、Oracle、SQL Server这样的数据库，SQLite仍然是最牛的。即使你与新技术打交道，大部分技术最终还是会转移。</li>
-<li>大多数公司都不做流媒体。这很难，也很复杂。如果你已经工作了10年，还不知道如何处理每秒1万条记录，那也不用担心，外面还有的是工作等着你。</li>
-<li>Airflow是狗屎，没错。外面还有其他产品，但可恨的是Airflow是最广泛使用的那个。</li>
-<li>机器学习项目是非常容易失败的。它们很复杂，很难实现。不相信我？编写他妈的单元测试一个机器学习模型有多容易？懂了吧。</li>
-<li>我们的领域是新的。没有关于数据工程的好书，只能放手去 &quot;做&quot;。不能通过训练营和别的垃圾方法来学习它。这可能会在10年后发生变化，因为我们都逐渐理清了我们到底他妈的在做什么。</li>
-<li></li>
-</ul>
-<h3 id="关于生活">关于生活</h3>
-<ul>
-<li>人会死。你希望你的代码成为你的遗产吗？如果是的话，那就花很多时间在上面，然后去死，因为那是你他妈的遗产! 但是，如果你像我一样，你的遗产被家人、朋友和你生活中的人所包围，而不是你写的代码。那就不要太在意代码了。</li>
-<li>好的员工会写出低劣的代码。聪明的员工也会写出烂代码。优秀的程序员和优秀的工程师也会写低劣的代码。不要让代码质量成为你自我价值的一个考量标准。</li>
-<li>我进入技术和编码领域是因为技术是我的爱好。现在我的爱好和工作是一样的，它毁了我的爱好。所以现在如果我想享受技术，我需要放弃我的爱好。或者我需要接受科技不再是我的爱好的事实，并找到新的爱好。</li>
-<li>编程和计算机科学大概有80年历史了吧？与任何其他工程学科相比。是的，我们总体上不知道我们在做什么。</li>
-<li>我赚的钱绝对不少。要心存感激，懂得感恩。还有，要节约。</li>
-</ul>
-<h3 id="其他琐碎">其他琐碎</h3>
-<ul>
-<li>多年来，我建立了很多大型平台和数据库，被多个团队和人员使用。然而由于某些原因，我最自豪的是被我自己使用的我写的小脚本。</li>
-<li>我职业生涯中最自豪的成就是帮助其他人更好地完成他们的工作。这可能是因为我注定要成为一个人事经理，所以这可能对你们没有啥帮助。</li>
-<li>有一次当我在找工作的时候，我创建并更新了我的Linkedin。我得到了狗屎般的回复，然后就把账号注销了。而现在我用Linkedin来寻找其他候选人加入我的公司。一句话，Linkedin充斥着很多噪音。因为现在我的部分工作就是为这些噪音做贡献，我才觉得它很有用处。</li>
-<li>有一次，我在大学里发现一个女孩喜欢我。因为我不怎么自信，我不太相信这是真的，但后来她主动约我。尽管她真的很酷，但我还是告诉她我不感兴趣。那是我一生中最自豪的时刻之一，因为我在19岁时就足够成熟，可以用成熟的方式拒绝对方。</li>
-<li>r/cscareerquestions是这样一个充满自我和错误信息的污水池，我不知道该面对它。就像，我操，我想吸引所有这些人的注意力，并试图向他们解释世界的真实情况，但他们不会相信我。</li>
-<li>关于我现在的总体感觉</li>
-<li>我喝醉了，而我通常不喝酒，所以我会认为我说的每一句话都可能是蹩脚的或糟糕的。</li>
-<li>我强烈认为，人们应该储蓄和投资金钱。如果你有6位数的工资，请尽力把你的401k做到最大。</li>
-<li>我已经成为我一直讨厌的人了：在职业生涯中从事技术工作，但在现实生活中避开技术。也许那是随着年龄的增长而来的。</li>
-<li>r/ExperiencedDevs是一个相当酷的社区。谢谢你们，管理员。你们得到的赞赏比你们应得的少。说真的，谢谢你们。</li>
-<li>我的事业、我的薪水、我的生活可能都归功于Reddit。Reddit被喷得屎去活来，但这里的社区让我摆脱了贫困（在加油站工作，赚取最低工资），学习Linux、SQL、Python、C#、Python和其他，让我有了今天的成就。</li>
-<li>有孩子很好啊，我没有选择生孩子。为什么？因为我喜欢孩子，而且我很害怕自己会成为一个什么样的父亲。哦，该死，在这里发这个是不是太私人了？</li>
-<li>有一次，有人问我崇拜谁，我说Conan O'brien（TBS电视网柯南秀主持人），他们就笑我了。但我是认真的，因为在他最后一次在《今夜秀》的节目中，他告诉他的观众要善良，要努力工作。这发生在我生命中的一个困难时期，当我看着他说这句话时，我说，你知道吗，我也要这样做。因为我有什么可失去的呢？而且你知道吗？我遇到了一些杰出的人，因为我对他们不赖，我10多年以来从他们身上学到了很多东西。通过努力工作和不害怕尝试新事物，我成长了很多。因为这些话，我的生活无限地、无限地变得更美好。因此，是的，说我因为在生活中取得了一定程度的成就归功于一档深夜秀节目，可能看起来很傻，甚至可笑。但你知道吗，滚你妈的，这是我的人生，我会自豪地说，我所取得的任何成功都是因为深夜电视上的一个该死的喜剧大师。</li>
-</ul>
-<h3 id="我酒醉不已所以请无视我所说的一切-另外对我的抱怨表示歉意">我酒醉不已，所以请无视我所说的一切。另外，对我的抱怨表示歉意。</h3>
-]]></content>
     </entry>
 </feed>
