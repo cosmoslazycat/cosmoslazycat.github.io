@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-07-31T07:25:26.385Z</updated>
+    <updated>2021-08-03T06:10:05.426Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的宇宙</rights>
+    <entry>
+        <title type="html"><![CDATA[[blog][Search Engine Optimization]我的关键词挖掘经验]]></title>
+        <id>https://cosmoslazycat.github.io/post/blogsearch-engine-optimizationwo-de-guan-jian-ci-wa-jue-jing-yan/</id>
+        <link href="https://cosmoslazycat.github.io/post/blogsearch-engine-optimizationwo-de-guan-jian-ci-wa-jue-jing-yan/">
+        </link>
+        <updated>2021-07-31T05:15:33.000Z</updated>
+        <content type="html"><![CDATA[<p>资料：</p>
+<p><a href="https://ahrefs.com/blog/how-to-use-google-trends-for-keyword-research/">How to Use Google Trends for Keyword Research: 7 Effective Ways</a></p>
+<p><a href="https://ahrefs.com/blog/zh/free-keyword-research-tools/">10 Free Keyword Research Tools (That Aren’t Google Keyword Planner)</a></p>
+<p>一、关键词挖掘方法</p>
+<p>我使用的工具<code>Google Trends</code>, 它是一个免费的关键词挖掘工具，可以展示某个关键词的历史搜索热度，并能对多个关键词进行对比分析。</p>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1627967782482.png" alt="" loading="lazy"></figure>
+<p>还能展示相关关键词<br>
+<img src="https://cosmoslazycat.github.io/post-images/1627967791793.png" alt="" loading="lazy"></p>
+<p>二、关键词扩展方法</p>
+<p>使用<a href="http://keywordshitter.com/">Keyword Shitter</a> ，输入关键词即可开始挖掘相关关键词，并给出建议。<br>
+<img src="https://cosmoslazycat.github.io/post-images/1627967831254.png" alt="" loading="lazy"></p>
+<p>三、总结</p>
+<p>关键词挖掘方法还有很多，时间关系我只尝试了几种工具，以后会持续输出相关文章以作记录。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[blog](持续更新)Interesting Website！]]></title>
         <id>https://cosmoslazycat.github.io/post/tui-jian-interesting-blog/</id>
@@ -562,131 +583,6 @@ image.src=&quot;https://xxx.xx.com/image.jpg&quot;
 </code></pre>
 <p>优点：即使子元素是浮动元素也适用。</p>
 <p>由于目前 <code>fit-content</code> 属性兼容性较差，因此该方案不推荐使用</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[blog][CSS]水平垂直居中方案]]></title>
-        <id>https://cosmoslazycat.github.io/post/blogcssshui-ping-chui-zhi-ju-zhong-fang-an/</id>
-        <link href="https://cosmoslazycat.github.io/post/blogcssshui-ping-chui-zhi-ju-zhong-fang-an/">
-        </link>
-        <updated>2021-02-10T08:52:50.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="一-flex方案">一、flex方案</h3>
-<h4 id="方案一">方案一：</h4>
-<pre><code>.outer {
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
-}
-</code></pre>
-<h4 id="方案二">方案二：</h4>
-<pre><code>.outer {
-  display: flex;
-}
-
-.inner {
-  margin: auto;
-}
-</code></pre>
-<h4 id="兼容性">兼容性：</h4>
-<ul>
-<li>IE 10+, Chrome 4+, Firefox 2+</li>
-<li>Android 2.3+, iOS 6+</li>
-</ul>
-<h3 id="二-grid-方案">二、Grid 方案</h3>
-<h4 id="方案一-2">方案一</h4>
-<pre><code>.outer {
-  display: grid;
-}
-
-.inner {
-  justify-self: center; /* 水平居中 */
-  align-self: center; /* 垂直居中 */
-}
-</code></pre>
-<h4 id="方案二-2">方案二</h4>
-<pre><code>.outer {
-  display: grid;
-}
-
-.inner {
-  margin: auto;
-}
-</code></pre>
-<p>优点：不需要固定居中元素的宽高。</p>
-<h4 id="兼容性-2">兼容性：</h4>
-<ul>
-<li>IE 10+, Chrome 57+, Firefox 52+</li>
-<li>Android 6+, iOS 10.3+</li>
-</ul>
-<h3 id="三-css3absolute-transform方案">三、CSS3：absolute + transform方案</h3>
-<h4 id="原理">原理</h4>
-<p>CSS3 中新增的 <code>transform</code>，其 <code>translate</code> 属性是根据元素自身计算的。例如：设置 <code>transform: translateX(-50%);</code>，元素会向左偏移自身宽度的一半。根据这一特性，很容易实现元素的居中：</p>
-<h4 id="absolute-calc">absolute + calc</h4>
-<pre><code>/* 这里引用复用代码 */
-
-.outer {
-  position: relative;
-}
-
-.inner {
-  position: absolute;
-  left: calc(50% - 50px);
-  top: calc(50% - 50px);
-}
-</code></pre>
-<p>缺点：需要固定居中元素的宽高。</p>
-<h4 id="兼容性-3">兼容性</h4>
-<ul>
-<li>IE 9+, Chrome 19+, Firefox 4+</li>
-<li>Android 4.4+, iOS 6+</li>
-</ul>
-<h4 id="absolute-负-margin">absolute + 负 margin</h4>
-<pre><code>/* 这里引用复用代码 */
-
-.outer {
-  position: relative;
-}
-
-.inner {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
-}
-</code></pre>
-<p>缺点：需要固定居中元素的宽高。</p>
-<h4 id="兼容性-4">兼容性：</h4>
-<ul>
-<li>IE 6+, Chrome 4+, Firefox 2+</li>
-<li>Android 2.3+, iOS 6+</li>
-</ul>
-<h4 id="absolute-margin-auto">absolute + margin: auto</h4>
-<pre><code>.outer {
-  position: relative;
-}
-
-.inner {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-</code></pre>
-<p>该方案的原理是：使用了 CSS 中的定位属性（<code>absolute</code>、<code>fixed</code> 等）后，如果 <code>left</code> 设置了具体值，没有设置 <code>right</code> 和 <code>width</code>，那么就会自动计算，把剩余的空间分配给 <code>right</code> 和 <code>width</code>。如果 <code>left</code>、<code>right</code> 和 <code>width</code> 都设置了具体值，并且没有占满横向空间，那么剩余空间就处于待分配状态，此时设置 <code>margin: auto;</code> 意味着把剩余的空间分配给 <code>margin</code>，并且左右均分，所以就实现了水平居中，垂直方向同理。</p>
-<p>但是要知道该方法的副作用：</p>
-<ul>
-<li><code>left: 0; right: 0;</code> 相当于 <code>width: 100%;</code></li>
-<li><code>top: 0; bottom: 0;</code> 相当于 <code>height: 100%;</code></li>
-</ul>
-<p>缺点：需要固定居中元素的宽高，否则其宽高会被设为 <code>100%</code>（副作用）。</p>
-<h4 id="兼容性-5">兼容性</h4>
-<ul>
-<li>IE 6+, Chrome 4+, Firefox 2+</li>
-<li>Android 2.3+, iOS 6+</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
