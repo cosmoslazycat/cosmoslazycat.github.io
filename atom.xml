@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-08-03T08:57:54.133Z</updated>
+    <updated>2021-08-03T09:54:08.526Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -10,6 +10,39 @@
     <logo>https://cosmoslazycat.github.io/images/avatar.png</logo>
     <icon>https://cosmoslazycat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CosmosLazyCat的宇宙</rights>
+    <entry>
+        <title type="html"><![CDATA[[blog]Google搜索引擎是如何进行网站排名的]]></title>
+        <id>https://cosmoslazycat.github.io/post/bloggoogle-sou-suo-yin-qing-shi-ru-he-jin-xing-wang-zhan-pai-ming-de/</id>
+        <link href="https://cosmoslazycat.github.io/post/bloggoogle-sou-suo-yin-qing-shi-ru-he-jin-xing-wang-zhan-pai-ming-de/">
+        </link>
+        <updated>2021-07-31T09:51:59.000Z</updated>
+        <content type="html"><![CDATA[<p>资料：</p>
+<p><a href="https://www.google.com/intl/en_us/search/howsearchworks/">How Google Search works</a></p>
+<p><a href="https://ahrefs.com/blog/zh/how-do-search-engines-work/#how-search-engines-rank-pages">搜索引擎如何工作的以及你为什么要在意？</a></p>
+<h3 id="一-原理">一、原理</h3>
+<h4 id="1-搜索引擎是如何工作的">1, 搜索引擎是如何工作的</h4>
+<p>Google搜索引擎的三个主要功能:</p>
+<ul>
+<li>**爬行：**Google爬虫在 Internet 上搜索内容，查看他们找到的每个 URL 的代码/内容。</li>
+<li>**索引：**存储和组织在爬行过程中发现的内容。一旦页面在索引中，它就会在运行中显示为相关查询的结果。</li>
+<li>**排名：**提供最能回答搜索者查询的内容片段，这意味着结果按最相关到最不相关的顺序排列。</li>
+</ul>
+<p>Google搜索引擎运行原理图<br>
+<img src="https://cosmoslazycat.github.io/post-images/1627984382539.png" alt="" loading="lazy"></p>
+<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1627984394764.jpg" alt="" loading="lazy"></figure>
+<h3 id="二-排名影响因素罗列">二、排名影响因素罗列</h3>
+<ul>
+<li>外链</li>
+<li>相关性</li>
+<li>新鲜度</li>
+<li>话题权威性</li>
+<li>页面速度</li>
+<li>移动友好</li>
+</ul>
+<h3 id="三-总结">三、总结</h3>
+<p>网站排名的影响因素非常多，许多因素都需要我实际测试，由于时间关系，我只是在博文中简单罗列，后续会将我的一些使用经验和数据更新在这篇博文中。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[blog][Search Engine Optimization]我的关键词挖掘经验]]></title>
         <id>https://cosmoslazycat.github.io/post/blogsearch-engine-optimizationwo-de-guan-jian-ci-wa-jue-jing-yan/</id>
@@ -516,26 +549,6 @@ image.src=&quot;https://xxx.xx.com/image.jpg&quot;
 <li>有一次，有人问我崇拜谁，我说Conan O'brien（TBS电视网柯南秀主持人），他们就笑我了。但我是认真的，因为在他最后一次在《今夜秀》的节目中，他告诉他的观众要善良，要努力工作。这发生在我生命中的一个困难时期，当我看着他说这句话时，我说，你知道吗，我也要这样做。因为我有什么可失去的呢？而且你知道吗？我遇到了一些杰出的人，因为我对他们不赖，我10多年以来从他们身上学到了很多东西。通过努力工作和不害怕尝试新事物，我成长了很多。因为这些话，我的生活无限地、无限地变得更美好。因此，是的，说我因为在生活中取得了一定程度的成就归功于一档深夜秀节目，可能看起来很傻，甚至可笑。但你知道吗，滚你妈的，这是我的人生，我会自豪地说，我所取得的任何成功都是因为深夜电视上的一个该死的喜剧大师。</li>
 </ul>
 <h3 id="我酒醉不已所以请无视我所说的一切-另外对我的抱怨表示歉意">我酒醉不已，所以请无视我所说的一切。另外，对我的抱怨表示歉意。</h3>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[转载][智能家居]小米家居联动逻辑]]></title>
-        <id>https://cosmoslazycat.github.io/post/zhuan-zai-zhi-neng-jia-ju-xiao-mi-jia-ju-lian-dong-luo-ji/</id>
-        <link href="https://cosmoslazycat.github.io/post/zhuan-zai-zhi-neng-jia-ju-xiao-mi-jia-ju-lian-dong-luo-ji/">
-        </link>
-        <updated>2021-05-05T08:09:08.000Z</updated>
-        <content type="html"><![CDATA[<p>资料：</p>
-<p>https://www.bilibili.com/read/cv11143786</p>
-<h3 id="洗手间场景">洗手间场景</h3>
-<figure data-type="image" tabindex="1"><img src="https://cosmoslazycat.github.io/post-images/1627978053987.webp" alt="" loading="lazy"></figure>
-<h3 id="离回家场景">离回家场景</h3>
-<figure data-type="image" tabindex="2"><img src="https://i0.hdslb.com/bfs/article/3614d95e04797fc10e72612db5c66eaa926aa0f3.png@942w_491h_progressive.webp" alt="img" loading="lazy"></figure>
-<h3 id="观影场景">观影场景</h3>
-<figure data-type="image" tabindex="3"><img src="https://i0.hdslb.com/bfs/article/54dab00550f80c97b3e2f1422c74308ac78df74f.png@776w_326h_progressive.webp" alt="img" loading="lazy"></figure>
-<h3 id="灯光基础">灯光基础</h3>
-<figure data-type="image" tabindex="4"><img src="https://i0.hdslb.com/bfs/article/c8099c69059c6c9423441fce2bd2ea81ce78e659.png@942w_339h_progressive.webp" alt="img" loading="lazy"></figure>
-<h3 id="安防场景">安防场景</h3>
-<figure data-type="image" tabindex="5"><img src="https://i0.hdslb.com/bfs/article/09b88b1704442545d0e0b8b5e8f03aaa11d820f5.png@942w_237h_progressive.webp" alt="img" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
