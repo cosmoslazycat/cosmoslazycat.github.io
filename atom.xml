@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cosmoslazycat.github.io</id>
     <title>CosmosLazyCat的宇宙</title>
-    <updated>2021-08-03T10:10:46.414Z</updated>
+    <updated>2021-08-03T10:15:52.126Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cosmoslazycat.github.io"/>
     <link rel="self" href="https://cosmoslazycat.github.io/atom.xml"/>
@@ -65,10 +65,10 @@
 <p><a href="http://keywordshitter.com/">Keyword Shitter-关键词</a></p>
 <p><a href="https://trends.google.com/trends/?geo=US">Google Trends-关键词</a></p>
 <p><a href="https://ahrefs.com/zh/keywords-explorer">(付费)arhefs - 关键词分析工具</a></p>
-<h3 id="chrome插件推荐">Chrome插件推荐</h3>
+<h3 id="二-chrome插件推荐">二、Chrome插件推荐</h3>
 <p>Wappalyzer</p>
 <p>Lighthouse</p>
-<h3 id="文章推荐">文章推荐</h3>
+<h3 id="三-文章推荐">三、文章推荐</h3>
 <p><a href="https://www.google.com/intl/en_us/search/howsearchworks/">How Google Search works</a></p>
 <p><a href="https://help.shopify.com/en/manual/products/add-update-products">Shopify Help Center</a></p>
 <p><a href="https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=zh-tw">搜尋引擎最佳化 (SEO) 入門指南</a></p>
